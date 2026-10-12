@@ -148,8 +148,10 @@ def main():
     old_order = [c["id"] for c in data.get("categories", [])]
     cat_list.sort(key=lambda c: old_order.index(c["id"]) if c["id"] in old_order else 999)
 
-    out = {"updated": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
-           "categories": cat_list, "memes": found}
+    stamp = data.get("updated")
+    if added or removed or changed or cat_list != data.get("categories") or not stamp:
+        stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    out = {"updated": stamp, "categories": cat_list, "memes": found}
     with open(MANIFEST, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=2)
         f.write("\n")
