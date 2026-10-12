@@ -1,0 +1,386 @@
+{
+  "updated": "2026-10-12T21:22:53Z",
+  "categories": [
+    {
+      "id": "zama-news",
+      "label": "Zama news",
+      "folder": "zama-news",
+      "blurb": "Ecosystem headlines, frog edition."
+    },
+    {
+      "id": "privacy-mood",
+      "label": "Privacy mood",
+      "folder": "privacy-mood",
+      "blurb": "Everyday life, encrypted."
+    },
+    {
+      "id": "the-pond",
+      "label": "The Pond",
+      "folder": "the-pond",
+      "blurb": "Community and recruitment."
+    }
+  ],
+  "memes": [
+    {
+      "id": "join-the-pond",
+      "file": "memes/the-pond/join-the-pond.jpg",
+      "category": "the-pond",
+      "title": "Join the pond",
+      "caption": "Our Telegram channel is now open. Stop lurking. Join the pond.",
+      "tags": [
+        "telegram",
+        "community"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "6e9105498e5a18f2ee055ba8654ecacc22014849",
+      "thumb": "thumbs/join-the-pond.webp"
+    },
+    {
+      "id": "zolana",
+      "file": "memes/zama-news/zolana.jpg",
+      "category": "zama-news",
+      "title": "Zolana",
+      "caption": "Zama is now trading on Solana. New chain. Same introvert.",
+      "tags": [
+        "solana",
+        "listing"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "356d89043f51d4a4916aa0a5c3de204f66c8fc4f",
+      "thumb": "thumbs/zolana.webp"
+    },
+    {
+      "id": "nice-try",
+      "file": "memes/privacy-mood/nice-try.jpg",
+      "category": "privacy-mood",
+      "title": "Nice try",
+      "caption": "Things to say to a wallet tracker: Nice try. Ask the frog. That's encrypted.",
+      "tags": [
+        "wallet tracker"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "b23a9fa26ac9b59986eb2e8f6cc82792a598c1a5",
+      "thumb": "thumbs/nice-try.webp"
+    },
+    {
+      "id": "608m-shielded-volume",
+      "file": "memes/zama-news/608m-shielded-volume.jpg",
+      "category": "zama-news",
+      "title": "$608.5M shielded volume",
+      "caption": "Zama: $608.5M cumulative shielded volume. Busy network. Boring day for gossip.",
+      "tags": [
+        "volume",
+        "stats"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "9ce1bbf1697acbacb8a61f4e68a7162d44c3e1e4",
+      "thumb": "thumbs/608m-shielded-volume.webp"
+    },
+    {
+      "id": "privacy-is-suspicious",
+      "file": "memes/privacy-mood/privacy-is-suspicious.jpg",
+      "category": "privacy-mood",
+      "title": "Privacy is suspicious",
+      "caption": "'Privacy is suspicious.' Bro, you have curtains.",
+      "tags": [
+        "privacy"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "4d187c65c0dab014426777ddd376f9a3ea41aa89",
+      "thumb": "thumbs/privacy-is-suspicious.webp"
+    },
+    {
+      "id": "tvl-115m",
+      "file": "memes/zama-news/tvl-115m.jpg",
+      "category": "zama-news",
+      "title": "$115.7M shielded TVL",
+      "caption": "Zama's shielded TVL: $115.7M. That's a lot of 'none of your business'.",
+      "tags": [
+        "tvl",
+        "stats"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "b3c2e9014937fa09bd11eb1d8fb21cf7c155de53",
+      "thumb": "thumbs/tvl-115m.webp"
+    },
+    {
+      "id": "feelings-not-shielded",
+      "file": "memes/privacy-mood/feelings-not-shielded.jpg",
+      "category": "privacy-mood",
+      "title": "Feelings not shielded",
+      "caption": "My data is shielded. My feelings are not.",
+      "tags": [
+        "shielded"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "4f016558b8f20ec85ba0950b1d0f312d03da74d7",
+      "thumb": "thumbs/feelings-not-shielded.webp"
+    },
+    {
+      "id": "telepathy",
+      "file": "memes/zama-news/telepathy.jpg",
+      "category": "zama-news",
+      "title": "Copy traders need telepathy",
+      "caption": "Zama made swaps confidential. Copy traders now need telepathy.",
+      "tags": [
+        "swaps",
+        "copy trading"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "97ae72818b93aa00b45ca437e5cc672aaa7f8f70",
+      "thumb": "thumbs/telepathy.webp"
+    },
+    {
+      "id": "let-him-cook",
+      "file": "memes/privacy-mood/let-him-cook.jpg",
+      "category": "privacy-mood",
+      "title": "Let him cook",
+      "caption": "Let him cook. The ingredients stay encrypted.",
+      "tags": [
+        "fhe"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "a911bc8d11e57ea8726f8a708f016cdd84ce6aef",
+      "thumb": "thumbs/let-him-cook.webp"
+    },
+    {
+      "id": "wbtc-vault",
+      "file": "memes/zama-news/wbtc-vault.jpg",
+      "category": "zama-news",
+      "title": "Confidential WBTC vault",
+      "caption": "Zama's confidential WBTC vault. My BTC has a 'do not disturb' sign.",
+      "tags": [
+        "btc",
+        "vault"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "def255779999e216f563193c33e6efbf950c60e2",
+      "thumb": "thumbs/wbtc-vault.webp"
+    },
+    {
+      "id": "therapy",
+      "file": "memes/privacy-mood/therapy.jpg",
+      "category": "privacy-mood",
+      "title": "Therapy",
+      "caption": "Therapist: 'Open up.' Me: 'The data stays encrypted.'",
+      "tags": [],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "65a083cbc9f546ef9f50ef986dfe9c9d68a2c57e",
+      "thumb": "thumbs/therapy.webp"
+    },
+    {
+      "id": "blockscout",
+      "file": "memes/zama-news/blockscout.jpg",
+      "category": "zama-news",
+      "title": "Blockscout + Zama",
+      "caption": "Blockscout + Zama: confidential tokens. The explorer works. The gossip doesn't.",
+      "tags": [
+        "explorer",
+        "tokens"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "0518bf428eccd24eabccfb492935449c97bb04ab",
+      "thumb": "thumbs/blockscout.webp"
+    },
+    {
+      "id": "poker",
+      "file": "memes/privacy-mood/poker.jpg",
+      "category": "privacy-mood",
+      "title": "Poker face",
+      "caption": "Poker face: public. Poker hand: private.",
+      "tags": [],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "2e7062b1d271c327285adbfe726db3946b8e10a3",
+      "thumb": "thumbs/poker.webp"
+    },
+    {
+      "id": "confidential-payroll",
+      "file": "memes/zama-news/confidential-payroll.jpg",
+      "category": "zama-news",
+      "title": "Confidential payroll",
+      "caption": "Zama + Bron: confidential payroll. My salary is not office lore.",
+      "tags": [
+        "payroll",
+        "bron"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "7bb52eeb76ed21d6fbc9fe01f6693cdfb09213c0",
+      "thumb": "thumbs/confidential-payroll.webp"
+    },
+    {
+      "id": "bad-takes-public",
+      "file": "memes/privacy-mood/bad-takes-public.jpg",
+      "category": "privacy-mood",
+      "title": "Bad takes are public",
+      "caption": "My data is encrypted. My bad takes are public.",
+      "tags": [],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "1f841e39ce75ff77b254798ab4af058e3a90d255",
+      "thumb": "thumbs/bad-takes-public.webp"
+    },
+    {
+      "id": "defillama",
+      "file": "memes/zama-news/defillama.jpg",
+      "category": "zama-news",
+      "title": "DefiLlama report",
+      "caption": "Zama in the DefiLlama report. Confidential DeFi. The category got famous. My wallet got shy.",
+      "tags": [
+        "defillama",
+        "defi"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "0359392e25bbd44cc43e588709d531e8e953dc1a",
+      "thumb": "thumbs/defillama.webp"
+    },
+    {
+      "id": "raining-data-requests",
+      "file": "memes/privacy-mood/raining-data-requests.jpg",
+      "category": "privacy-mood",
+      "title": "Raining data requests",
+      "caption": "It's raining data requests. Good thing I am shielded.",
+      "tags": [
+        "shielded"
+      ],
+      "added": "2026-10-12",
+      "w": 1408,
+      "h": 1408,
+      "hash": "85b09600ab4b75590f2d063bbe1393241f2cc659",
+      "thumb": "thumbs/raining-data-requests.webp"
+    },
+    {
+      "id": "ai-agents",
+      "file": "memes/zama-news/ai-agents.jpg",
+      "category": "zama-news",
+      "title": "AI agents pay for data",
+      "caption": "AI agents can pay for data. My search history is not for sale.",
+      "tags": [
+        "ai",
+        "agents"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "f442fd76105550fb89dc183be9e939782102de83",
+      "thumb": "thumbs/ai-agents.webp"
+    },
+    {
+      "id": "bars-are-public",
+      "file": "memes/privacy-mood/bars-are-public.jpg",
+      "category": "privacy-mood",
+      "title": "The bars are public",
+      "caption": "When the data is encrypted but the bars are public.",
+      "tags": [
+        "pepe"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "88d8a9b68099af5f132f5f743815abd12c9cb46d",
+      "thumb": "thumbs/bars-are-public.webp"
+    },
+    {
+      "id": "confidential-vaults",
+      "file": "memes/zama-news/confidential-vaults.jpg",
+      "category": "zama-news",
+      "title": "More confidential vaults",
+      "caption": "Zama added more confidential vaults. Now my overthinking has options.",
+      "tags": [
+        "vaults"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "449954896d9d8f2490c36494d648fab62734ca67",
+      "thumb": "thumbs/confidential-vaults.webp"
+    },
+    {
+      "id": "incognito-mode",
+      "file": "memes/privacy-mood/incognito-mode.jpg",
+      "category": "privacy-mood",
+      "title": "Incognito mode",
+      "caption": "When they say 'just use incognito mode'.",
+      "tags": [],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "774c6ebe19d138147d8818ba39e7228267b8d9d2",
+      "thumb": "thumbs/incognito-mode.webp"
+    },
+    {
+      "id": "quantum",
+      "file": "memes/zama-news/quantum.jpg",
+      "category": "zama-news",
+      "title": "Wrong pond",
+      "caption": "Quantum computers are coming. Zama FHE: wrong pond.",
+      "tags": [
+        "quantum",
+        "fhe"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "9a8cc67d17dbe6d9de95ca5e53b9a17831d4b26f",
+      "thumb": "thumbs/quantum.webp"
+    },
+    {
+      "id": "no-sleep",
+      "file": "memes/privacy-mood/no-sleep.jpg",
+      "category": "privacy-mood",
+      "title": "One last scroll",
+      "caption": "Me: just one last scroll. Also me at 3am:",
+      "tags": [],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "d2a3a48ef973389b267a32f8e1423e0c4c631a5b",
+      "thumb": "thumbs/no-sleep.webp"
+    },
+    {
+      "id": "still-the-pond",
+      "file": "memes/the-pond/still-the-pond.jpg",
+      "category": "the-pond",
+      "title": "Still the pond",
+      "caption": "If you log out, it's still the pond.",
+      "tags": [
+        "community"
+      ],
+      "added": "2026-10-12",
+      "w": 1254,
+      "h": 1254,
+      "hash": "e646038c739a872ceb4e8f03ee9f3405b12f9e30",
+      "thumb": "thumbs/still-the-pond.webp"
+    }
+  ]
+}
