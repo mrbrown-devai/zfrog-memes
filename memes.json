@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-12T21:27:13Z",
+  "updated": "2026-10-13T16:30:18Z",
   "categories": [
     {
       "id": "zama-news",
@@ -21,6 +21,55 @@
     }
   ],
   "memes": [
+    {
+      "id": "confidential-rewards",
+      "file": "memes/zama-news/confidential-rewards.jpg",
+      "category": "zama-news",
+      "title": "Confidential rewards",
+      "caption": "Zama + Merkl: confidential rewards. I came for rewards, not a leaderboard.",
+      "tags": [
+        "rewards",
+        "merkl",
+        "apr"
+      ],
+      "added": "2026-10-13",
+      "w": 1254,
+      "h": 1254,
+      "hash": "02cbd5bde6e7b3569856428dc41b10f5db39a9e2",
+      "thumb": "thumbs/confidential-rewards.webp"
+    },
+    {
+      "id": "confidential-vesting",
+      "file": "memes/zama-news/confidential-vesting.jpg",
+      "category": "zama-news",
+      "title": "Confidential vesting",
+      "caption": "Zama + TokenOps: confidential vesting. My allocation doesn't need a comment section.",
+      "tags": [
+        "vesting",
+        "tokenops"
+      ],
+      "added": "2026-10-13",
+      "w": 1254,
+      "h": 1254,
+      "hash": "27dbdfb66124a8b7ece708de2b2253e9e1c1518f",
+      "thumb": "thumbs/confidential-vesting.webp"
+    },
+    {
+      "id": "privacy-with-accountability",
+      "file": "memes/zama-news/privacy-with-accountability.jpg",
+      "category": "zama-news",
+      "title": "Privacy with accountability",
+      "caption": "Zama: privacy with accountability. The auditor is invited. The group chat isn't.",
+      "tags": [
+        "auditor",
+        "compliance"
+      ],
+      "added": "2026-10-13",
+      "w": 1254,
+      "h": 1254,
+      "hash": "f6f56975b6f270d891e9eb4c8ba65f6f307c9a08",
+      "thumb": "thumbs/privacy-with-accountability.webp"
+    },
     {
       "id": "join-the-pond",
       "file": "memes/the-pond/join-the-pond.jpg",
