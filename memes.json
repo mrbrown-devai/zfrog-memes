@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-13T16:30:18Z",
+  "updated": "2026-10-16T09:57:07Z",
   "categories": [
     {
       "id": "zama-news",
@@ -21,6 +21,74 @@
     }
   ],
   "memes": [
+    {
+      "id": "privacy-is-not-a-side-quest",
+      "file": "memes/privacy-mood/privacy-is-not-a-side-quest.jpg",
+      "category": "privacy-mood",
+      "title": "Privacy is not a side quest",
+      "caption": "Zama: make onchain encryption normal. Privacy is not a side quest.",
+      "tags": [
+        "encryption",
+        "groceries"
+      ],
+      "added": "2026-10-16",
+      "w": 1254,
+      "h": 1254,
+      "hash": "5137df1b3a76cb5cb8779ef65df0b4df7034607e",
+      "thumb": "thumbs/privacy-is-not-a-side-quest.webp"
+    },
+    {
+      "id": "confidential-distributions",
+      "file": "memes/zama-news/confidential-distributions.jpg",
+      "category": "zama-news",
+      "title": "Confidential distributions",
+      "caption": "Zama + TokenOps: confidential distributions. My allocation doesn't need a press tour.",
+      "tags": [
+        "tokenops",
+        "distributions",
+        "allocation"
+      ],
+      "added": "2026-10-16",
+      "w": 1254,
+      "h": 1254,
+      "hash": "05d40015072525624aab353af576988363afc964",
+      "thumb": "thumbs/confidential-distributions.webp"
+    },
+    {
+      "id": "gpu-benchmark-1000-tps",
+      "file": "memes/zama-news/gpu-benchmark-1000-tps.jpg",
+      "category": "zama-news",
+      "title": "GPU benchmark: 1,000 TPS",
+      "caption": "Zama GPU benchmark: 1,000 TPS. Even my secrets have a fast lane.",
+      "tags": [
+        "gpu",
+        "benchmark",
+        "tps",
+        "speed"
+      ],
+      "added": "2026-10-16",
+      "w": 1254,
+      "h": 1254,
+      "hash": "7e343c7932d6ca858689f607967a45c763a732bd",
+      "thumb": "thumbs/gpu-benchmark-1000-tps.webp"
+    },
+    {
+      "id": "shield-in-one-transaction",
+      "file": "memes/zama-news/shield-in-one-transaction.jpg",
+      "category": "zama-news",
+      "title": "Shield in one transaction",
+      "caption": "Zama: shield in one transaction. My wallet learned to close the blinds.",
+      "tags": [
+        "shield",
+        "wallet",
+        "blinds"
+      ],
+      "added": "2026-10-16",
+      "w": 1254,
+      "h": 1254,
+      "hash": "5919babf4744e14fa41a81093c72a6c6a4efec78",
+      "thumb": "thumbs/shield-in-one-transaction.webp"
+    },
     {
       "id": "confidential-rewards",
       "file": "memes/zama-news/confidential-rewards.jpg",
