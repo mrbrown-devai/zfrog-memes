@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-16T09:57:07Z",
+  "updated": "2026-10-17T08:50:42Z",
   "categories": [
     {
       "id": "zama-news",
@@ -18,9 +18,592 @@
       "label": "The Pond",
       "folder": "the-pond",
       "blurb": "Community and recruitment."
+    },
+    {
+      "id": "lore",
+      "label": "Lore",
+      "folder": "lore",
+      "blurb": "Scenes from the swamp saga."
+    },
+    {
+      "id": "reactions",
+      "label": "Reactions",
+      "folder": "reactions",
+      "blurb": "Reply ammo. Hood up, mask on."
     }
   ],
   "memes": [
+    {
+      "id": "frog-telepathy",
+      "file": "memes/lore/frog-telepathy.jpg",
+      "category": "lore",
+      "title": "Frog telepathy",
+      "caption": "Two frogs, one encrypted link.",
+      "tags": [
+        "telepathy",
+        "galaxy",
+        "space",
+        "connection",
+        "mind link",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1536,
+      "h": 1024,
+      "hash": "bebfee7a7947de5a50480ba6cf133a66ffc3cb97",
+      "thumb": "thumbs/frog-telepathy.webp"
+    },
+    {
+      "id": "king-in-the-reflection",
+      "file": "memes/lore/king-in-the-reflection.jpg",
+      "category": "lore",
+      "title": "King in the reflection",
+      "caption": "Paper crown on the bus. Real crown in the reflection.",
+      "tags": [
+        "crown",
+        "king",
+        "bus",
+        "rain",
+        "reflection",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1122,
+      "h": 1402,
+      "hash": "d12b1a49c728e61d90129cdad4a50cd02281da06",
+      "thumb": "thumbs/king-in-the-reflection.webp"
+    },
+    {
+      "id": "reading-the-ancient-book",
+      "file": "memes/lore/reading-the-ancient-book.jpg",
+      "category": "lore",
+      "title": "Reading the ancient book",
+      "caption": "Studying the ancient texts of encryption.",
+      "tags": [
+        "book",
+        "library",
+        "research",
+        "whitepaper",
+        "study",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1536,
+      "h": 1024,
+      "hash": "d5d80460ce2f258be4a91230d3e5e35e74d3f1b5",
+      "thumb": "thumbs/reading-the-ancient-book.webp"
+    },
+    {
+      "id": "storm-watch",
+      "file": "memes/lore/storm-watch.jpg",
+      "category": "lore",
+      "title": "Storm watch",
+      "caption": "Looking up into the storm. The Z chip keeps glowing.",
+      "tags": [
+        "rain",
+        "storm",
+        "night",
+        "city",
+        "z chip",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1122,
+      "h": 1402,
+      "hash": "5d8a0800b55f1f58c7edfd7a9c3277c36dfedbab",
+      "thumb": "thumbs/storm-watch.webp"
+    },
+    {
+      "id": "the-giant",
+      "file": "memes/lore/the-giant.jpg",
+      "category": "lore",
+      "title": "The giant",
+      "caption": "Some frogs are bigger than the swamp.",
+      "tags": [
+        "giant",
+        "colossus",
+        "fog",
+        "wanderer",
+        "epic",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1122,
+      "h": 1402,
+      "hash": "d424284f7a7c127a50f6dc0f08c1ff8770e20b71",
+      "thumb": "thumbs/the-giant.webp"
+    },
+    {
+      "id": "the-yellow-wave",
+      "file": "memes/lore/the-yellow-wave.jpg",
+      "category": "lore",
+      "title": "The yellow wave",
+      "caption": "The yellow wave is coming.",
+      "tags": [
+        "wave",
+        "tsunami",
+        "coast",
+        "yellow",
+        "send it",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1672,
+      "h": 941,
+      "hash": "8c9c4590141bed116f6386bb4f6f5fc1ad8d14d9",
+      "thumb": "thumbs/the-yellow-wave.webp"
+    },
+    {
+      "id": "writing-the-lore",
+      "file": "memes/lore/writing-the-lore.jpg",
+      "category": "lore",
+      "title": "Writing the lore",
+      "caption": "The lore is written in fire.",
+      "tags": [
+        "quill",
+        "fire",
+        "writing",
+        "library",
+        "candles",
+        "lore"
+      ],
+      "added": "2026-10-17",
+      "w": 1536,
+      "h": 1024,
+      "hash": "a9af652cc49183d04e448bf19bece81a4bf897fb",
+      "thumb": "thumbs/writing-the-lore.webp"
+    },
+    {
+      "id": "cutting-the-feeds",
+      "file": "memes/privacy-mood/cutting-the-feeds.jpg",
+      "category": "privacy-mood",
+      "title": "Cutting the feeds",
+      "caption": "One cable at a time, the cameras go dark.",
+      "tags": [
+        "surveillance",
+        "cctv",
+        "cameras",
+        "unplug",
+        "static",
+        "hacker"
+      ],
+      "added": "2026-10-17",
+      "w": 1672,
+      "h": 941,
+      "hash": "25791c2644d1f1780c7ebb961aebb32dfb782870",
+      "thumb": "thumbs/cutting-the-feeds.webp"
+    },
+    {
+      "id": "hiding-in-a-box",
+      "file": "memes/privacy-mood/hiding-in-a-box.jpg",
+      "category": "privacy-mood",
+      "title": "Hiding in a box",
+      "caption": "Hiding from the cameras like a pro.",
+      "tags": [
+        "box",
+        "hiding",
+        "stealth",
+        "cctv",
+        "office",
+        "metal gear"
+      ],
+      "added": "2026-10-17",
+      "w": 1672,
+      "h": 941,
+      "hash": "5219bb223e2502f7b5a3c3bb549dc08dcdcc6453",
+      "thumb": "thumbs/hiding-in-a-box.webp"
+    },
+    {
+      "id": "late-night-scroll",
+      "file": "memes/privacy-mood/late-night-scroll.jpg",
+      "category": "privacy-mood",
+      "title": "Late night scroll",
+      "caption": "Still scrolling under the blanket at 3am.",
+      "tags": [
+        "bed",
+        "night",
+        "phone",
+        "scroll",
+        "3am",
+        "insomnia"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "119a21800d94ed34a20e53c74575625c3ea575e8",
+      "thumb": "thumbs/late-night-scroll.webp"
+    },
+    {
+      "id": "off-duty",
+      "file": "memes/privacy-mood/off-duty.jpg",
+      "category": "privacy-mood",
+      "title": "Off duty",
+      "caption": "Off duty. Still encrypted.",
+      "tags": [
+        "gaming",
+        "couch",
+        "pizza",
+        "chill",
+        "weekend",
+        "cartoon"
+      ],
+      "added": "2026-10-17",
+      "w": 1672,
+      "h": 941,
+      "hash": "e1aad6a36c64a04e14eca14a657f1475cfbd9c35",
+      "thumb": "thumbs/off-duty.webp"
+    },
+    {
+      "id": "peephole",
+      "file": "memes/privacy-mood/peephole.jpg",
+      "category": "privacy-mood",
+      "title": "Peephole",
+      "caption": "Who is it? Encrypted.",
+      "tags": [
+        "peephole",
+        "door",
+        "knock knock",
+        "fisheye",
+        "visitor"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "23e3e412e2e1fabeea7d3675852adf9b2c9bdbcb",
+      "thumb": "thumbs/peephole.webp"
+    },
+    {
+      "id": "pixelated-yacht-selfie",
+      "file": "memes/privacy-mood/pixelated-yacht-selfie.jpg",
+      "category": "privacy-mood",
+      "title": "Pixelated in the group selfie",
+      "caption": "Everyone in the group selfie, except me. Shielded.",
+      "tags": [
+        "yacht",
+        "selfie",
+        "pixelated",
+        "blurred",
+        "vacation",
+        "summer"
+      ],
+      "added": "2026-10-17",
+      "w": 1672,
+      "h": 941,
+      "hash": "7c9247c823ed938666d903ddaddd7eb39fbffaca",
+      "thumb": "thumbs/pixelated-yacht-selfie.webp"
+    },
+    {
+      "id": "redacted-scroll",
+      "file": "memes/privacy-mood/redacted-scroll.jpg",
+      "category": "privacy-mood",
+      "title": "Redacted scroll",
+      "caption": "Reading the terms. Everything is redacted.",
+      "tags": [
+        "redacted",
+        "scroll",
+        "terms",
+        "documents",
+        "confused",
+        "cartoon"
+      ],
+      "added": "2026-10-17",
+      "w": 1536,
+      "h": 1024,
+      "hash": "f0473cb686bc45f5f77aa7b4b955bb72f81512cf",
+      "thumb": "thumbs/redacted-scroll.webp"
+    },
+    {
+      "id": "shredder",
+      "file": "memes/privacy-mood/shredder.jpg",
+      "category": "privacy-mood",
+      "title": "Shredder",
+      "caption": "No paper trail. Just shredded paper.",
+      "tags": [
+        "shredder",
+        "paper trail",
+        "documents",
+        "office",
+        "redacted",
+        "cartoon"
+      ],
+      "added": "2026-10-17",
+      "w": 1536,
+      "h": 1024,
+      "hash": "bf85261310f1c0a75cf8fd427af421f32547bd17",
+      "thumb": "thumbs/shredder.webp"
+    },
+    {
+      "id": "absolute-privacy",
+      "file": "memes/reactions/absolute-privacy.jpg",
+      "category": "reactions",
+      "title": "Absolute privacy",
+      "caption": "Absolute privacy.",
+      "tags": [
+        "absolute privacy",
+        "hands up",
+        "black and white",
+        "reaction",
+        "no comment"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "083e8beca688ae08a115c271d2e04ff859f5b63d",
+      "thumb": "thumbs/absolute-privacy.webp"
+    },
+    {
+      "id": "any-minute-now",
+      "file": "memes/reactions/any-minute-now.jpg",
+      "category": "reactions",
+      "title": "Any minute now",
+      "caption": "Any minute now.",
+      "tags": [
+        "waiting",
+        "pocket watch",
+        "soon",
+        "patience",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1122,
+      "h": 1402,
+      "hash": "4cc199a13ed0cfef645d990e7b8c4781d0774154",
+      "thumb": "thumbs/any-minute-now.webp"
+    },
+    {
+      "id": "closing-the-laptop",
+      "file": "memes/reactions/closing-the-laptop.jpg",
+      "category": "reactions",
+      "title": "Closing the laptop",
+      "caption": "Closing the laptop. You saw nothing.",
+      "tags": [
+        "laptop",
+        "closing",
+        "you saw nothing",
+        "pov",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "2dff72f37f94b983ec2ee83c617657e1835d4d39",
+      "thumb": "thumbs/closing-the-laptop.webp"
+    },
+    {
+      "id": "clown-selfie",
+      "file": "memes/reactions/clown-selfie.jpg",
+      "category": "reactions",
+      "title": "Clown selfie",
+      "caption": "Me after aping without reading.",
+      "tags": [
+        "clown",
+        "selfie",
+        "mirror",
+        "fumble",
+        "rekt",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "9e386e22ac490222799dde1725761a5ff07fe5ea",
+      "thumb": "thumbs/clown-selfie.webp"
+    },
+    {
+      "id": "couch-builder",
+      "file": "memes/reactions/couch-builder.jpg",
+      "category": "reactions",
+      "title": "Couch builder",
+      "caption": "Shipping from the couch.",
+      "tags": [
+        "laptop",
+        "couch",
+        "builder",
+        "working",
+        "buff",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "10d4c86c7e1a00dd56d166916be470661e6622f2",
+      "thumb": "thumbs/couch-builder.webp"
+    },
+    {
+      "id": "crying-with-money",
+      "file": "memes/reactions/crying-with-money.jpg",
+      "category": "reactions",
+      "title": "Crying with money",
+      "caption": "Crying, but in profit.",
+      "tags": [
+        "money",
+        "cash",
+        "crying",
+        "profit",
+        "tears",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "78302a6f7101bb12c6e1b73e8a07785025aeb5a0",
+      "thumb": "thumbs/crying-with-money.webp"
+    },
+    {
+      "id": "delete-this",
+      "file": "memes/reactions/delete-this.jpg",
+      "category": "reactions",
+      "title": "Delete this",
+      "caption": "Delete this.",
+      "tags": [
+        "delete this",
+        "sign",
+        "spongebob",
+        "reaction",
+        "cringe"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "675e1311431089fd9999512cdac709f434b6b37a",
+      "thumb": "thumbs/delete-this.webp"
+    },
+    {
+      "id": "fried-rice",
+      "file": "memes/reactions/fried-rice.jpg",
+      "category": "reactions",
+      "title": "Cooking",
+      "caption": "He is literally cooking. The recipe stays encrypted.",
+      "tags": [
+        "let him cook",
+        "cooking",
+        "wok",
+        "fried rice",
+        "kitchen",
+        "builder"
+      ],
+      "added": "2026-10-17",
+      "w": 1122,
+      "h": 1402,
+      "hash": "a8ed3958a55afa3c0c58f97a8d727a5cbc2f8ca6",
+      "thumb": "thumbs/fried-rice.webp"
+    },
+    {
+      "id": "let-him-cook-red-chair",
+      "file": "memes/reactions/let-him-cook-red-chair.jpg",
+      "category": "reactions",
+      "title": "Let him cook (red chair)",
+      "caption": "Let him cook.",
+      "tags": [
+        "let him cook",
+        "builder",
+        "patience",
+        "reaction",
+        "chair"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "9cf37b6507488b4c8419227817a0ad2ce812d9ed",
+      "thumb": "thumbs/let-him-cook-red-chair.webp"
+    },
+    {
+      "id": "loading",
+      "file": "memes/reactions/loading.jpg",
+      "category": "reactions",
+      "title": "Loading",
+      "caption": "Brain loading. Please wait.",
+      "tags": [
+        "loading",
+        "thinking",
+        "glasses",
+        "confused",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "8984dc91073487362c63c998a954730d39f3843d",
+      "thumb": "thumbs/loading.webp"
+    },
+    {
+      "id": "peeking-from-the-curtain",
+      "file": "memes/reactions/peeking-from-the-curtain.jpg",
+      "category": "reactions",
+      "title": "Peeking from the curtain",
+      "caption": "Watching from behind the curtain.",
+      "tags": [
+        "peek",
+        "curtain",
+        "lurking",
+        "watching",
+        "cartoon",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1536,
+      "h": 1024,
+      "hash": "35b5de2c66840a92ec1fdb9d51d4eb9972745365",
+      "thumb": "thumbs/peeking-from-the-curtain.webp"
+    },
+    {
+      "id": "popcorn",
+      "file": "memes/reactions/popcorn.jpg",
+      "category": "reactions",
+      "title": "Popcorn",
+      "caption": "Grabbing popcorn for this.",
+      "tags": [
+        "popcorn",
+        "cinema",
+        "watching the drama",
+        "drama",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "4500533a3ce94941f509c8011537f0e4f09a3f47",
+      "thumb": "thumbs/popcorn.webp"
+    },
+    {
+      "id": "silence",
+      "file": "memes/reactions/silence.jpg",
+      "category": "reactions",
+      "title": "Silence",
+      "caption": "Silence.",
+      "tags": [
+        "silence",
+        "shh",
+        "quiet",
+        "reaction",
+        "hood"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "ed85d12eabf5d99fefcc727f41962f4716cfe927",
+      "thumb": "thumbs/silence.webp"
+    },
+    {
+      "id": "soul-left-the-chat",
+      "file": "memes/reactions/soul-left-the-chat.jpg",
+      "category": "reactions",
+      "title": "Soul left the chat",
+      "caption": "When the soul leaves the body at 4am.",
+      "tags": [
+        "tired",
+        "burnout",
+        "ghost",
+        "desk",
+        "soul left",
+        "reaction"
+      ],
+      "added": "2026-10-17",
+      "w": 1254,
+      "h": 1254,
+      "hash": "92a2ea63e8f2385e4ea5e05380486c78019b8580",
+      "thumb": "thumbs/soul-left-the-chat.webp"
+    },
     {
       "id": "privacy-is-not-a-side-quest",
       "file": "memes/privacy-mood/privacy-is-not-a-side-quest.jpg",
