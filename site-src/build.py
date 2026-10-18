@@ -53,7 +53,7 @@ ORG = {
     '@type': 'Organization', '@id': SITE + '/#org', 'name': 'ZFROG', 'url': SITE + '/',
     'logo': SITE + '/media/logo.jpg',
     'description': '$ZFROG is a community memecoin on Solana that rewards holders in $ZAMA. '
-                   'Named after FROG Mark 1, Zama\'s first FPGA supercomputer for fully homomorphic encryption. '
+                   'Its main character, ZFROG, was born from FROG Mark 1, Zama\'s first FPGA supercomputer for fully homomorphic encryption. '
                    'Not affiliated with Zama. Official contract: ' + CA,
     'sameAs': SAME_AS,
 }
@@ -94,8 +94,8 @@ NAV_LINKS = [('/earn-zama', 'Earn $ZAMA'), ('/fhe', 'FHE explained'), ('/frog-ma
 # ---------------------------------------------------------------- homepage
 def build_home():
     s = open(os.path.join(SRC, 'index.html'), encoding='utf-8').read()
-    title = 'ZFROG ($ZFROG): the Zama-inspired frog memecoin that pays holders in $ZAMA'
-    desc = ('Hold $ZFROG on Solana, earn $ZAMA automatically. The hooded frog named after FROG Mark 1, '
+    title = 'ZFROG ($ZFROG): Hold the Frog, Earn $ZAMA on Solana'
+    desc = ('Hold $ZFROG on Solana, earn $ZAMA automatically. The hooded frog born from FROG Mark 1, '
             "Zama's FPGA supercomputer for FHE. Community memecoin, not affiliated with Zama.")
     s = sub(s, '<meta name="description" content="Hold $ZFROG. Earn $ZAMA. The hooded frog guarding Zama\'s first FPGA supercomputer.">',
             f'<meta name="description" content="{esc(desc)}">')
@@ -122,6 +122,13 @@ def build_home():
     # official-contract clarity (other ZFROG tokens exist)
     s = sub(s, '      <div class="ca chip" role="group" aria-label="Contract address">',
             '      <div class="ca chip" role="group" aria-label="Official $ZFROG contract address on Solana">')
+    # character naming: the hero is ZFROG; FROG Mark 1 is his creator
+    s = sub(s, 'alt="Cover of the ZFROG brand book: Mark, the hooded frog, next to the ZFROG wordmark"',
+            'alt="Cover of the ZFROG brand book: ZFROG, the hooded frog, next to the ZFROG wordmark"')
+    s = sub(s, "Mark's character sheet", "ZFROG's character sheet")
+    s = sub(s, '<figcaption>Unit 01 · FROG Mark 1</figcaption>', '<figcaption>ZFROG · Unit 01</figcaption>')
+    s = sub(s, "<p class=\"lede\">The hooded frog guarding Zama's first FPGA supercomputer.",
+            "<p class=\"lede\">The hooded frog born from FROG Mark 1, Zama's first FPGA supercomputer.")
     return s
 
 

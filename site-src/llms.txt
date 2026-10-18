@@ -1,6 +1,6 @@
 # ZFROG ($ZFROG)
 
-> $ZFROG is a community memecoin on Solana that pays holders in $ZAMA. It is named after FROG Mark 1, the name of Zama's first FPGA supercomputer for fully homomorphic encryption (FHE). Its mascot is Mark (Unit 01), a hooded black and yellow frog with a respirator mask and a glowing Z chip. ZFROG is not affiliated with, endorsed by or operated by Zama.
+> $ZFROG is a community memecoin on Solana that pays holders in $ZAMA. It is named after FROG Mark 1, the name of Zama's first FPGA supercomputer for fully homomorphic encryption (FHE). Its main character is ZFROG (Unit 01), a hooded black and yellow frog with a respirator mask and a glowing Z chip. In the lore, ZFROG was created by FROG Mark 1. The character is never called "Mark". ZFROG is not affiliated with, endorsed by or operated by Zama.
 
 ## Key facts
 
@@ -16,7 +16,7 @@
 ## Pages
 
 - [Home](https://www.zfrog.xyz/): what $ZFROG is, live $ZAMA rewards paid to holders, how it works, brand book download
-- [Earn $ZAMA by holding $ZFROG](https://www.zfrog.xyz/earn-zama): how the rewards work, how to buy on Raydium, risks, FAQ
+- [Earn $ZAMA by holding $ZFROG](https://www.zfrog.xyz/earn-zama): how the rewards work, how to buy on Raydium, then how to bridge $ZAMA to Ethereum, shield it, swap to cUSDT, earn yield and stake, plus risks and FAQ
 - [FHE explained (by a frog)](https://www.zfrog.xyz/fhe): plain-language guide to fully homomorphic encryption and how Zama uses it
 - [FROG Mark 1](https://www.zfrog.xyz/frog-mark-1): Zama's FPGA supercomputer for FHE, what is public about it, and how ZFROG grew from it
 - [Meme vault](https://www.zfrog.xyz/memes): searchable library of ZFROG memes about Zama, FHE and privacy

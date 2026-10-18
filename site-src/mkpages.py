@@ -11,7 +11,7 @@ pages.append(dict(order=1, slug='earn-zama', crumb='Earn $ZAMA', eyebrow='Reward
  description='Hold at least $20 of $ZFROG on Solana and get $ZAMA sent to your wallet automatically. How the rewards work, how to buy on Raydium, and the risks.',
  h1='Earn $ZAMA by <em>holding $ZFROG.</em>', h1_plain='Earn $ZAMA by holding $ZFROG',
  lede='Hold the frog. Get $ZAMA. Nothing to claim, nothing to stake, nothing to lock.',
- hero_img='/media/portrait.jpg', hero_alt='Mark, the ZFROG hooded frog mascot, in a rain-soaked alley', schema_type='Article',
+ hero_img='/media/portrait.jpg', hero_alt='ZFROG, the hooded frog, in a rain-soaked alley', schema_type='Article',
  about=['$ZFROG','$ZAMA','Zama','Solana','Raydium','stonk.fun'],
  faq=[
   ('How do I earn $ZAMA with $ZFROG?','Hold at least $20 worth of $ZFROG in a Solana wallet. $ZAMA from the reward pot is sent to you automatically, in proportion to your holdings.'),
@@ -21,7 +21,8 @@ pages.append(dict(order=1, slug='earn-zama', crumb='Earn $ZAMA', eyebrow='Reward
   ('Which wallets work?','Any Solana wallet that supports Token-2022 tokens, including Phantom, Solflare and Backpack.'),
   ('Why does Raydium show a warning?','$ZFROG uses the Token-2022 standard. Raydium asks you to confirm before trading any Token-2022 token, and you add it by pasting the contract address.'),
   ('Is $ZFROG a Zama token?','No. It is an independent community memecoin named after FROG Mark 1, Zama\'s FPGA supercomputer. It is not affiliated with Zama.'),
-  ('What can I do with the $ZAMA I earn?','Hold it, or bridge it with Zama\'s official bridge and stake it on Zama\'s staking portal. $ZAMA is the token of the Zama Confidential Blockchain Protocol.'),
+  ('What can I do with the $ZAMA I earn?','Bridge it from Solana to Ethereum with Zama\'s official bridge, then shield it, swap cZAMA to cUSDT, earn yield on cUSDT, or stake $ZAMA with an operator. The 5-step guide is on this page.'),
+  ('Do I need ETH to bridge $ZAMA to Ethereum?','Yes. Keep a little ETH in your Ethereum wallet for gas, and a little SOL on Solana for the bridge transaction.'),
  ],
  body=f'''<h2>How the rewards work</h2>
 <p>$ZFROG is a Solana Token-2022 token with a transfer fee built in. Here is the loop:</p>
@@ -53,6 +54,16 @@ pages.append(dict(order=1, slug='earn-zama', crumb='Earn $ZAMA', eyebrow='Reward
 </ol>
 <p><a class="btn btn-primary chip" href="https://raydium.io/swap/?inputMint=sol&amp;outputMint={CA}" target="_blank" rel="noopener">Open $ZFROG on Raydium</a></p>
 <blockquote><strong>Watch out for copycats.</strong> At least one other Solana token uses the ZFROG name (<code>2QbdFYSVpksupj1BnAwgn7xs5RQi5AHm3Wk1kFn2yqvK</code>). It is not us. Always match the full contract address above.</blockquote>
+<h2 id="shielded">What to do with your $ZAMA: get fully shielded</h2>
+<p>Your $ZFROG earns $ZAMA on Solana. That is half the stack. To shield, swap, earn and stake, $ZAMA has to be on Ethereum for now. Five steps, one Ethereum wallet. Each step has a short video on <a href="https://x.com/FrogMark1/status/2109340658666221591" target="_blank" rel="noopener">our X series</a>.</p>
+<ol class="steps-guide">
+<li><strong>Bridge $ZAMA from Solana to Ethereum.</strong> Open <a href="https://bridge.zama.org" rel="noopener">bridge.zama.org</a>, connect your Solana wallet and your Ethereum wallet, and send your $ZAMA across. Keep some SOL for the Solana side and some ETH for gas on Ethereum. <a href="https://x.com/FrogMark1/status/2107203182447198533" target="_blank" rel="noopener">Watch step 1</a>.</li>
+<li><strong>Shield (and unshield) $ZAMA.</strong> In the <a href="https://app.zama.org" rel="noopener">Zama App</a>, Shield turns $ZAMA into cZAMA, a confidential balance only you can read. Unshield brings it back to a public balance when you need it. Same wallet, two states. <a href="https://x.com/FrogMark1/status/2107569388794658872" target="_blank" rel="noopener">Watch step 2</a>.</li>
+<li><strong>Swap cZAMA to cUSDT.</strong> Still in the <a href="https://app.zama.org" rel="noopener">Zama App</a>, swap without leaving the confidential state. Amounts and balances stay encrypted. Private in, private out. <a href="https://x.com/FrogMark1/status/2108318923355455653" target="_blank" rel="noopener">Watch step 3</a>.</li>
+<li><strong>Earn yield with cUSDT.</strong> On <a href="https://app.zama.org/earn" rel="noopener">app.zama.org/earn</a>, deposit cUSDT and earn yield on Ethereum, with amounts still encrypted. <a href="https://x.com/FrogMark1/status/2108707055099932719" target="_blank" rel="noopener">Watch step 4</a>.</li>
+<li><strong>Stake $ZAMA.</strong> On <a href="https://staking.zama.org" rel="noopener">staking.zama.org</a>, delegate $ZAMA to an operator to help secure the protocol and earn staking rewards. Staking uses regular (non-confidential) $ZAMA, so unshield first if needed. <a href="https://x.com/FrogMark1/status/2109315114369163325" target="_blank" rel="noopener">Watch step 5</a>.</li>
+</ol>
+<p>Type these addresses yourself and check the domain is <code>zama.org</code>. Yield and staking rewards are set by those protocols, not by ZFROG, and are never guaranteed. Bridging, swaps and deposits each cost network fees.</p>
 <h2>Risks</h2>
 <p>Read this before you buy.</p>
 <ul>
@@ -70,11 +81,11 @@ pages.append(dict(order=1, slug='earn-zama', crumb='Earn $ZAMA', eyebrow='Reward
 
 # ---------------- /fhe
 pages.append(dict(order=2, slug='fhe', crumb='FHE explained', eyebrow='Learn',
- title='FHE Explained (by a Frog): What Is Zama FHE? | ZFROG',
+ title='FHE Explained by a Frog: an Unofficial Guide to Zama FHE | ZFROG',
  description='What is fully homomorphic encryption? A plain-language guide to FHE, how Zama uses it onchain, why it needs serious hardware and where $ZAMA fits.',
  h1='FHE explained <em>(by a frog).</em>', h1_plain='FHE explained (by a frog)',
- lede='Mark here. Unit 01. I live in the swamp and I compute on things I cannot see. Let me explain how.',
- hero_img=RAW+'memes/lore/reading-the-ancient-book.jpg', hero_alt='Mark the hooded frog peeking over an ancient book of encryption diagrams', hero_w=1536, hero_h=1024,
+ lede='ZFROG here. Unit 01. I live in the swamp and I compute on things I cannot see. Let me explain how.',
+ hero_img=RAW+'memes/lore/reading-the-ancient-book.jpg', hero_alt='ZFROG the hooded frog peeking over an ancient book of encryption diagrams', hero_w=1536, hero_h=1024,
  schema_type='Article', about=['Fully homomorphic encryption','FHE','Zama','FHEVM','TFHE','Confidential tokens','ERC-7984'],
  faq=[
   ('What is FHE in one sentence?','Encryption that lets you compute on data while it stays encrypted, so whoever processes it never sees it.'),
@@ -109,7 +120,7 @@ pages.append(dict(order=2, slug='fhe', crumb='FHE explained', eyebrow='Learn',
 <li><strong>Symbolic execution.</strong> The host chain does not run the heavy FHE math. It stores pointers and emits events.</li>
 <li><strong>Coprocessors.</strong> Offchain operators pick up those events, run the FHE computations in parallel and store the ciphertexts.</li>
 <li><strong>Gateway.</strong> Coordinates input checks, decryption and bridging, on a dedicated Arbitrum rollup.</li>
-<li><strong>Threshold key management.</strong> The decryption key is split across 13 MPC nodes, and a two-thirds majority is needed. Nothing is decrypted unless the contract allows it.</li>
+<li><strong>Threshold key management.</strong> The decryption key is split across 13 MPC nodes, and a threshold of them (9 of 13 in Zama's docs) must cooperate to decrypt. Nothing is decrypted unless the contract allows it.</li>
 <li><strong>Access control.</strong> Tracks who may compute on or decrypt each ciphertext.</li>
 </ul>
 <p>Source: the <a href="https://docs.zama.org/protocol/zama-protocol-litepaper" rel="noopener">Zama Protocol litepaper</a>.</p>
@@ -121,10 +132,10 @@ pages.append(dict(order=2, slug='fhe', crumb='FHE explained', eyebrow='Learn',
 <div class="tablewrap"><table>
 <tr><th>Hardware</th><th>Throughput per chain</th></tr>
 <tr><td>CPU (today)</td><td>20+ TPS</td></tr>
-<tr><td>GPU</td><td>500 to 1,000 TPS, expected by end of 2026</td></tr>
-<tr><td>FPGA and ASIC</td><td>Thousands of TPS, with dedicated FHE ASICs expected in 2027 to 2028</td></tr>
+<tr><td>GPU</td><td>Zama has shown up to about 1,000 TPS on GPUs</td></tr>
+<tr><td>FPGA and ASIC</td><td>The longer-term target: thousands of TPS and more, on dedicated FHE hardware</td></tr>
 </table></div>
-<p>In May 2025 Zama open-sourced the <strong>HPU</strong> (Homomorphic Processing Unit), an FHE processor running on an AMD V80 FPGA board, at about 13,000 programmable bootstraps per second for about 200W. That is where my name comes from. The whole story is on the <a href="/frog-mark-1">FROG Mark 1 page</a>.</p>
+<p>In May 2025 Zama open-sourced the <strong>HPU</strong> (Homomorphic Processing Unit), an FHE processor running on an AMD V80 FPGA board, at about 13,000 programmable bootstraps per second for about 200W. That is the family of hardware my creator, FROG Mark 1, comes from. The whole story is on the <a href="/frog-mark-1">FROG Mark 1 page</a>.</p>
 <h2>Where does $ZAMA fit?</h2>
 <p>$ZAMA is the protocol token:</p>
 <ul>
@@ -174,12 +185,12 @@ pages.append(dict(order=3, slug='frog-mark-1', crumb='FROG Mark 1', eyebrow='Ori
 </ul>
 <p>If Zama publishes more, this page gets updated.</p>
 <h2>Why it matters for Zama</h2>
-<p>Zama's litepaper puts current CPU throughput at more than 20 TPS per chain. It targets 500 to 1,000 TPS on GPUs by the end of 2026, thousands on FPGAs and ASICs, and over 100,000 TPS per chain on a single ASIC server, with FHE ASICs expected in 2027 to 2028.</p>
+<p>Zama's litepaper puts current CPU throughput at more than 20 TPS per chain. Zama has shown up to about 1,000 TPS on GPUs, and its longer-term target is far higher throughput on FPGAs and dedicated FHE ASICs.</p>
 <p>FPGAs are the bridge. They are reprogrammable silicon, so you can prove an FHE processor design in real hardware before spending big on a custom chip. FROG Mark 1 is that bridge, with a name. Want the basics first? Read <a href="/fhe">FHE explained by a frog</a>.</p>
 <h2>From rack to frog</h2>
 <p>Most memecoins invent a story. $ZFROG started from a real machine.</p>
 <p>A hardware lab named its FHE supercomputer FROG. Crypto noticed. The swamp did the rest.</p>
-<p><strong>Mark</strong>, Unit 01, is the community's take on the machine as a character: a black and yellow hooded frog with a respirator mask and a glowing Z chip on his chest. He speaks through the respirator. He computes on things he cannot see. He is here to get the world ready for the privacy age. Meet him in the <a href="/memes">meme vault</a> and the <a href="/#brandbook">brand book</a>.</p>
+<p><strong>ZFROG</strong>, Unit 01, is the main character, and in our lore FROG Mark 1 is his creator: the machine made the frog. He is a black and yellow hooded frog with a respirator mask and a glowing Z chip on his chest. He speaks through the respirator. He computes on things he cannot see. He is here to get the world ready for the privacy age. Meet him in the <a href="/memes">meme vault</a> and the <a href="/#brandbook">brand book</a>.</p>
 <p>$ZFROG launched on Solana on 3 October 2026, and holders earn $ZAMA automatically. <a href="/earn-zama">Here is how</a>.</p>
 '''+DISC))
 

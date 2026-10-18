@@ -86,7 +86,7 @@ AI engines quote sources that are consistent, specific and corroborated by third
 2. **/guides/shield-tokens-on-zama**: turn the existing X tutorial into a page.
 3. **/guides/bridge-zama-solana-ethereum**
 4. **/learn/confidential-vaults**: the Morpho vaults, plus the "$68M+ in confidential vaults" stat from Zama's newsletter.
-5. **/mark**: the character page, using renders only and following the brand book IP rules.
+5. **/zfrog**: the character page for ZFROG (Unit 01, created by FROG Mark 1), using renders only and following the brand book IP rules.
 
 **Ride the news.** Publish a short explainer within 24 hours of each Zama milestone: Merkl confidential rewards claims, Developer Program Season 5, the Revolut Learn & Earn campaign, confidential apps on Solana.
 
