@@ -49,7 +49,7 @@ h1 em,h2 em{font-style:normal;color:var(--toxic)}
 .prose p,.prose li{color:color-mix(in srgb,var(--fg) 88%,var(--muted))}
 .prose p{margin:0 0 18px}
 .prose ul,.prose ol{padding-left:22px;margin:0 0 20px;display:grid;gap:8px}
-.prose a{color:var(--toxic);text-underline-offset:3px}
+.prose a:not(.btn){color:var(--toxic);text-underline-offset:3px}
 .prose strong{color:var(--fg);font-weight:600}
 .prose code{font:400 .82em/1 var(--mono);background:var(--panel);padding:3px 6px;overflow-wrap:anywhere}
 .prose blockquote{margin:24px 0;padding:18px 22px;background:var(--bog);box-shadow:inset 3px 0 0 var(--toxic);color:var(--fg)}
