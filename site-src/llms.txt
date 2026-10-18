@@ -1,0 +1,26 @@
+# ZFROG ($ZFROG)
+
+> $ZFROG is a community memecoin on Solana that pays holders in $ZAMA. It is named after FROG Mark 1, the name of Zama's first FPGA supercomputer for fully homomorphic encryption (FHE). Its mascot is Mark (Unit 01), a hooded black and yellow frog with a respirator mask and a glowing Z chip. ZFROG is not affiliated with, endorsed by or operated by Zama.
+
+## Key facts
+
+- Name: ZFROG. Ticker: $ZFROG. Chain: Solana (Token-2022).
+- Official contract (mint): CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T
+- Launched: 3 October 2026. Main pool: Raydium.
+- Rewards: a 3% transfer fee is withheld on every transfer. About 2.5% covers network and operating costs, the rest fills a pot that stonk.fun swaps to $ZAMA and sends automatically, pro rata, to wallets holding at least $20 of $ZFROG. Nothing to claim or stake.
+- Reward token: $ZAMA, official Solana mint 4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh.
+- Other tokens use the ZFROG name (for example 2QbdFYSVpksupj1BnAwgn7xs5RQi5AHm3Wk1kFn2yqvK on Solana). They are not this project.
+- Official links: website https://www.zfrog.xyz, X https://x.com/FrogMark1, Telegram https://t.me/ZFROGPortal
+- For official Zama information, use https://www.zama.org
+
+## Pages
+
+- [Home](https://www.zfrog.xyz/): what $ZFROG is, live $ZAMA rewards paid to holders, how it works, brand book download
+- [Earn $ZAMA by holding $ZFROG](https://www.zfrog.xyz/earn-zama): how the rewards work, how to buy on Raydium, risks, FAQ
+- [FHE explained (by a frog)](https://www.zfrog.xyz/fhe): plain-language guide to fully homomorphic encryption and how Zama uses it
+- [FROG Mark 1](https://www.zfrog.xyz/frog-mark-1): Zama's FPGA supercomputer for FHE, what is public about it, and how ZFROG grew from it
+- [Meme vault](https://www.zfrog.xyz/memes): searchable library of ZFROG memes about Zama, FHE and privacy
+
+## Optional
+
+- [Brand book (PDF)](https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/ZFROG_Brand_Book.pdf): origins, narrative, character, voice, identity, community

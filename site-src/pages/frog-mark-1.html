@@ -1,0 +1,33 @@
+{"order": 3, "slug": "frog-mark-1", "crumb": "FROG Mark 1", "eyebrow": "Origins", "title": "FROG Mark 1: Zama's FPGA Supercomputer | ZFROG", "description": "FROG Mark 1 is the name of Zama's first FPGA supercomputer for fully homomorphic encryption. What is public, what is not, and how it spawned $ZFROG.", "h1": "FROG Mark 1: <em>Zama's FPGA supercomputer.</em>", "h1_plain": "FROG Mark 1: Zama's FPGA supercomputer", "lede": "Every frog has an origin story. Mine is a rack of hardware.", "hero_img": "/media/machine-poster.jpg", "hero_alt": "Racks of FPGA hardware: the machine that inspired ZFROG", "schema_type": "Article", "about": ["FROG Mark 1", "Zama", "FPGA", "HPU", "Fully homomorphic encryption", "AMD Alveo V80"], "faq": [["What is FROG Mark 1?", "The name given to Zama's first FPGA supercomputer for fully homomorphic encryption, shared by Zama CEO Rand Hindi on X on 25 June 2025."], ["What hardware does Zama use for FHE acceleration?", "Zama's open-source HPU runs on an AMD V80 FPGA board. Zama also uses GPUs, and its roadmap includes dedicated FHE ASICs."], ["How many FPGA cards are in FROG Mark 1?", "That number is not public. We have not seen a verified figure."], ["How fast is Zama's FPGA accelerator?", "Zama reports about 13,000 programmable bootstraps per second per HPU, at about 200W."], ["Is the HPU open source?", "Yes. Zama open-sourced the full HPU stack, including the SystemVerilog, in May 2025."], ["Is $ZFROG made by Zama?", "No. $ZFROG is an independent community memecoin inspired by the machine's name."]]}
+<h2>What is FROG Mark 1?</h2>
+<p>FROG Mark 1 is the name of Zama's first FPGA supercomputer for fully homomorphic encryption. Zama CEO Rand Hindi shared it on X on 25 June 2025, the same day Zama announced a $57M Series B that pushed its valuation past $1 billion.</p>
+<p><a class="btn btn-ghost chip" href="https://x.com/randhindi/status/1938010202235687040" target="_blank" rel="noopener">See Rand Hindi's original post</a></p>
+<p>The purpose is simple. FHE is very heavy to compute, and dedicated hardware makes it fast enough for real onchain use.</p>
+<h2>The hardware behind it: Zama's HPU</h2>
+<p>On 21 May 2025 Zama announced the <strong>HPU on FPGA</strong>, which it called the first open-source hardware accelerator for FHE. What Zama published:</p>
+<ul>
+<li><strong>A full processor for encrypted data,</strong> with a register file, control logic and an arithmetic unit that runs instruction streams on encrypted operands.</li>
+<li><strong>A programmable bootstrapping module.</strong> Bootstrapping is the expensive step in FHE, and this is where it gets accelerated.</li>
+<li><strong>The board:</strong> an AMD V80, a 7nm FPGA with two HBM2e memory stacks, running at 350 MHz.</li>
+<li><strong>Throughput:</strong> about 13,000 programmable bootstraps per second at about 200W.</li>
+<li><strong>Open source:</strong> the whole stack, driven through the HPU backend in TFHE-rs.</li>
+<li><strong>Next step:</strong> Zama said it was working on multi-HPU servers.</li>
+</ul>
+<p>Source: <a href="https://www.zama.org/post/announcing-hpu-on-fpga-the-first-open-source-hardware-accelerator-for-fhe" rel="noopener">Zama, Announcing HPU on FPGA</a>. The AMD Alveo V80 itself is a data-center accelerator card with about 820 GB/s of memory bandwidth and PCIe Gen5 (<a href="https://www.amd.com/en/products/accelerators/alveo/v80.html" rel="noopener">AMD</a>).</p>
+<h3>What is not public</h3>
+<p>We do not make up specs in the pond. These details have not been published:</p>
+<ul>
+<li>How many FPGA cards FROG Mark 1 holds.</li>
+<li>Which exact boards are inside, although the V80 is Zama's published HPU platform.</li>
+<li>Total throughput, power draw or where the machine sits.</li>
+</ul>
+<p>If Zama publishes more, this page gets updated.</p>
+<h2>Why it matters for Zama</h2>
+<p>Zama's litepaper puts current CPU throughput at more than 20 TPS per chain. It targets 500 to 1,000 TPS on GPUs by the end of 2026, thousands on FPGAs and ASICs, and over 100,000 TPS per chain on a single ASIC server, with FHE ASICs expected in 2027 to 2028.</p>
+<p>FPGAs are the bridge. They are reprogrammable silicon, so you can prove an FHE processor design in real hardware before spending big on a custom chip. FROG Mark 1 is that bridge, with a name. Want the basics first? Read <a href="/fhe">FHE explained by a frog</a>.</p>
+<h2>From rack to frog</h2>
+<p>Most memecoins invent a story. $ZFROG started from a real machine.</p>
+<p>A hardware lab named its FHE supercomputer FROG. Crypto noticed. The swamp did the rest.</p>
+<p><strong>Mark</strong>, Unit 01, is the community's take on the machine as a character: a black and yellow hooded frog with a respirator mask and a glowing Z chip on his chest. He speaks through the respirator. He computes on things he cannot see. He is here to get the world ready for the privacy age. Meet him in the <a href="/memes">meme vault</a> and the <a href="/#brandbook">brand book</a>.</p>
+<p>$ZFROG launched on Solana on 3 October 2026, and holders earn $ZAMA automatically. <a href="/earn-zama">Here is how</a>.</p>
+<p class="callout"><strong>Not Zama.</strong> $ZFROG is an independent community memecoin. It is not affiliated with, endorsed by or sponsored by Zama. For official Zama information, go to <a href="https://www.zama.org" rel="noopener">zama.org</a>.</p>

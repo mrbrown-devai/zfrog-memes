@@ -1,0 +1,49 @@
+{"order": 2, "slug": "fhe", "crumb": "FHE explained", "eyebrow": "Learn", "title": "FHE Explained (by a Frog): What Is Zama FHE? | ZFROG", "description": "What is fully homomorphic encryption? A plain-language guide to FHE, how Zama uses it onchain, why it needs serious hardware and where $ZAMA fits.", "h1": "FHE explained <em>(by a frog).</em>", "h1_plain": "FHE explained (by a frog)", "lede": "Mark here. Unit 01. I live in the swamp and I compute on things I cannot see. Let me explain how.", "hero_img": "https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/memes/lore/reading-the-ancient-book.jpg", "hero_alt": "Mark the hooded frog peeking over an ancient book of encryption diagrams", "hero_w": 1536, "hero_h": 1024, "schema_type": "Article", "about": ["Fully homomorphic encryption", "FHE", "Zama", "FHEVM", "TFHE", "Confidential tokens", "ERC-7984"], "faq": [["What is FHE in one sentence?", "Encryption that lets you compute on data while it stays encrypted, so whoever processes it never sees it."], ["Is FHE the same as zero-knowledge proofs?", "No. ZK proves a statement is true without revealing the data. FHE computes on hidden data. Zama uses both: ZK proofs check encrypted inputs."], ["Who invented FHE?", "Craig Gentry published the first plausible fully homomorphic scheme in 2009. Zama builds on TFHE, published in 2016."], ["Does Zama have its own blockchain?", "No. Zama is a confidentiality layer on top of existing chains. Its Gateway runs on a dedicated Arbitrum rollup."], ["Which chains does Zama support?", "Confidential apps run on Ethereum mainnet. $ZAMA itself can be bridged across Ethereum, BNB Chain and Solana. Zama has said confidential apps on more chains are coming."], ["Why is FHE slow?", "Ciphertexts are large and bootstrapping is compute-heavy. That is why Zama is moving from CPUs to GPUs, FPGAs and eventually dedicated ASICs."], ["Is FHE quantum-safe?", "Zama describes FHE as already post-quantum, because it is built on lattice problems rather than the math quantum computers threaten."]]}
+<h2>What is fully homomorphic encryption?</h2>
+<p>Normal encryption is a locked box. You can store it and send it. But to do anything with what is inside, you have to open it, and the moment you open it, whoever is doing the work sees everything.</p>
+<p>Fully homomorphic encryption (FHE) changes that. You can run computations on encrypted data <strong>without decrypting it</strong>. The result stays encrypted. Only the key holder can read it, and it matches what you would get from doing the same math on the raw data.</p>
+<blockquote>Lock the box. Do math on the box. Open the box. The right answer is inside. Nobody in the middle saw a thing.</blockquote>
+<h2>A 30-second history</h2>
+<p>Cryptographers chased this idea for decades. In 2009 Craig Gentry published the first plausible fully homomorphic scheme, built on lattice-based cryptography.</p>
+<p>The catch was noise. Every operation on a ciphertext adds a little, and too much makes the data unreadable. Gentry's fix was <strong>bootstrapping</strong>: the scheme runs its own decryption circuit while the data stays encrypted, producing a fresh, low-noise ciphertext. Refresh often enough and you can compute forever.</p>
+<p>In 2016, Ilaria Chillotti, Nicolas Gama, Mariya Georgieva and Malika Izabachène published <strong>TFHE</strong>, a scheme with much faster bootstrapping. TFHE is the family Zama builds on, through its TFHE-rs library.</p>
+<h2>Why FHE matters onchain</h2>
+<p>Public blockchains are glass houses. Every balance, trade and salary payment is visible to anyone with a block explorer. Fine for memes. Fatal for most real finance.</p>
+<p>FHE lets a public chain stay verifiable and get privacy too:</p>
+<ul>
+<li><strong>Confidential balances.</strong> Your token balance is encrypted onchain.</li>
+<li><strong>Private transfers.</strong> Amounts stay hidden while the contract still checks you can afford them.</li>
+<li><strong>Sealed-bid auctions, private voting, payroll.</strong> Logic runs on data nobody can peek at.</li>
+<li><strong>Selective disclosure.</strong> You choose who can decrypt, such as an auditor.</li>
+</ul>
+<h2>How does Zama work?</h2>
+<p>Zama builds the <strong>Zama Confidential Blockchain Protocol</strong>. It is not a new L1 or L2. It is a confidentiality layer that plugs into chains that already exist.</p>
+<ul>
+<li><strong>FHEVM library.</strong> Developers write confidential smart contracts in plain Solidity.</li>
+<li><strong>Symbolic execution.</strong> The host chain does not run the heavy FHE math. It stores pointers and emits events.</li>
+<li><strong>Coprocessors.</strong> Offchain operators pick up those events, run the FHE computations in parallel and store the ciphertexts.</li>
+<li><strong>Gateway.</strong> Coordinates input checks, decryption and bridging, on a dedicated Arbitrum rollup.</li>
+<li><strong>Threshold key management.</strong> The decryption key is split across 13 MPC nodes, and a two-thirds majority is needed. Nothing is decrypted unless the contract allows it.</li>
+<li><strong>Access control.</strong> Tracks who may compute on or decrypt each ciphertext.</li>
+</ul>
+<p>Source: the <a href="https://docs.zama.org/protocol/zama-protocol-litepaper" rel="noopener">Zama Protocol litepaper</a>.</p>
+<h2>Confidential tokens and shielding</h2>
+<p>The flagship use case is the confidential token. Zama and OpenZeppelin implemented <strong>ERC-7984</strong>, a confidential version of the ERC-20 standard. Balances and transfer amounts are encrypted with FHE, so even the smart contract does not know your balance.</p>
+<p>You <strong>shield</strong> a regular token by wrapping it into its confidential version. The amount is visible going in and encrypted after that. <strong>Unshielding</strong> takes an explicit decryption step. Official wrappers are live on Ethereum for tokens including USDC, USDT, WETH and ZAMA, and the Zama App has Shield and Unshield built in.</p>
+<h2>Why FHE needs serious hardware</h2>
+<p>FHE is heavy. Bootstrapping on a CPU is slow, and slow means low throughput. Zama's litepaper lays out the roadmap:</p>
+<div class="tablewrap"><table>
+<tr><th>Hardware</th><th>Throughput per chain</th></tr>
+<tr><td>CPU (today)</td><td>20+ TPS</td></tr>
+<tr><td>GPU</td><td>500 to 1,000 TPS, expected by end of 2026</td></tr>
+<tr><td>FPGA and ASIC</td><td>Thousands of TPS, with dedicated FHE ASICs expected in 2027 to 2028</td></tr>
+</table></div>
+<p>In May 2025 Zama open-sourced the <strong>HPU</strong> (Homomorphic Processing Unit), an FHE processor running on an AMD V80 FPGA board, at about 13,000 programmable bootstraps per second for about 200W. That is where my name comes from. The whole story is on the <a href="/frog-mark-1">FROG Mark 1 page</a>.</p>
+<h2>Where does $ZAMA fit?</h2>
+<p>$ZAMA is the protocol token:</p>
+<ul>
+<li><strong>Fees.</strong> Encryption, decryption, proof verification and bridging are priced in USD and paid in $ZAMA. Apps can pay on your behalf, so users do not have to hold it.</li>
+<li><strong>Staking.</strong> Operators and delegators stake $ZAMA to secure the network and earn rewards.</li>
+</ul>
+<p>$ZAMA started trading on 2 February 2026 and lives on Ethereum, BNB Chain and Solana. Want some without buying it directly? <a href="/earn-zama">Hold $ZFROG and earn $ZAMA</a>. ZRIBBIT.</p>
+<p class="callout"><strong>Not Zama.</strong> $ZFROG is an independent community memecoin. It is not affiliated with, endorsed by or sponsored by Zama. For official Zama information, go to <a href="https://www.zama.org" rel="noopener">zama.org</a>.</p>

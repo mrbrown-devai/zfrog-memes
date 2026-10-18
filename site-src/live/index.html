@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Hold $ZFROG. Earn $ZAMA. The hooded frog guarding Zama's first FPGA supercomputer.">
+<link rel="icon" href="media/logo.jpg">
+<title>ZFROG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+/* Layout: a swamp-at-night circuit board. Panels are cut like the chip on the frog's chest (notched corners), traces run between sections. Single dark world by choice. */
+:root{
+  --void:#07070a;
+  --bog:#101109;
+  --panel:#15160d;
+  --line:#2c2c17;
+  --toxic:#f7d417;
+  --toxic-dim:#a88f0c;
+  --fg:#f1eee0;
+  --muted:#a29f8a;
+  --display:"Chakra Petch","Arial Narrow",system-ui,sans-serif;
+  --body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+  --gutter:clamp(16px,4vw,48px);
+  --wrap:1180px;
+  --notch:14px;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--void);color:var(--fg);font:400 17px/1.6 var(--body);margin:0;overflow-x:hidden}
+a{color:inherit}
+img,video{max-width:100%;display:block}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;text-wrap:balance;margin:0;letter-spacing:-.01em}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--toxic)}
+.chip{clip-path:polygon(var(--notch) 0,calc(100% - var(--notch)) 0,100% var(--notch),100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,var(--notch) 100%,0 calc(100% - var(--notch)),0 var(--notch))}
+:focus-visible{outline:2px solid var(--toxic);outline-offset:3px}
+
+/* nav */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--void) 82%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px/1 var(--display);letter-spacing:.02em}
+.brand img{width:42px;height:42px;object-fit:cover;border:1px solid var(--toxic);box-shadow:0 0 14px color-mix(in srgb,var(--toxic) 35%,transparent);clip-path:polygon(7px 0,calc(100% - 7px) 0,100% 7px,100% calc(100% - 7px),calc(100% - 7px) 100%,7px 100%,0 calc(100% - 7px),0 7px)}
+.nav nav{display:flex;gap:22px;margin-left:auto;font:500 15px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 22px;border:0;cursor:pointer;--notch:9px}
+.btn-primary{background:var(--toxic);color:var(--void)}
+.btn-primary:hover{background:#fff27a}
+.btn-ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--toxic-dim)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1px var(--toxic);color:var(--toxic)}
+@media (max-width:760px){.nav nav{display:none}.nav .btn{margin-left:auto;padding:12px 16px;font-size:13px}}
+
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid var(--line)}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% 30%;z-index:-2}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,var(--void) 0%,color-mix(in srgb,var(--void) 80%,transparent) 38%,transparent 75%),linear-gradient(0deg,var(--void) 0%,transparent 35%)}
+.hero .wrap{padding-block:clamp(72px,11vw,150px) clamp(56px,7vw,96px);display:grid;gap:28px}
+.hero h1{font-size:clamp(52px,9vw,124px);max-width:9ch;text-transform:uppercase}
+.hero h1 em{font-style:normal;color:var(--toxic);text-shadow:0 0 28px color-mix(in srgb,var(--toxic) 45%,transparent)}
+.hero p.lede{font-size:clamp(18px,1.9vw,22px);max-width:34ch;color:var(--fg);margin:0}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.ca{display:flex;align-items:stretch;max-width:560px;background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);--notch:10px}
+.ca span{font:600 11px/1 var(--mono);letter-spacing:.16em;color:var(--void);background:var(--toxic);padding:0 12px;display:flex;align-items:center}
+.ca code{flex:1;min-width:0;font:400 14px/1 var(--mono);padding:15px 14px;overflow-x:auto;white-space:nowrap;user-select:all;scrollbar-width:none}
+.ca button{font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;background:transparent;color:var(--toxic);border:0;border-left:1px solid var(--line);padding:0 16px;cursor:pointer;min-width:84px}
+.ca button:hover{background:color-mix(in srgb,var(--toxic) 12%,transparent)}
+
+/* ticker */
+.ticker{background:var(--toxic);color:var(--void);overflow:hidden;white-space:nowrap;font:700 18px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;padding:14px 0}
+.ticker div{display:inline-flex;gap:36px;padding-right:36px;animation:slide 32s linear infinite}
+.ticker b{font-weight:700}
+.ticker i{font-style:normal;opacity:.55}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+section{padding-block:clamp(72px,9vw,128px)}
+.head{display:grid;gap:14px;margin-bottom:clamp(36px,5vw,56px);max-width:760px}
+.head h2{font-size:clamp(36px,5.4vw,68px);text-transform:uppercase}
+.head h2 em{font-style:normal;color:var(--toxic)}
+.head p{color:var(--muted);margin:0;max-width:58ch}
+
+/* swamp report */
+.report{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(20px,3vw,36px);align-items:start}
+.report-figure{position:relative}
+.report-figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%}
+.report-figure figcaption{position:absolute;left:16px;bottom:16px;font:600 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;background:var(--void);color:var(--toxic);padding:8px 10px}
+.facts{display:grid;gap:2px;background:var(--line);padding:1px}
+.fact{background:var(--panel);display:grid;grid-template-columns:150px 1fr;gap:16px;padding:18px 20px;align-items:baseline}
+.fact dt{font:600 11px/1.4 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.fact dd{margin:0;font:600 22px/1.2 var(--display);min-width:0;overflow-wrap:anywhere}
+.fact dd small{display:block;font:400 14px/1.4 var(--body);color:var(--muted);margin-top:4px}
+.fact.big dd{font-size:clamp(28px,3.4vw,40px);color:var(--toxic)}
+.report-side{display:grid;gap:18px;min-width:0}
+.live{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:var(--bog);box-shadow:inset 0 0 0 1px var(--line);padding:18px 20px}
+.live p{margin:0;color:var(--muted);font-size:15px;max-width:34ch}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--toxic);margin-right:8px;box-shadow:0 0 10px var(--toxic);animation:pulse 1.8s ease-in-out infinite}
+@keyframes pulse{50%{opacity:.35}}
+.payout{background:var(--panel);box-shadow:inset 0 0 0 1px var(--toxic-dim);padding:22px 22px 24px;display:grid;gap:10px}
+.payout-top{display:flex;flex-wrap:wrap;gap:8px 16px;justify-content:space-between;align-items:center}
+.status{font:500 11px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);display:inline-flex;align-items:center}
+.status.is-live{color:var(--toxic)}
+.status:not(.is-live) .dot{background:var(--muted);box-shadow:none;animation:none}
+.payout-total{font:700 clamp(40px,5.6vw,68px)/1 var(--display);color:var(--toxic);font-variant-numeric:tabular-nums;overflow-wrap:anywhere;text-shadow:0 0 24px color-mix(in srgb,var(--toxic) 30%,transparent)}
+.payout-total b{font-size:.42em;color:var(--fg);letter-spacing:.04em}
+.payout-usd{font:600 20px/1.2 var(--display);font-variant-numeric:tabular-nums}
+.payout-usd small{font:400 14px var(--body);color:var(--muted)}
+.stats{grid-template-columns:1fr 1fr}
+.stats .fact{grid-template-columns:1fr;gap:6px}
+.stats dd{font-variant-numeric:tabular-nums}
+.stats .unit{display:inline;margin:0}
+.buy{margin-top:clamp(28px,4vw,44px);display:grid;grid-template-columns:auto 1fr auto;gap:18px 32px;align-items:center;padding-top:28px;border-top:1px dashed var(--line)}
+.buy ol{margin:0;padding-left:20px;display:grid;gap:6px;color:var(--muted);font-size:16px}
+.buy code{font:400 13px/1 var(--mono);color:var(--fg);background:var(--void);padding:3px 6px}
+.step strong{color:var(--fg)}
+@media (max-width:860px){.buy{grid-template-columns:1fr}.buy .btn{justify-self:start}}
+@media (max-width:420px){.stats{grid-template-columns:1fr}}
+@media (max-width:860px){.report{grid-template-columns:1fr}.report-figure img{aspect-ratio:16/11}.fact{grid-template-columns:1fr;gap:6px}}
+
+/* how it works */
+.how{background:var(--bog);border-block:1px solid var(--line);position:relative}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,2vw,24px);counter-reset:s}
+.step{background:var(--panel);padding:28px 26px 30px;display:grid;gap:14px;align-content:start;box-shadow:inset 0 0 0 1px var(--line);position:relative}
+.step::before{counter-increment:s;content:"0" counter(s);font:700 56px/1 var(--display);color:transparent;-webkit-text-stroke:1px var(--toxic-dim)}
+.step h3{font-size:26px;text-transform:uppercase}
+.step p{margin:0;color:var(--muted);font-size:16px}
+.step p code{font:400 13px/1 var(--mono);color:var(--fg);background:var(--void);padding:3px 6px}
+.step .arrow{position:absolute;right:-18px;top:50%;width:12px;height:2px;background:var(--toxic);z-index:1}
+.step:last-child .arrow{display:none}
+@media (max-width:860px){.steps{grid-template-columns:1fr}.step .arrow{display:none}}
+
+/* machine */
+.machine{display:grid;grid-template-columns:minmax(0,360px) 1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.machine video{width:100%;aspect-ratio:3/4;object-fit:cover;background:var(--panel)}
+.machine .copy{display:grid;gap:20px;min-width:0}
+.machine .copy p{margin:0;color:var(--muted);max-width:52ch}
+.machine .copy p strong{color:var(--fg);font-weight:600}
+.spec{display:flex;flex-wrap:wrap;gap:8px}
+.spec span{font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:9px 12px;box-shadow:inset 0 0 0 1px var(--line);color:var(--fg)}
+@media (max-width:760px){.machine{grid-template-columns:1fr}.machine video{aspect-ratio:4/5;max-height:70vh}}
+
+/* lore */
+.lore-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(12px,1.6vw,20px)}
+.tile{position:relative;background:var(--panel);overflow:hidden}
+.tile video,.tile img{width:100%;height:100%;object-fit:cover}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 16px;background:linear-gradient(0deg,var(--void),transparent);font:600 13px/1.3 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.tile figcaption em{font-style:normal;color:var(--toxic)}
+.t-a{grid-column:span 4;aspect-ratio:16/9}
+.t-b{grid-column:span 2;aspect-ratio:auto}
+.t-c{grid-column:span 3;aspect-ratio:16/9}
+.t-d{grid-column:span 3;aspect-ratio:16/9}
+.tile button.sound{position:absolute;top:12px;right:12px;font:600 11px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;background:var(--void);color:var(--toxic);border:1px solid var(--toxic-dim);padding:8px 10px;cursor:pointer}
+@media (max-width:860px){.lore-grid{grid-template-columns:1fr}.t-a,.t-b,.t-c,.t-d{grid-column:auto;aspect-ratio:16/10}}
+
+/* brand book */
+.book{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.book-cover{position:relative;display:block;aspect-ratio:16/9;background:var(--panel);overflow:hidden;box-shadow:inset 0 0 0 1px var(--line)}
+.book-cover img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease}
+.book-cover:hover img,.book-cover:focus-visible img{transform:scale(1.03)}
+.book .head{margin:0}
+.book-meta{font:500 12px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0}
+@media (max-width:860px){.book{grid-template-columns:1fr}}
+
+/* memes */
+.memes-head{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:end;justify-content:space-between;margin-bottom:clamp(28px,4vw,44px)}
+.memes-head .head{margin:0}
+.memes-count{font:700 clamp(56px,7vw,88px)/.9 var(--display);color:transparent;-webkit-text-stroke:1px var(--toxic-dim);font-variant-numeric:tabular-nums;text-align:right}
+.memes-count small{display:block;font:600 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);-webkit-text-stroke:0;margin-top:10px}
+.meme-strip{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(10px,1.4vw,16px)}
+.meme{position:relative;display:block;aspect-ratio:1;background:var(--panel);overflow:hidden;--notch:12px}
+.meme img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease,filter .35s ease}
+.meme:hover img,.meme:focus-visible img{transform:scale(1.05);filter:brightness(.6)}
+.meme::after{content:"Open";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:700 13px/1 var(--display);letter-spacing:.1em;text-transform:uppercase;background:var(--toxic);color:var(--void);padding:10px 14px;opacity:0;transition:opacity .25s}
+.meme:hover::after,.meme:focus-visible::after{opacity:1}
+.memes-cta{margin-top:clamp(24px,3vw,36px);display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center}
+.memes-cta p{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:860px){.meme-strip{grid-template-columns:repeat(3,1fr)}.memes-count{display:none}}
+@media (hover:none){.meme::after{display:none}}
+
+/* community */
+.join{position:relative;isolation:isolate;overflow:hidden;border-top:1px solid var(--line)}
+.join img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:20% 30%;z-index:-2;opacity:.55}
+.join::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,var(--void) 10%,color-mix(in srgb,var(--void) 55%,transparent) 60%,transparent)}
+.join .wrap{display:grid;justify-items:end;text-align:right;gap:22px}
+.join h2{font-size:clamp(48px,8vw,110px);text-transform:uppercase}
+.join h2 em{font-style:normal;color:var(--toxic)}
+.join p{margin:0;color:var(--fg);max-width:40ch}
+@media (max-width:760px){.join .wrap{justify-items:start;text-align:left}.join::after{background:color-mix(in srgb,var(--void) 70%,transparent)}}
+
+footer{border-top:1px solid var(--line);padding-block:40px 48px;font-size:14px;color:var(--muted)}
+footer .wrap{display:grid;gap:22px}
+.foot-top{display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between}
+.foot-top .tag{font:600 15px/1.3 var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--fg)}
+.foot-links{display:flex;flex-wrap:wrap;gap:20px;font:500 14px/1 var(--mono)}
+.foot-links a{text-decoration:none}
+.foot-links a:hover{color:var(--toxic)}
+.disclaimer{max-width:90ch;font-size:13px;line-height:1.6;border-top:1px dashed var(--line);padding-top:20px;margin:0}
+
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;background:var(--toxic);color:var(--void);font:700 14px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;padding:14px 20px;transition:.25s;pointer-events:none;z-index:50}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .ticker div,.dot{animation:none}
+  .meme img{transition:none}
+}
+</style>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="ZFROG home"><img src="media/logo.jpg" alt="">ZFROG</a>
+    <nav aria-label="Sections">
+      <a href="#rewards">The rewards</a>
+      <a href="#how">How it works</a>
+      <a href="#machine">The machine</a>
+      <a href="/memes">Memes</a>
+      <a href="https://solscan.io/token/CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Contract</a>
+    </nav>
+    <a class="btn btn-primary chip" href="https://raydium.io/swap/?inputMint=sol&amp;outputMint=CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Get $ZFROG</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" style="padding:0">
+    <video id="heroVid" src="media/hero.mp4" poster="media/hero-poster.jpg" muted loop playsinline preload="auto" aria-hidden="true"></video>
+    <div class="wrap">
+      <span class="eyebrow">FROG Mark 1 · Solana · Raydium</span>
+      <h1>Hold $ZFROG. <em>Earn $ZAMA.</em></h1>
+      <p class="lede">The hooded frog guarding Zama's first FPGA supercomputer. Hold the frog, collect $ZAMA, and welcome to privacy.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary chip" href="#rewards">Dive into the swamp</a>
+        <a class="btn btn-ghost chip" href="https://x.com/FrogMark1" target="_blank" rel="noopener">Follow on X</a>
+        <a class="btn btn-ghost chip" href="https://dexscreener.com/solana/fpbmde3afu8ytcqs8vgh7zep7gsepfewx4hqcnduyoj1" target="_blank" rel="noopener">Chart</a>
+        <a class="btn btn-ghost chip" href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a>
+      </div>
+      <div class="ca chip" role="group" aria-label="Contract address">
+        <span>CA</span>
+        <code id="ca">CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T</code>
+        <button type="button" id="copyBtn">Copy</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div>
+      <b>ZRIBBIT</b><i>✦</i><b>Hold $ZFROG</b><i>✦</i><b>Earn $ZAMA</b><i>✦</i><b>Welcome to privacy</b><i>✦</i><b>FROG Mark 1</b><i>✦</i><b>FPGA supercomputer</b><i>✦</i>
+      <b>ZRIBBIT</b><i>✦</i><b>Hold $ZFROG</b><i>✦</i><b>Earn $ZAMA</b><i>✦</i><b>Welcome to privacy</b><i>✦</i><b>FROG Mark 1</b><i>✦</i><b>FPGA supercomputer</b><i>✦</i>
+    </div>
+  </div>
+
+  <section id="rewards">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">The Swamp Report</span>
+        <h2>Small frog. <em>Encrypted rewards.</em></h2>
+        <p>$ZFROG trades against $ZAMA on Raydium. Holders are rewarded in $ZAMA, the token behind the confidential-compute stack the frog was named after.</p>
+      </div>
+      <div class="report">
+        <figure class="report-figure chip" style="margin:0">
+          <img src="media/portrait.jpg" alt="The ZFROG mascot: a black and yellow frog in a dark hood wearing a metal respirator, a glowing Z chip on its chest" loading="lazy">
+          <figcaption>Unit 01 · FROG Mark 1</figcaption>
+        </figure>
+        <div class="report-side">
+          <div class="payout chip" aria-live="polite">
+            <div class="payout-top">
+              <span class="eyebrow">Total paid to holders</span>
+              <span class="status" id="rwStatus"><span class="dot" aria-hidden="true"></span><span id="rwStatusTxt">Snapshot · 6 Oct 2026, 18:27 UTC</span></span>
+            </div>
+            <div class="payout-total"><span id="rwPaid">47,395.49</span> <b>ZAMA</b></div>
+            <div class="payout-usd">≈ <span id="rwUsd">$3,998</span> <small>at the current $ZAMA price</small></div>
+          </div>
+          <dl class="facts stats" style="margin:0">
+            <div class="fact"><dt>Next pot</dt><dd><span id="rwPot">0.00</span> <small class="unit">ZAMA collecting</small></dd></div>
+            <div class="fact"><dt>Payouts</dt><dd id="rwPayouts">2,462</dd></div>
+            <div class="fact"><dt>Holders</dt><dd id="rwHolders">81</dd></div>
+            <div class="fact"><dt>Last drop</dt><dd><span id="rwLastRel">7h ago</span><small id="rwLastAbs">6 Oct 2026, 11:20 UTC</small></dd></div>
+          </dl>
+          <div class="live chip">
+            <p>All time · actual payouts in $ZAMA, indexed by StonkFun. USD uses today's $ZAMA price, not the price at each drop.</p>
+            <a class="btn btn-ghost chip" href="https://solscan.io/account/5KXDF6QnqhBj72hDtJNkkpFaQVUfbFXNybMsp3DiK6tD" target="_blank" rel="noopener">Verify on-chain</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">How it works</span>
+        <h2>A simple idea. <em>A little swamp magic.</em></h2>
+        <p>Every trade feeds the pot. The pot turns into $ZAMA. The $ZAMA lands in holders' wallets on its own.</p>
+      </div>
+      <div class="steps">
+        <article class="step chip">
+          <h3>Hold $ZFROG</h3>
+          <p>Keep at least <strong>$20</strong> of $ZFROG in your Solana wallet. That is the only condition to receive drops.</p>
+          <span class="arrow" aria-hidden="true"></span>
+        </article>
+        <article class="step chip">
+          <h3>3% fills the pot</h3>
+          <p>A 3% Token-2022 transfer tax is withheld on every $ZFROG transfer. About 2.5% of that covers network and operating costs; the rest goes to the pot.</p>
+          <span class="arrow" aria-hidden="true"></span>
+        </article>
+        <article class="step chip">
+          <h3>Dropped in $ZAMA</h3>
+          <p>Once the pot is worth selling, it is swapped to $ZAMA and sent pro rata to every eligible wallet. Nothing to claim.</p>
+        </article>
+      </div>
+      <div class="buy">
+        <span class="eyebrow">How to buy</span>
+        <ol>
+          <li>Get Phantom, Solflare or Backpack and fund it with SOL.</li>
+          <li>Open Raydium and paste the CA <code>CZ4dv…oH2T</code>. Check the full address before you swap.</li>
+          <li>Swap, hold, and watch the counter above. ZRIBBIT.</li>
+        </ol>
+        <a class="btn btn-primary chip" href="https://raydium.io/swap/?inputMint=sol&amp;outputMint=CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Buy on Raydium</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="machine">
+    <div class="wrap machine">
+      <video id="machineVid" class="chip" src="media/machine.mp4" poster="media/machine-poster.jpg" controls playsinline preload="metadata"></video>
+      <div class="copy">
+        <span class="eyebrow">The real machine</span>
+        <h2 style="font-size:clamp(36px,5vw,64px);text-transform:uppercase">The frog is <em style="font-style:normal;color:var(--toxic)">real hardware.</em></h2>
+        <p><strong>FROG Mark 1</strong> is the name given to Zama's first FPGA supercomputer: racks of FPGA boards built to run fully homomorphic encryption, which means computing on data without ever decrypting it.</p>
+        <p>$ZFROG is the community meme that grew around it. The hood hides the face, the mask filters the air, the chip on the chest keeps the secrets.</p>
+        <div class="spec"><span>FPGA</span><span>FHE</span><span>Confidential compute</span><span>Privacy</span></div>
+        <div class="cta-row"><a class="btn btn-ghost chip" href="https://x.com/randhindi/status/1938010202235687040" target="_blank" rel="noopener">See the original post</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="lore" style="padding-top:0">
+    <div class="wrap">
+      <div class="head">
+        <span class="eyebrow">Lore</span>
+        <h2>Tales from <em>the swamp.</em></h2>
+      </div>
+      <div class="lore-grid">
+        <figure class="tile chip t-a" style="margin:0">
+          <video class="lore-vid" src="media/swamp.mp4" poster="media/swamp-poster.jpg" muted loop playsinline preload="metadata"></video>
+          <button class="sound" type="button">Sound on</button>
+          <figcaption><em>Ep. 1</em> · The swamp node</figcaption>
+        </figure>
+        <figure class="tile chip t-b" style="margin:0">
+          <img src="media/portrait.jpg" alt="ZFROG portrait in a rain-soaked alley" loading="lazy" style="object-position:50% 25%">
+          <figcaption><em>Unit 01</em> · Portrait</figcaption>
+        </figure>
+        <figure class="tile chip t-c" style="margin:0">
+          <video class="lore-vid" src="media/walk.mp4" poster="media/walk-poster.jpg" muted loop playsinline preload="metadata"></video>
+          <button class="sound" type="button">Sound on</button>
+          <figcaption><em>Ep. 2</em> · The night shift</figcaption>
+        </figure>
+        <figure class="tile chip t-d" style="margin:0">
+          <img src="media/council.jpg" alt="ZFROG crouched on a lily pad beside a server, surrounded by hooded frogs in a dark pond" loading="lazy">
+          <figcaption><em>Ep. 3</em> · The council of the pond</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="brandbook" style="padding-top:0">
+    <div class="wrap book">
+      <a class="book-cover chip" href="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/ZFROG_Brand_Book.pdf" download="ZFROG_Brand_Book.pdf"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/cover.webp" alt="Cover of the ZFROG brand book: Mark, the hooded frog, next to the ZFROG wordmark" loading="lazy" width="1200" height="675"></a>
+      <div class="head">
+        <span class="eyebrow">Brand book</span>
+        <h2>Know the frog. <em>Use him right.</em></h2>
+        <p>Everything about ZFROG in one PDF: where the frog comes from, the story, Mark's character sheet, the voice, the colors and type, and how the Pond runs. Read it before you make anything with the frog.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary chip" href="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/ZFROG_Brand_Book.pdf" download="ZFROG_Brand_Book.pdf">Download the brand book</a>
+        </div>
+        <p class="book-meta">PDF · 29 pages · 12 MB · V1, Oct 2026</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="memes" style="padding-top:0">
+    <div class="wrap">
+      <div class="memes-head">
+        <div class="head">
+          <span class="eyebrow">The meme vault</span>
+          <h2>Steal these <em>memes.</em></h2>
+          <p>Every ZFROG meme in one place. Grab one, send it straight to Telegram, ZRIBBIT. New ones land here as soon as they drop.</p>
+        </div>
+        <a class="memes-count" href="/memes" style="text-decoration:none"><span id="memeCount">24</span><small>memes in the vault</small></a>
+      </div>
+      <div class="meme-strip" id="memeStrip">
+        <a class="meme chip" href="/memes#join-the-pond"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/thumbs/join-the-pond.webp" alt="Our Telegram channel is now open. Stop lurking. Join the pond." loading="lazy" width="640" height="640"></a>
+        <a class="meme chip" href="/memes#zolana"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/thumbs/zolana.webp" alt="Zama is now trading on Solana. New chain. Same introvert." loading="lazy" width="640" height="640"></a>
+        <a class="meme chip" href="/memes#nice-try"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/thumbs/nice-try.webp" alt="Things to say to a wallet tracker: Nice try. Ask the frog. That's encrypted." loading="lazy" width="640" height="640"></a>
+        <a class="meme chip" href="/memes#608m-shielded-volume"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/thumbs/608m-shielded-volume.webp" alt="Zama: $608.5M cumulative shielded volume. Busy network. Boring day for gossip." loading="lazy" width="640" height="640"></a>
+        <a class="meme chip" href="/memes#privacy-is-suspicious"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/thumbs/privacy-is-suspicious.webp" alt="'Privacy is suspicious.' Bro, you have curtains." loading="lazy" width="640" height="640"></a>
+        <a class="meme chip" href="/memes#tvl-115m"><img src="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/thumbs/tvl-115m.webp" alt="Zama's shielded TVL: $115.7M. That's a lot of 'none of your business'." loading="lazy" width="640" height="640"></a>
+      </div>
+      <div class="memes-cta">
+        <a class="btn btn-primary chip" href="/memes">Open the meme vault</a>
+        <p>Made one? Post it in the <a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a>.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="join">
+    <img class="bg" src="media/banner.jpg" alt="" loading="lazy">
+    <div class="wrap">
+      <span class="eyebrow">Community</span>
+      <h2>Join Z <em>Pond.</em></h2>
+      <p><a href="/memes">Memes</a>, raids and the latest from the swamp happen on X and Telegram. Bring your frog.</p>
+      <div class="cta-row">
+        <a class="btn btn-ghost chip" href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Join the Telegram</a>
+        <a class="btn btn-primary chip" href="https://x.com/FrogMark1" target="_blank" rel="noopener">@FrogMark1 on X</a>
+        <a class="btn btn-ghost chip" href="https://raydium.io/swap/?inputMint=sol&amp;outputMint=CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Buy on Raydium</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <a class="brand" href="#top"><img src="media/logo.jpg" alt="">ZFROG</a>
+      <span class="tag">Made of memes. Powered by privacy.</span>
+      <div class="foot-links">
+        <a href="/memes">Memes</a>
+        <a href="#brandbook">Brand book</a>
+        <a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a>
+        <a href="https://x.com/FrogMark1" target="_blank" rel="noopener">X</a>
+        <a href="https://dexscreener.com/solana/fpbmde3afu8ytcqs8vgh7zep7gsepfewx4hqcnduyoj1" target="_blank" rel="noopener">Dexscreener</a>
+        <a href="https://solscan.io/token/CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Solscan</a>
+      </div>
+    </div>
+    <p class="disclaimer">$ZFROG is a community memecoin with no intrinsic value and no expectation of financial return. It is not affiliated with, endorsed by or operated by Zama. Crypto assets are highly volatile and you can lose everything you put in. Nothing on this site is financial advice. © 2026 ZFROG.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hero = document.getElementById('heroVid');
+  if(!reduce){ var p = hero.play(); if(p && p.catch) p.catch(function(){}); }
+
+  var toast = document.getElementById('toast'), t;
+  function say(msg){ toast.textContent = msg; toast.classList.add('on'); clearTimeout(t); t = setTimeout(function(){toast.classList.remove('on')}, 1800); }
+
+  var ca = document.getElementById('ca');
+  document.getElementById('copyBtn').addEventListener('click', function(){
+    var text = ca.textContent.trim();
+    function fallback(){
+      var r = document.createRange(); r.selectNodeContents(ca);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      say('Selected. Press Ctrl+C');
+    }
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){ say('Contract copied. ZRIBBIT'); }, fallback);
+    } else fallback();
+  });
+
+  // ---- Live $ZAMA rewards (StonkFun public API, no key, ~300 req/min) ----
+  var MINT = 'CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T';
+  var ZAMA_MINT = '4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh';
+  var REWARDS_URL = 'https://www.stonkfun.xyz/api/public/v1/tokens/' + MINT + '/rewards';
+  var PRICE_URL = 'https://api.dexscreener.com/latest/dex/tokens/' + ZAMA_MINT;
+  // Holder count: same figure Solscan shows (Jupiter token API, refreshed every few minutes)
+  var HOLDERS_URL = 'https://lite-api.jup.ag/tokens/v2/search?query=' + MINT;
+  // Fallback shown until (or unless) the live call answers
+  var SNAPSHOT = {paid:47395.49010292, pot:2.2e-8, payouts:2462, holders:81,
+                  last:'2026-10-06T11:20:11.700Z', price:0.08435, at:'2026-10-06T18:27:26Z'};
+  var state = {paid:SNAPSHOT.paid, pot:SNAPSHOT.pot, payouts:SNAPSHOT.payouts, holders:SNAPSHOT.holders,
+               last:new Date(SNAPSHOT.last), price:SNAPSHOT.price, live:false, at:new Date(SNAPSHOT.at)};
+
+  var $ = function(id){ return document.getElementById(id); };
+  var n2 = new Intl.NumberFormat('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});
+  var n0 = new Intl.NumberFormat('en-US',{maximumFractionDigits:0});
+  var usd = new Intl.NumberFormat('en-US',{style:'currency',currency:'USD',maximumFractionDigits:0});
+  function utc(d){
+    return d.toLocaleString('en-GB',{day:'numeric',month:'short',year:'numeric',hour:'2-digit',minute:'2-digit',timeZone:'UTC'}) + ' UTC';
+  }
+  function ago(d){
+    var s = Math.max(0,(Date.now()-d.getTime())/1000);
+    if(s<60) return 'just now';
+    if(s<3600) return Math.floor(s/60)+'m ago';
+    if(s<86400) return Math.floor(s/3600)+'h ago';
+    return Math.floor(s/86400)+'d ago';
+  }
+  function render(){
+    $('rwPaid').textContent = n2.format(state.paid);
+    $('rwUsd').textContent = state.price ? usd.format(state.paid*state.price) : '—';
+    $('rwPot').textContent = n2.format(state.pot);
+    $('rwPayouts').textContent = n0.format(state.payouts);
+    $('rwHolders').textContent = n0.format(state.holders);
+    $('rwLastRel').textContent = ago(state.last);
+    $('rwLastAbs').textContent = utc(state.last);
+    $('rwStatus').classList.toggle('is-live', state.live);
+    $('rwStatusTxt').textContent = state.live ? 'Live · updated ' + ago(state.at) : 'Snapshot · ' + utc(state.at);
+  }
+  function loadRewards(){
+    return fetch(REWARDS_URL).then(function(res){
+      if(!res.ok) throw new Error(res.status);
+      return res.json();
+    }).then(function(j){
+      var r = j.data.rewards;
+      state.paid = r.distributedTokens; state.pot = r.undistributedTokens;
+      state.payouts = r.payoutCount;
+      state.last = new Date(r.lastPayoutAt);
+      state.at = new Date((j.meta && j.meta.generatedAt) || Date.now());
+      state.live = true;
+    });
+  }
+  function loadPrice(){
+    return fetch(PRICE_URL).then(function(res){ return res.json(); }).then(function(j){
+      var best = (j.pairs||[]).filter(function(p){ return p.baseToken && p.baseToken.address === ZAMA_MINT && p.priceUsd; })
+        .sort(function(a,b){ return ((b.liquidity||{}).usd||0) - ((a.liquidity||{}).usd||0); })[0];
+      if(best) state.price = parseFloat(best.priceUsd);
+    }).catch(function(){});
+  }
+  function loadHolders(){
+    return fetch(HOLDERS_URL).then(function(res){ return res.json(); }).then(function(j){
+      var t = (j||[]).filter(function(x){ return x.id === MINT; })[0];
+      if(t && typeof t.holderCount === 'number') state.holders = t.holderCount;
+    }).catch(function(){});
+  }
+  render();
+  var timer;
+  function tick(){
+    Promise.all([loadRewards(), loadPrice(), loadHolders()]).then(render, function(){
+      // Rewards API unreachable: keep the snapshot (holders/price may still have updated)
+      render();
+      if(!state.live) clearInterval(timer);
+    });
+  }
+  tick();
+  timer = setInterval(tick, 45000);       // indexer is not tick-level; 30–60s is plenty
+  setInterval(render, 30000);             // keep "x min ago" fresh
+
+  // Meme vault teaser: newest memes from the vault repo (static tiles stay if this fails)
+  (function(){
+    var strip = $('memeStrip'); if(!strip || !window.fetch) return;
+    var BASE = 'https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/';
+    fetch(BASE + 'memes.json?t=' + Math.floor(Date.now() / 300000)).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+      if(!d || !d.memes || !d.memes.length) return;
+      $('memeCount').textContent = d.memes.length;
+      strip.innerHTML = '';
+      d.memes.slice(0, 6).forEach(function(m){
+        var a = document.createElement('a'); a.className = 'meme chip'; a.href = '/memes#' + encodeURIComponent(m.id);
+        var img = document.createElement('img');
+        img.src = BASE + (m.thumb || m.file).split('/').map(encodeURIComponent).join('/');
+        img.alt = m.caption || m.title; img.loading = 'lazy'; img.width = 640; img.height = 640;
+        a.appendChild(img); strip.appendChild(a);
+      });
+    }).catch(function(){});
+  })();
+
+  // Lore videos: play when visible, muted by default
+  var vids = document.querySelectorAll('.lore-vid');
+  if('IntersectionObserver' in window && !reduce){
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if(e.isIntersecting){ var p=e.target.play(); if(p&&p.catch)p.catch(function(){}); }
+        else e.target.pause();
+      });
+    }, {threshold:.35});
+    vids.forEach(function(v){ io.observe(v); });
+  }
+  document.querySelectorAll('.sound').forEach(function(b){
+    b.addEventListener('click', function(){
+      var v = b.parentNode.querySelector('video');
+      vids.forEach(function(o){ if(o!==v){ o.muted=true; o.parentNode.querySelector('.sound').textContent='Sound on'; } });
+      v.muted = !v.muted;
+      if(!v.muted){ v.currentTime = 0; var p=v.play(); if(p&&p.catch)p.catch(function(){}); }
+      b.textContent = v.muted ? 'Sound on' : 'Mute';
+    });
+  });
+})();
+</script>

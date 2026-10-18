@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZFROG Memes</title>
+<meta name="description" content="Every ZFROG meme in one place. Grab one, drop it in the chat. ZRIBBIT.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZFROG">
+<meta property="og:title" content="ZFROG Memes · the meme vault">
+<meta property="og:description" content="Every ZFROG meme in one place. Grab one, drop it in the chat. ZRIBBIT.">
+<meta property="og:url" content="https://zfrog.xyz/memes">
+<meta property="og:image" content="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@FrogMark1">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/og.jpg">
+<link rel="icon" href="/media/logo.jpg">
+<link rel="preconnect" href="https://raw.githubusercontent.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<style>
+:root{
+--void:#07070a;--bog:#101109;--panel:#15160d;--line:#2c2c17;
+--toxic:#f7d417;--toxic-dim:#a88f0c;--fg:#f1eee0;--muted:#a29f8a;
+--display:"Chakra Petch","Arial Narrow",system-ui,sans-serif;
+--body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+--mono:"JetBrains Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+--gutter:clamp(16px,4vw,48px);--wrap:1280px;--notch:14px;
+color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background:var(--void);color:var(--fg);font:400 17px/1.6 var(--body);margin:0;overflow-x:hidden}
+a{color:inherit}
+img{max-width:100%;display:block}
+button{font:inherit;color:inherit}
+.wrap{max-width:var(--wrap);margin-inline:auto;padding-inline:var(--gutter)}
+h1,h2,h3{font-family:var(--display);font-weight:700;line-height:1.02;text-wrap:balance;margin:0;letter-spacing:-.01em}
+.eyebrow{font:600 12px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--toxic)}
+.chip{clip-path:polygon(var(--notch) 0,calc(100% - var(--notch)) 0,100% var(--notch),100% calc(100% - var(--notch)),calc(100% - var(--notch)) 100%,var(--notch) 100%,0 calc(100% - var(--notch)),0 var(--notch))}
+:focus-visible{outline:2px solid var(--toxic);outline-offset:3px}
+#ecount{display:none}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.nav{position:sticky;top:0;z-index:30;background:color-mix(in srgb,var(--void) 86%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;gap:24px;min-height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:700 22px/1 var(--display);letter-spacing:.02em}
+.brand img{width:42px;height:42px;object-fit:cover;border:1px solid var(--toxic);box-shadow:0 0 14px color-mix(in srgb,var(--toxic) 35%,transparent);clip-path:polygon(7px 0,calc(100% - 7px) 0,100% 7px,100% calc(100% - 7px),calc(100% - 7px) 100%,7px 100%,0 calc(100% - 7px),0 7px)}
+.nav nav{display:flex;gap:22px;margin-left:auto;font:500 15px/1 var(--display);letter-spacing:.04em;text-transform:uppercase}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover,.nav nav a[aria-current]{color:var(--fg)}
+.nav nav a[aria-current]{box-shadow:0 2px 0 var(--toxic)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 22px;border:0;cursor:pointer;--notch:9px;white-space:nowrap}
+.btn-primary{background:var(--toxic);color:var(--void)}
+.btn-primary:hover{background:#fff27a}
+.btn-ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--toxic-dim)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1px var(--toxic);color:var(--toxic)}
+.btn svg{width:18px;height:18px;flex:none}
+@media (max-width:760px){.nav nav{display:none}.nav .btn{margin-left:auto;padding:12px 16px;font-size:13px}}
+.top{border-bottom:1px solid var(--line);background:radial-gradient(ellipse 60% 120% at 85% 0%,color-mix(in srgb,var(--toxic) 9%,transparent),transparent 70%)}
+.top .wrap{padding-block:clamp(40px,5vw,64px) clamp(28px,4vw,44px);display:grid;grid-template-columns:1fr auto;gap:20px 40px;align-items:end}
+.top h1{font-size:clamp(46px,8vw,104px);text-transform:uppercase;margin-top:14px}
+.top h1 em{font-style:normal;color:var(--toxic);text-shadow:0 0 28px color-mix(in srgb,var(--toxic) 45%,transparent)}
+.top p{margin:16px 0 0;color:var(--muted);max-width:46ch;font-size:clamp(17px,1.6vw,19px)}
+.top p b{color:var(--fg);font-weight:600}
+.count{font:700 clamp(56px,7vw,92px)/.9 var(--display);color:transparent;-webkit-text-stroke:1px var(--toxic-dim);text-align:right;font-variant-numeric:tabular-nums}
+.count small{display:block;font:600 11px/1 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted);-webkit-text-stroke:0;margin-top:10px}
+@media (max-width:640px){.top .wrap{grid-template-columns:1fr;padding-block:28px 22px}.count{display:none}#ecount{display:inline!important}.top h1{margin-top:10px}.top p{margin-top:10px}}
+.bar{position:sticky;top:64px;z-index:20;background:color-mix(in srgb,var(--void) 92%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar .wrap{display:flex;flex-wrap:wrap;gap:12px;align-items:center;padding-block:14px}
+.search{position:relative;flex:1 1 260px;max-width:380px;--notch:9px}
+.search input{width:100%;font:400 16px/1 var(--body);color:var(--fg);background:var(--panel);border:0;box-shadow:inset 0 0 0 1px var(--line);padding:13px 14px 13px 42px;outline:none}
+.search input:focus{box-shadow:inset 0 0 0 1px var(--toxic)}
+.search input::placeholder{color:var(--muted)}
+.search svg{position:absolute;left:14px;top:50%;width:18px;height:18px;transform:translateY(-50%);color:var(--muted);pointer-events:none}
+.filters{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;flex:1 1 auto;min-width:0}
+.filters::-webkit-scrollbar{display:none}
+.f{flex:none;font:600 12px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;padding:12px 14px;background:transparent;border:0;box-shadow:inset 0 0 0 1px var(--line);color:var(--muted);cursor:pointer;--notch:7px}
+.f b{font-weight:600;color:var(--toxic-dim);margin-left:6px}
+.f:hover{color:var(--fg);box-shadow:inset 0 0 0 1px var(--toxic-dim)}
+.f[aria-pressed="true"]{background:var(--toxic);color:var(--void);box-shadow:none}
+.f[aria-pressed="true"] b{color:var(--void);opacity:.6}
+.rand{padding:12px 16px;font-size:13px}
+@media (max-width:640px){.bar{top:64px}.search{max-width:none;flex-basis:100%}.rand{order:-1;display:none}}
+main{padding-block:clamp(24px,3vw,40px) clamp(56px,7vw,96px)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:clamp(10px,1.4vw,18px)}
+@media (max-width:560px){.grid{grid-template-columns:1fr 1fr}}
+.card{position:relative;display:block;width:100%;padding:0;border:0;background:var(--panel);cursor:zoom-in;aspect-ratio:1;overflow:hidden;--notch:12px;text-align:left}
+.card img{width:100%;height:100%;object-fit:cover;transition:transform .35s ease,filter .35s ease;background:var(--panel)}
+.card:hover img,.card:focus-visible img{transform:scale(1.04);filter:brightness(.55)}
+.card .meta{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;background:linear-gradient(0deg,var(--void),transparent);opacity:0;transform:translateY(6px);transition:.25s}
+.card:hover .meta,.card:focus-visible .meta{opacity:1;transform:none}
+.card .meta strong{display:block;font:700 18px/1.1 var(--display);text-transform:uppercase}
+.card .meta span{font:600 10px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--toxic)}
+.new{position:absolute;top:10px;left:10px;font:700 11px/1 var(--mono);letter-spacing:.14em;background:var(--toxic);color:var(--void);padding:6px 8px;z-index:1}
+@media (hover:none){.card .meta{display:none}}
+.empty{text-align:center;padding:72px 16px;color:var(--muted)}
+.empty strong{display:block;font:700 28px/1.1 var(--display);text-transform:uppercase;color:var(--fg);margin-bottom:8px}
+.skel{aspect-ratio:1;background:linear-gradient(100deg,var(--panel) 40%,var(--bog) 50%,var(--panel) 60%) 0 0/300% 100%;animation:sh 1.4s linear infinite;--notch:12px}
+@keyframes sh{to{background-position:-150% 0}}
+.drop{margin-top:clamp(40px,5vw,64px);display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center;justify-content:space-between;background:var(--bog);box-shadow:inset 0 0 0 1px var(--line);padding:clamp(20px,3vw,32px)}
+.drop h2{font-size:clamp(26px,3.4vw,40px);text-transform:uppercase}
+.drop h2 em{font-style:normal;color:var(--toxic)}
+.drop p{margin:8px 0 0;color:var(--muted);max-width:52ch}
+dialog{padding:0;border:0;background:transparent;color:var(--fg);max-width:none;max-height:none;width:100%;height:100%;overflow:hidden}
+dialog::backdrop{background:color-mix(in srgb,var(--void) 94%,transparent);backdrop-filter:blur(6px)}
+.v{height:100%;display:grid;grid-template-columns:1fr minmax(280px,360px);gap:0}
+.v-stage{position:relative;display:grid;place-items:center;padding:clamp(12px,3vw,40px);min-height:0;min-width:0}
+.v-stage img{max-width:100%;max-height:100%;object-fit:contain;box-shadow:0 0 0 1px var(--line),0 20px 80px rgba(0,0,0,.6);background:var(--panel)}
+.v-side{background:var(--panel);border-left:1px solid var(--line);padding:24px;display:flex;flex-direction:column;gap:18px;overflow-y:auto}
+.v-side h2{font-size:30px;text-transform:uppercase}
+.v-side .cap{margin:0;color:var(--muted);font-size:16px}
+.v-actions{display:grid;gap:10px}
+.v-actions .btn{width:100%;justify-content:flex-start}
+.v-actions .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.v-actions .btn.alt{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--toxic-dim)}
+.v-actions .row .btn{justify-content:center;padding-inline:12px;font-size:13px}
+.v-hint{font:400 12px/1.5 var(--mono);color:var(--muted);margin:auto 0 0;letter-spacing:.02em}
+.v-close,.v-nav{position:absolute;z-index:2;display:grid;place-items:center;width:46px;height:46px;background:var(--void);border:1px solid var(--line);color:var(--fg);cursor:pointer;--notch:8px}
+.v-close:hover,.v-nav:hover{border-color:var(--toxic);color:var(--toxic)}
+.v-close{top:14px;right:14px}
+.v-nav{top:50%;transform:translateY(-50%)}
+.v-prev{left:14px}.v-next{right:14px}
+.v-close svg,.v-nav svg{width:20px;height:20px}
+@media (max-width:860px){
+.v{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto}
+.v-side{border-left:0;border-top:1px solid var(--line);padding:16px var(--gutter) calc(16px + env(safe-area-inset-bottom,0px));gap:12px;max-height:48vh}
+.v-side h2{font-size:22px}
+.v-side .eyebrow,.v-hint{display:none}
+.v-side .cap{font-size:14px}
+.v-nav{top:auto;bottom:12px;transform:none;width:42px;height:42px}
+.v-stage{padding:60px 12px 64px}
+}
+footer{border-top:1px solid var(--line);padding-block:32px 40px;font-size:13px;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center}
+footer a{text-decoration:none;font:500 14px/1 var(--mono)}
+footer a:hover{color:var(--toxic)}
+.foot-links{display:flex;gap:20px;flex-wrap:wrap}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;background:var(--toxic);color:var(--void);font:700 14px/1 var(--display);letter-spacing:.08em;text-transform:uppercase;padding:14px 20px;transition:.25s;pointer-events:none;z-index:100}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+@media (prefers-reduced-motion:reduce){.card img,.card .meta,.toast{transition:none}.skel{animation:none}}
+</style>
+<header class="nav">
+<div class="wrap">
+<a class="brand" href="/" aria-label="ZFROG home"><img src="/media/logo.jpg" alt="">ZFROG</a>
+<nav aria-label="Site">
+<a href="/#rewards">The rewards</a>
+<a href="/#how">How it works</a>
+<a href="/memes" aria-current="page">Memes</a>
+<a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a>
+</nav>
+<a class="btn btn-primary chip" href="https://raydium.io/swap/?inputMint=sol&amp;outputMint=CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Get $ZFROG</a>
+</div>
+</header>
+<section class="top">
+<div class="wrap">
+<div>
+<span class="eyebrow">The meme vault<span id="ecount"></span></span>
+<h1>Steal these <em>memes.</em></h1>
+<p>Every ZFROG meme in one place. Tap one, <b>send it straight to Telegram</b> or save it. ZRIBBIT.</p>
+</div>
+<div class="count" aria-live="polite"><span id="count">··</span><small>memes in the vault</small></div>
+</div>
+</section>
+<div class="bar">
+<div class="wrap">
+<label class="search chip">
+<span class="sr">Search memes</span>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+<input id="q" type="search" placeholder="Search: encrypted, solana, pond…" autocomplete="off" enterkeyhint="search">
+</label>
+<div class="filters" id="filters" role="group" aria-label="Categories"></div>
+<button class="btn btn-ghost chip rand" id="rand" type="button" title="Open a random meme">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M16 3h5v5M4 20 21 3M21 16v5h-5M15 15l6 6M4 4l5 5"/></svg>Surprise me
+</button>
+</div>
+</div>
+<main>
+<div class="wrap">
+<div class="grid" id="grid" aria-live="polite"></div>
+<div class="drop chip">
+<div>
+<h2>Made a <em>meme?</em></h2>
+<p>Drop it in the Telegram. The best ones land in the vault.</p>
+</div>
+<a class="btn btn-primary chip" href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Post it in the pond</a>
+</div>
+</div>
+</main>
+<footer>
+<div class="wrap">
+<span>Made of memes. Powered by privacy. $ZFROG is a community memecoin, not affiliated with Zama. Not financial advice.</span>
+<div class="foot-links">
+<a href="/">Home</a>
+<a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a>
+<a href="https://x.com/FrogMark1" target="_blank" rel="noopener">X</a>
+</div>
+</div>
+</footer>
+<dialog id="viewer" aria-labelledby="vTitle">
+<div class="v">
+<div class="v-stage" id="vStage">
+<button class="v-close chip" id="vClose" type="button" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+<button class="v-nav v-prev chip" id="vPrev" type="button" aria-label="Previous meme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 5-7 7 7 7"/></svg></button>
+<img id="vImg" alt="">
+<button class="v-nav v-next chip" id="vNext" type="button" aria-label="Next meme"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m9 5 7 7-7 7"/></svg></button>
+</div>
+<aside class="v-side">
+<div>
+<span class="eyebrow" id="vCat"></span>
+<h2 id="vTitle" style="margin-top:10px"></h2>
+</div>
+<p class="cap" id="vCap"></p>
+<div class="v-actions">
+<button class="btn btn-primary chip" id="aShare" type="button" hidden>
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M12 3v13M7 8l5-5 5 5M5 14v6h14v-6"/></svg>Send the image
+</button>
+<a class="btn btn-primary chip" id="aTg" target="_blank" rel="noopener">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.3 18.6 19.8c-.2 1.1-.9 1.4-1.8.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.6-.2L6 13.3l-4.9-1.5c-1.1-.3-1.1-1.1.2-1.6L20.5 2.8c.9-.3 1.7.2 1.4 1.5z"/></svg><span id="aTgTxt">Share on Telegram</span>
+</a>
+<div class="row">
+<button class="btn btn-ghost chip" id="aDl" type="button">Download</button>
+<button class="btn btn-ghost chip" id="aCopy" type="button">Copy link</button>
+</div>
+<button class="btn btn-ghost chip" id="aCopyImg" type="button" hidden>Copy image</button>
+</div>
+<p class="v-hint">← → to browse · Esc to close<br>On desktop: Copy image, then paste in Telegram.</p>
+</aside>
+</div>
+</dialog>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script>
+(function(){
+var REPO = 'mrbrown-devai/zfrog-memes';
+var BASE = 'https://raw.githubusercontent.com/' + REPO + '/main/';
+var PAGE = 'https://zfrog.xyz/memes';
+var $ = function(id){ return document.getElementById(id); };
+var grid = $('grid'), filters = $('filters'), q = $('q'), dlg = $('viewer');
+var data = {categories:[], memes:[]}, list = [], cat = 'all', cur = -1;
+var canShareFiles = !!(navigator.canShare && window.File);
+var canCopyImg = !!(window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) && !matchMedia('(hover:none)').matches;
+var toast = $('toast'), tt;
+function say(m){ toast.textContent = m; toast.classList.add('on'); clearTimeout(tt); tt = setTimeout(function(){ toast.classList.remove('on'); }, 1800); }
+function url(p){ return BASE + p.split('/').map(encodeURIComponent).join('/'); }
+function catLabel(id){ var c = data.categories.filter(function(x){ return x.id === id; })[0]; return c ? c.label : id; }
+function norm(s){ return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, ''); }
+var firstDay = '';
+function isNew(m){
+if(!m.added || m.added === firstDay) return false;
+return (Date.now() - new Date(m.added + 'T00:00:00Z').getTime()) < 7 * 864e5;
+}
+function skeleton(){
+var h = ''; for(var i = 0; i < 8; i++) h += '<div class="skel chip"></div>';
+grid.innerHTML = h;
+}
+function renderFilters(){
+var counts = {}; data.memes.forEach(function(m){ counts[m.category] = (counts[m.category] || 0) + 1; });
+var items = [{id:'all', label:'All', n:data.memes.length}].concat(data.categories.map(function(c){ return {id:c.id, label:c.label, n:counts[c.id] || 0}; }));
+filters.innerHTML = '';
+items.forEach(function(c){
+var b = document.createElement('button');
+b.type = 'button'; b.className = 'f chip'; b.dataset.cat = c.id;
+b.setAttribute('aria-pressed', String(c.id === cat));
+b.innerHTML = '<span></span><b>' + c.n + '</b>';
+b.firstChild.textContent = c.label;
+b.addEventListener('click', function(){ cat = c.id; renderFilters(); renderGrid(); });
+filters.appendChild(b);
+});
+}
+function renderGrid(){
+var term = norm(q.value.trim());
+list = data.memes.filter(function(m){
+if(cat !== 'all' && m.category !== cat) return false;
+if(!term) return true;
+return norm([m.title, m.caption, catLabel(m.category), (m.tags || []).join(' ')].join(' ')).indexOf(term) !== -1;
+});
+grid.innerHTML = '';
+if(!list.length){
+grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><strong>Nothing in the pond</strong>Try another word, or clear the filters.</div>';
+return;
+}
+var frag = document.createDocumentFragment();
+list.forEach(function(m, i){
+var b = document.createElement('button');
+b.type = 'button'; b.className = 'card chip';
+b.setAttribute('aria-label', m.title + ' (open)');
+var img = document.createElement('img');
+img.src = url(m.thumb || m.file); img.alt = m.caption || m.title;
+img.loading = i < 8 ? 'eager' : 'lazy'; img.decoding = 'async';
+img.width = 640; img.height = 640;
+b.appendChild(img);
+if(isNew(m)){ var n = document.createElement('span'); n.className = 'new'; n.textContent = 'NEW'; b.appendChild(n); }
+var meta = document.createElement('span'); meta.className = 'meta';
+meta.innerHTML = '<span></span><strong></strong>';
+meta.firstChild.textContent = catLabel(m.category);
+meta.lastChild.textContent = m.title;
+b.appendChild(meta);
+b.addEventListener('click', function(){ open(i); });
+frag.appendChild(b);
+});
+grid.appendChild(frag);
+}
+var fileCache = {};
+function getFile(m){
+if(fileCache[m.id]) return fileCache[m.id];
+var name = m.file.split('/').pop();
+fileCache[m.id] = fetch(url(m.file)).then(function(r){ if(!r.ok) throw 0; return r.blob(); })
+.then(function(b){ return new File([b], name, {type: b.type || 'image/jpeg'}); });
+fileCache[m.id].catch(function(){ delete fileCache[m.id]; });
+return fileCache[m.id];
+}
+function show(i){
+cur = (i + list.length) % list.length;
+var m = list[cur];
+$('vImg').src = url(m.file); $('vImg').alt = m.caption || m.title;
+$('vCat').textContent = catLabel(m.category);
+$('vTitle').textContent = m.title;
+$('vCap').textContent = m.caption || '';
+var link = PAGE + '#' + m.id;
+$('aTg').href = 'https://t.me/share/url?url=' + encodeURIComponent(link) + '&text=' + encodeURIComponent(m.title + ' · ZRIBBIT');
+$('aShare').hidden = true; $('aTg').classList.remove('alt'); $('aTgTxt').textContent = 'Share on Telegram';
+if(canShareFiles){
+getFile(m).then(function(f){
+if(list[cur] === m && navigator.canShare({files:[f]})){
+$('aShare').hidden = false;
+$('aTgTxt').textContent = 'Share link on Telegram';
+$('aTg').classList.add('alt');
+}
+}).catch(function(){});
+}
+$('aCopyImg').hidden = !canCopyImg;
+$('vPrev').hidden = $('vNext').hidden = list.length < 2;
+if(history.replaceState) history.replaceState(null, '', '#' + m.id);
+[cur + 1, cur - 1].forEach(function(j){ var n = list[(j + list.length) % list.length]; if(n){ var p = new Image(); p.src = url(n.file); } });
+}
+function open(i){ show(i); if(!dlg.open){ dlg.showModal(); } }
+function close(){ if(dlg.open) dlg.close(); }
+dlg.addEventListener('close', function(){ if(history.replaceState) history.replaceState(null, '', location.pathname + location.search); });
+$('vClose').addEventListener('click', close);
+$('vPrev').addEventListener('click', function(){ show(cur - 1); });
+$('vNext').addEventListener('click', function(){ show(cur + 1); });
+$('vStage').addEventListener('click', function(e){ if(e.target === this) close(); });
+dlg.addEventListener('keydown', function(e){
+if(e.key === 'ArrowLeft'){ show(cur - 1); e.preventDefault(); }
+if(e.key === 'ArrowRight'){ show(cur + 1); e.preventDefault(); }
+});
+var sx = null, sy = null;
+$('vStage').addEventListener('touchstart', function(e){ sx = e.touches[0].clientX; sy = e.touches[0].clientY; }, {passive:true});
+$('vStage').addEventListener('touchend', function(e){
+if(sx === null) return;
+var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+if(Math.abs(dx) > 50 && Math.abs(dx) > Math.abs(dy)) show(cur + (dx < 0 ? 1 : -1));
+else if(dy > 90 && Math.abs(dy) > Math.abs(dx)) close();
+sx = null;
+});
+$('aShare').addEventListener('click', function(){
+var m = list[cur];
+getFile(m).then(function(f){
+return navigator.share({files:[f], text: m.title + ' · ' + PAGE});
+}).catch(function(err){ if(err && err.name === 'AbortError') return; say('Sharing failed, try Download'); });
+});
+$('aDl').addEventListener('click', function(){
+var m = list[cur];
+getFile(m).then(function(f){
+var a = document.createElement('a'); a.href = URL.createObjectURL(f); a.download = f.name;
+document.body.appendChild(a); a.click(); a.remove();
+setTimeout(function(){ URL.revokeObjectURL(a.href); }, 4000);
+say('Saved. ZRIBBIT');
+}).catch(function(){ window.open(url(m.file), '_blank', 'noopener'); });
+});
+function copyText(t){
+if(navigator.clipboard && navigator.clipboard.writeText) return navigator.clipboard.writeText(t);
+return Promise.reject();
+}
+$('aCopy').addEventListener('click', function(){
+copyText(PAGE + '#' + list[cur].id).then(function(){ say('Link copied'); }, function(){ say('Could not copy'); });
+});
+$('aCopyImg').addEventListener('click', function(){
+var m = list[cur];
+var png = getFile(m).then(function(f){ return createImageBitmap(f); }).then(function(bmp){
+var c = document.createElement('canvas'); c.width = bmp.width; c.height = bmp.height;
+c.getContext('2d').drawImage(bmp, 0, 0);
+return new Promise(function(res){ c.toBlob(res, 'image/png'); });
+});
+navigator.clipboard.write([new ClipboardItem({'image/png': png})])
+.then(function(){ say('Image copied. Paste it in Telegram'); }, function(){ say('Could not copy, use Download'); });
+});
+$('rand').addEventListener('click', function(){ if(list.length) open(Math.floor(Math.random() * list.length)); });
+var deb;
+q.addEventListener('input', function(){ clearTimeout(deb); deb = setTimeout(renderGrid, 120); });
+document.addEventListener('keydown', function(e){
+if(e.key === '/' && document.activeElement !== q && !dlg.open){ e.preventDefault(); q.focus(); }
+});
+function fromHash(){
+var id = decodeURIComponent(location.hash.slice(1));
+if(!id || (dlg.open && list[cur] && list[cur].id === id)) return;
+var i = list.map(function(m){ return m.id; }).indexOf(id);
+if(i === -1 && (cat !== 'all' || q.value)){ cat = 'all'; q.value = ''; renderFilters(); renderGrid(); i = list.map(function(m){ return m.id; }).indexOf(id); }
+if(i !== -1) open(i);
+}
+window.addEventListener('hashchange', fromHash);
+function boot(d){
+data = d; data.categories = data.categories || [];
+firstDay = data.memes.reduce(function(a, m){ return !a || m.added < a ? m.added : a; }, '');
+$('count').textContent = data.memes.length;
+$('ecount').textContent = ' · ' + data.memes.length + ' memes';
+renderFilters(); renderGrid();
+fromHash();
+}
+skeleton();
+fetch(BASE + 'memes.json?t=' + Math.floor(Date.now() / 60000), {cache:'no-store'})
+.then(function(r){ if(!r.ok) throw 0; return r.json(); })
+.then(boot)
+.catch(function(){
+grid.innerHTML = '<div class="empty" style="grid-column:1/-1"><strong>The vault is offline</strong>Refresh in a minute.</div>';
+});
+})();
+</script>
