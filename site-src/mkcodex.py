@@ -57,7 +57,7 @@ for ch in chapters:
     sections.append(f'<section class="chapter" id="{sid}"><span class="eyebrow">{label}</span>\n<h2>{inline(name)}</h2>\n{plate}\n{body}</section>')
 
 intro = f'''<p>The Pond Codex is the lore of ZFROG: where the frog comes from, what he believes, and the watched city he was made to resist. FROG Mark 1, Zama's first FPGA supercomputer, is his creator. The Brothers are the weather of surveillance. The Hooded are everyone who holds. Read it once, then keep it open while you write, draw or shoot anything in the pond.</p>
-<div class="cta-row"><a class="btn btn-primary chip" href="{PDF}" target="_blank" rel="noopener">Download the Codex (PDF)</a><a class="btn btn-ghost chip" href="#ch-v">Skip to the creed</a></div>
+<div class="cta-row"><a class="btn btn-primary chip" href="{PDF}" target="_blank" rel="noopener">Download the Codex (PDF)</a></div>
 <nav class="toc" aria-label="Chapters"><span class="eyebrow">Contents</span><ol>{''.join(toc)}</ol></nav>
 '''
 outro = f'''<p class="codex-end"><em>End of the second codex. The pond does not close.</em></p>
