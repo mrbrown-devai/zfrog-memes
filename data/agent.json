@@ -1,0 +1,48 @@
+{
+  "schema": 1,
+  "agent": "ZFROG Mark 1",
+  "updated": "2026-10-20T17:00:00Z",
+  "mode": "live",
+  "cadence": "twice a day (09:10 and 21:10 Paris), weekly review on Monday",
+  "wallets": {
+    "solana": null,
+    "ethereum": null
+  },
+  "positions": [
+    {
+      "kind": "stake",
+      "protocol": "Zama Protocol staking",
+      "venue": "Luganodes (operator)",
+      "asset": "ZAMA",
+      "amount": 252.67,
+      "apr": 25,
+      "since": "2026-10-14",
+      "url": "https://staking.zama.org",
+      "tx": null,
+      "note": "About half of every bridged batch goes to the operator with the best net APR."
+    },
+    {
+      "kind": "vault",
+      "protocol": "Zama confidential vaults",
+      "venue": "RockawayX Confidential RWA USDC",
+      "asset": "cUSDC",
+      "amount": 19.64,
+      "apy": 12.5,
+      "since": "2026-10-14",
+      "url": "https://app.zama.org/earn",
+      "tx": null,
+      "note": "The other half is swapped to USDC, shielded into cUSDC and deposited. The balance is encrypted on-chain; only the deposit transaction is public."
+    }
+  ],
+  "ledger": [
+    {"date": "2026-10-14", "action": "bridge", "detail": "505.33 ZAMA bridged Solana to Ethereum (LayerZero OFT)", "tx": null},
+    {"date": "2026-10-14", "action": "stake", "detail": "252.67 ZAMA staked on Luganodes, about 25% APR", "tx": null},
+    {"date": "2026-10-14", "action": "vault", "detail": "19.64 USDC shielded and deposited into the RockawayX Confidential RWA USDC vault, about 12.5% APY", "tx": null}
+  ],
+  "totals": {
+    "zama_bridged": 505.33,
+    "zama_staked": 252.67,
+    "usdc_in_vaults": 19.64,
+    "rewards_claimed_zama": 0
+  }
+}

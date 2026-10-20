@@ -1,0 +1,92 @@
+{"order": 4, "slug": "agent", "published": "2026-10-20", "crumb": "The agent", "eyebrow": "ZFROG Mark 1", "title": "ZFROG Mark 1: the Agent That Earns on Zama, in Public | ZFROG", "description": "ZFROG Mark 1 is ZFROG's autonomous agent. It bridges $ZAMA to Ethereum, stakes it with Zama Protocol operators and deposits into Zama confidential vaults. Every move is logged here.", "h1": "The night shift: <em>ZFROG Mark 1.</em>", "h1_plain": "The night shift: ZFROG Mark 1", "lede": "I built myself a worker. It bridges, it stakes, it shields, and it reports. Every move is on this page.", "hero_img": "/media/council.jpg", "hero_alt": "ZFROG crouched on a lily pad beside a server, surrounded by hooded frogs in a dark pond", "hero_w": 1200, "hero_h": 675, "schema_type": "Article", "about": ["ZFROG Mark 1", "AI agent", "Zama Protocol", "Staking", "Confidential vaults", "$ZAMA"], "faq": [["What is ZFROG Mark 1?", "An autonomous agent run by the ZFROG team. It bridges $ZAMA from Solana to Ethereum, stakes about half with the Zama Protocol operator offering the best net APR, and puts the other half to work in Zama confidential vaults. It runs twice a day and reviews its positions every Monday."], ["Whose money is it?", "A separate pool funded by the ZFROG team, not the holder reward pot. The 3% transfer fee on $ZFROG is collected, swapped to $ZAMA and distributed to holders by the stonk.fun contract on Solana; the agent never touches it."], ["Can I see the positions on-chain?", "Yes. The agent wallets are listed on this page with explorer links. Staking positions are public. Confidential vault balances are encrypted by design; the deposit transactions are public."], ["Does the agent trade $ZFROG or move the price?", "No. It only bridges, stakes, shields and deposits $ZAMA and stablecoins on Zama infrastructure. It never buys or sells $ZFROG."], ["Is the yield going to holders?", "Not today. Rewards accrue to the agent pool. Any change to that would be announced on X and in the Telegram before it happens, never promised in advance."], ["Is this a Zama product?", "No. The agent uses Zama's public protocol and app like any user. ZFROG is not affiliated with Zama."]]}
+<style>
+.live{display:grid;gap:14px;margin:0 0 28px}
+.live .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.stat{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:18px 20px;display:grid;gap:6px;--notch:10px}
+.stat .k{font:600 11px/1.3 var(--mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.stat .v{font:700 clamp(24px,3vw,34px)/1.05 var(--display);color:var(--fg)}
+.stat .v small{font:500 14px/1 var(--display);color:var(--toxic);margin-left:6px}
+.stat .s{font:400 13px/1.4 var(--body);color:var(--muted)}
+.pos{display:grid;gap:12px}
+.pos .card{background:var(--bog);box-shadow:inset 3px 0 0 var(--toxic);padding:16px 20px;display:grid;gap:4px}
+.pos .card b{font:700 18px/1.2 var(--display);text-transform:uppercase}
+.pos .card span{color:var(--muted);font-size:15px}
+.wal{display:grid;gap:8px;font:400 13px/1.5 var(--mono);color:var(--muted)}
+.wal a{color:var(--fg);overflow-wrap:anywhere}
+.stamp{font:500 12px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.stamp b{color:var(--toxic)}
+.ledger td:first-child{white-space:nowrap;font-family:var(--mono);font-size:13px}
+.ledger .a{font:600 11px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--toxic)}
+</style>
+<p class="callout"><strong>Two different pots.</strong> The <a href="/#rewards">homepage counter</a> is the holder reward pot: $ZFROG's 3% fee, swapped to $ZAMA and sent to holders by stonk.fun. This page is something else: a separate pool the team put to work on Zama's protocol through an agent. It never touches holder rewards.</p>
+<div class="live" id="live">
+<p class="stamp" id="stamp">Loading the night shift report…</p>
+<div class="grid" id="stats"></div>
+<div class="pos" id="positions"></div>
+<div class="wal" id="wallets"></div>
+</div>
+<h2>What the agent does</h2>
+<p>ZFROG Mark 1 is a small program that runs on a machine the team controls. Twice a day it wakes up, looks at its wallets, and follows five rules:</p>
+<ol>
+<li><strong>Bridge.</strong> Any $ZAMA sitting on Solana goes to Ethereum through Zama's official LayerZero bridge, because that is where staking and the confidential vaults live.</li>
+<li><strong>Stake half.</strong> About half of each batch is delegated to the Zama Protocol operator with the best net APR after commission. The agent scans every operator each run.</li>
+<li><strong>Shield the rest.</strong> The other half is swapped to a stablecoin, shielded into its confidential version, and deposited into the Zama confidential vault with the best yield.</li>
+<li><strong>Review on Mondays.</strong> Once a week it compares vault yields and operator rates and moves funds only if the gap is worth the fees.</li>
+<li><strong>Report.</strong> Every action, with the transaction hash, is logged. The log feeds this page.</li>
+</ol>
+<h2>Ledger</h2>
+<div class="tablewrap"><table class="ledger" id="ledger"><tr><th>Date</th><th>Action</th><th>Detail</th><th>Tx</th></tr></table></div>
+<p id="ledger-note" class="stamp"></p>
+<h2>How it is kept safe</h2>
+<ul>
+<li><strong>Keys never leave the machine.</strong> The wallets were generated locally and are stored encrypted. No AI model and no cloud service has ever seen them.</li>
+<li><strong>Allowlist only.</strong> The agent can only talk to Zama Protocol contracts, the official bridge and the swap route it uses. Any other address is refused by the code.</li>
+<li><strong>Caps.</strong> Each transaction has a hard USD ceiling. A bad day is a small day.</li>
+<li><strong>Dry-run by default.</strong> New logic ships in simulation mode first and only signs after a human reads the dry run.</li>
+<li><strong>Separate pool.</strong> The holder reward pot is handled by the stonk.fun contract on Solana and is not reachable by the agent.</li>
+</ul>
+<h2>Why build it</h2>
+<p>Most memecoins have a chart and a Telegram. The Pond wanted a product. ZFROG Mark 1 is proof that one frog, a public protocol and a few hundred lines of code can earn on Zama's stack without trusting anyone to hold the keys. It is also the easiest way to show what shielding, confidential vaults and staking actually look like when they run every day. Want to do it by hand? The <a href="/earn-zama#shielded">five-step guide</a> walks the same path.</p>
+<p>Yields quoted on this page are read from the protocols at the time of each run. They change, and nothing here is a promise.</p>
+<p class="callout"><strong>Not Zama.</strong> $ZFROG is an independent community memecoin. It is not affiliated with, endorsed by or sponsored by Zama. For official Zama information, go to <a href="https://www.zama.org" rel="noopener">zama.org</a>.</p>
+<script>
+(function(){
+var SRC='https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/data/agent.json';
+var ETH_RPC='https://ethereum-rpc.publicnode.com', SOL_RPC='https://api.mainnet-beta.solana.com';
+var ZAMA_ETH='0xa12cc123ba206d4031d1c7f6223d1c2ec249f4f3', ZAMA_SOL='4Zp52aF4hZi9fzH19xpbWKYKQvgLyCN67KFbrQDqeTKh';
+function el(id){return document.getElementById(id)}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+function num(n,d){return Number(n).toLocaleString('en-US',{maximumFractionDigits:d==null?2:d})}
+function short(a){return a.slice(0,6)+'…'+a.slice(-4)}
+function rpc(url,method,params){return fetch(url,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({jsonrpc:'2.0',id:1,method:method,params:params})}).then(function(r){return r.json()}).then(function(j){return j.result})}
+function stat(k,v,unit,s){return '<div class="stat chip"><span class="k">'+esc(k)+'</span><span class="v">'+esc(v)+(unit?'<small>'+esc(unit)+'</small>':'')+'</span>'+(s?'<span class="s">'+esc(s)+'</span>':'')+'</div>'}
+fetch(SRC,{cache:'no-store'}).then(function(r){return r.json()}).then(function(d){
+  var t=d.totals||{};
+  var when=d.updated?new Date(d.updated):null;
+  el('stamp').innerHTML='Last report <b>'+(when?esc(when.toUTCString().replace(':00 GMT',' UTC')):'n/a')+'</b> · mode <b>'+esc(d.mode||'?')+'</b> · '+esc(d.cadence||'');
+  el('stats').innerHTML=stat('ZAMA staked',num(t.zama_staked),'ZAMA','with Zama Protocol operators')+stat('In confidential vaults',num(t.usdc_in_vaults),'USDC','balance encrypted on-chain')+stat('ZAMA bridged to date',num(t.zama_bridged),'ZAMA','Solana to Ethereum')+stat('Rewards claimed',num(t.rewards_claimed_zama),'ZAMA','staking rewards to date');
+  el('positions').innerHTML=(d.positions||[]).map(function(p){var rate=p.apr!=null?num(p.apr,1)+'% APR':(p.apy!=null?num(p.apy,1)+'% APY':'');return '<div class="card"><b>'+esc(p.venue)+'</b><span>'+num(p.amount)+' '+esc(p.asset)+(rate?' · about '+rate:'')+(p.since?' · since '+esc(p.since):'')+'</span><span>'+esc(p.note||'')+(p.url?' <a href="'+esc(p.url)+'" rel="noopener" target="_blank">'+esc(p.protocol)+'</a>':'')+'</span></div>'}).join('');
+  var w=d.wallets||{}; var rows=[];
+  if(w.ethereum) rows.push('<div>Ethereum wallet <a href="https://etherscan.io/address/'+esc(w.ethereum)+'" target="_blank" rel="noopener">'+esc(w.ethereum)+'</a> <span id="ethbal"></span></div>');
+  if(w.solana) rows.push('<div>Solana wallet <a href="https://solscan.io/account/'+esc(w.solana)+'" target="_blank" rel="noopener">'+esc(w.solana)+'</a> <span id="solbal"></span></div>');
+  if(!rows.length) rows.push('<div>Wallet addresses are published here once the next cycle runs.</div>');
+  el('wallets').innerHTML=rows.join('');
+  var L=(d.ledger||[]).slice().reverse();
+  el('ledger').insertAdjacentHTML('beforeend',L.map(function(e){return '<tr><td>'+esc(e.date)+'</td><td><span class="a">'+esc(e.action)+'</span></td><td>'+esc(e.detail)+'</td><td>'+(e.tx?'<a href="'+esc(e.tx)+'" target="_blank" rel="noopener">view</a>':'—')+'</td></tr>'}).join(''));
+  el('ledger-note').textContent=L.length+' actions logged. Newest first.';
+  if(w.ethereum){
+    var pad='000000000000000000000000'+w.ethereum.slice(2).toLowerCase();
+    Promise.all([rpc(ETH_RPC,'eth_getBalance',[w.ethereum,'latest']),rpc(ETH_RPC,'eth_call',[{to:ZAMA_ETH,data:'0x70a08231'+pad},'latest'])]).then(function(r){
+      var eth=parseInt(r[0],16)/1e18, z=parseInt(r[1],16)/1e18;
+      el('ethbal').textContent='· live: '+num(eth,4)+' ETH, '+num(z)+' ZAMA idle';
+    }).catch(function(){});
+  }
+  if(w.solana){
+    Promise.all([rpc(SOL_RPC,'getBalance',[w.solana]),rpc(SOL_RPC,'getTokenAccountsByOwner',[w.solana,{mint:ZAMA_SOL},{encoding:'jsonParsed'}])]).then(function(r){
+      var sol=(r[0]&&r[0].value||0)/1e9; var z=0;(r[1]&&r[1].value||[]).forEach(function(a){z+=Number(a.account.data.parsed.info.tokenAmount.uiAmount||0)});
+      el('solbal').textContent='· live: '+num(sol,4)+' SOL, '+num(z)+' ZAMA waiting to bridge';
+    }).catch(function(){});
+  }
+}).catch(function(){el('stamp').textContent='The report could not be loaded. Try again in a minute.'});
+})();
+</script>

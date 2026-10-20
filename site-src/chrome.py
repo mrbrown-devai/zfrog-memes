@@ -4,7 +4,7 @@ CA = 'CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T'
 RAW = 'https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/'
 BUY = f'https://raydium.io/swap/?inputMint=sol&amp;outputMint={CA}'
 NAV = [('/#rewards', 'Rewards', 'home'), ('/earn-zama', 'Earn $ZAMA', 'earn-zama'), ('/fhe', 'FHE explained', 'fhe'),
-       ('/frog-mark-1', 'FROG Mark 1', 'frog-mark-1'), ('/codex', 'Lore', 'codex'), ('/memes', 'Memes', 'memes')]
+       ('/frog-mark-1', 'FROG Mark 1', 'frog-mark-1'), ('/codex', 'Lore', 'codex'), ('/agent', 'Agent', 'agent'), ('/memes', 'Memes', 'memes')]
 
 CHROME_CSS = '''header.nav.sf{position:sticky;top:0;z-index:40;background:color-mix(in srgb,#07070a 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid #2c2c17}
 header.sf .wrap{display:flex;align-items:center;gap:24px;min-height:68px;max-width:1180px;margin-inline:auto;padding-inline:clamp(16px,4vw,48px)}
@@ -60,7 +60,7 @@ FOOTER = f'''<footer class="sf">
 <div class="sf-top">
 <div><a class="brand" href="/"><img src="/media/logo.jpg" alt="" width="42" height="42" loading="lazy">ZFROG</a><p class="tag">Made of memes. Powered by privacy.</p></div>
 <nav aria-label="Explore"><h2>Explore</h2><ul>
-<li><a href="/">Home</a></li><li><a href="/#rewards">Live rewards</a></li><li><a href="/earn-zama">Earn $ZAMA</a></li><li><a href="/fhe">FHE explained</a></li><li><a href="/frog-mark-1">FROG Mark 1</a></li><li><a href="/codex">The Pond Codex</a></li><li><a href="/memes">Meme vault</a></li>
+<li><a href="/">Home</a></li><li><a href="/#rewards">Live rewards</a></li><li><a href="/earn-zama">Earn $ZAMA</a></li><li><a href="/fhe">FHE explained</a></li><li><a href="/frog-mark-1">FROG Mark 1</a></li><li><a href="/codex">The Pond Codex</a></li><li><a href="/agent">ZFROG Mark 1 agent</a></li><li><a href="/memes">Meme vault</a></li>
 </ul></nav>
 <nav aria-label="Community"><h2>Community</h2><ul>
 <li><a href="https://x.com/FrogMark1" target="_blank" rel="noopener">X @FrogMark1</a></li><li><a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://t.me/addstickers/zfrog" target="_blank" rel="noopener">Sticker pack</a></li><li><a href="{RAW}brand/ZFROG_Brand_Book.pdf" target="_blank" rel="noopener">Brand book (PDF)</a></li><li><a href="{RAW}codex/ZFROG_Pond_Codex.pdf" target="_blank" rel="noopener">Pond Codex (PDF)</a></li>

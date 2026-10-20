@@ -9,7 +9,7 @@ Output:  out/ (index.html, memes/index.html, <slug>/index.html, robots.txt, site
 import html, json, os, re, datetime
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-SRC = os.path.join(HERE, '..', 'v2')
+SRC = os.path.join(HERE, 'live')
 OUT = os.path.join(HERE, 'out')
 SITE = 'https://www.zfrog.xyz'
 RAW = 'https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/'
@@ -88,7 +88,7 @@ def load_pages():
     PAGES.sort(key=lambda p: p.get('order', 99))
 
 
-NAV_LINKS = [('/earn-zama', 'Earn $ZAMA'), ('/fhe', 'FHE explained'), ('/frog-mark-1', 'FROG Mark 1'), ('/codex', 'Lore'), ('/memes', 'Memes')]
+NAV_LINKS = [('/earn-zama', 'Earn $ZAMA'), ('/fhe', 'FHE explained'), ('/frog-mark-1', 'FROG Mark 1'), ('/codex', 'Lore'), ('/agent', 'Agent'), ('/memes', 'Memes')]
 
 
 CODEX_RAW = RAW + 'codex/'
