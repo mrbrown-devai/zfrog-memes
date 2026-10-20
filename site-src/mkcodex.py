@@ -64,7 +64,7 @@ outro = f'''<p class="codex-end"><em>End of the second codex. The pond does not 
 <div class="cta-row"><a class="btn btn-primary chip" href="{PDF}" target="_blank" rel="noopener">Download the Codex (PDF)</a><a class="btn btn-ghost chip" href="/frog-mark-1">The real FROG Mark 1</a></div>
 ''' + DISC
 
-meta = dict(order=4, slug='codex', crumb='The Pond Codex', eyebrow='Lore',
+meta = dict(order=4, slug='codex', published='2026-10-20', crumb='The Pond Codex', eyebrow='Lore',
             title='The Pond Codex: the lore of ZFROG, born of FROG Mark 1 | ZFROG',
             description='The lore of ZFROG: a hooded frog created by FROG Mark 1, Zama\'s first FPGA supercomputer, raised to fight for privacy in a watched city. Read online or download the PDF.',
             h1='The Pond <em>Codex.</em>', h1_plain='The Pond Codex: the ZFROG lore',

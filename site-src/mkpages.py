@@ -6,7 +6,7 @@ DISC='<p class="callout"><strong>Not Zama.</strong> $ZFROG is an independent com
 pages=[]
 
 # ---------------- /earn-zama
-pages.append(dict(order=1, slug='earn-zama', crumb='Earn $ZAMA', eyebrow='Rewards guide',
+pages.append(dict(order=1, slug='earn-zama', published='2026-10-18', crumb='Earn $ZAMA', eyebrow='Rewards guide',
  title='Earn $ZAMA by Holding $ZFROG on Solana | ZFROG',
  description='Hold at least $20 of $ZFROG on Solana and get $ZAMA sent to your wallet automatically. How the rewards work, how to buy on Raydium, and the risks.',
  h1='Earn $ZAMA by <em>holding $ZFROG.</em>', h1_plain='Earn $ZAMA by holding $ZFROG',
@@ -80,7 +80,7 @@ pages.append(dict(order=1, slug='earn-zama', crumb='Earn $ZAMA', eyebrow='Reward
 {DISC}'''))
 
 # ---------------- /fhe
-pages.append(dict(order=2, slug='fhe', crumb='FHE explained', eyebrow='Learn',
+pages.append(dict(order=2, slug='fhe', published='2026-10-18', crumb='FHE explained', eyebrow='Learn',
  title='FHE Explained by a Frog: an Unofficial Guide to Zama FHE | ZFROG',
  description='What is fully homomorphic encryption? A plain-language guide to FHE, how Zama uses it onchain, why it needs serious hardware and where $ZAMA fits.',
  h1='FHE explained <em>(by a frog).</em>', h1_plain='FHE explained (by a frog)',
@@ -147,7 +147,7 @@ pages.append(dict(order=2, slug='fhe', crumb='FHE explained', eyebrow='Learn',
 '''+DISC))
 
 # ---------------- /frog-mark-1
-pages.append(dict(order=3, slug='frog-mark-1', crumb='FROG Mark 1', eyebrow='Origins',
+pages.append(dict(order=3, slug='frog-mark-1', published='2026-10-18', crumb='FROG Mark 1', eyebrow='Origins',
  title="FROG Mark 1: Zama's FPGA Supercomputer | ZFROG",
  description="FROG Mark 1 is the name of Zama's first FPGA supercomputer for fully homomorphic encryption. What is public, what is not, and how it spawned $ZFROG.",
  h1='FROG Mark 1: <em>Zama\'s FPGA supercomputer.</em>', h1_plain="FROG Mark 1: Zama's FPGA supercomputer",
