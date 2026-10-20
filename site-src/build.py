@@ -306,7 +306,13 @@ def main():
     files = {'index.html': build_home(), 'memes/index.html': build_memes(memes), '404.html': build_404()}
     for p in PAGES:
         files[p['slug'] + '/index.html'] = build_article(p)
+    from chrome import unify
+    for rel in list(files):
+        key = 'home' if rel == 'index.html' else ('404' if rel == '404.html' else rel.split('/')[0])
+        files[rel] = unify(files[rel], key)
     files['assets/site.css'] = ARTICLE_CSS
+    from chrome import CHROME_CSS
+    files['assets/chrome.css'] = CHROME_CSS
     bots = ['GPTBot', 'OAI-SearchBot', 'ChatGPT-User', 'ClaudeBot', 'Claude-SearchBot', 'Claude-User', 'PerplexityBot', 'Perplexity-User', 'Google-Extended', 'Applebot-Extended', 'Bingbot', 'Googlebot']
     files['robots.txt'] = ''.join(f'User-agent: {b}\nAllow: /\n\n' for b in bots) + f'User-agent: *\nAllow: /\n\nSitemap: {SITE}/sitemap.xml\n'
     files['llms.txt'] = open(os.path.join(HERE, 'llms.txt'), encoding='utf-8').read()
