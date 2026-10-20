@@ -19,6 +19,7 @@
 - [Earn $ZAMA by holding $ZFROG](https://www.zfrog.xyz/earn-zama): how the rewards work, how to buy on Raydium, then how to bridge $ZAMA to Ethereum, shield it, swap to cUSDT, earn yield and stake, plus risks and FAQ
 - [FHE explained (by a frog)](https://www.zfrog.xyz/fhe): plain-language guide to fully homomorphic encryption and how Zama uses it
 - [FROG Mark 1](https://www.zfrog.xyz/frog-mark-1): Zama's FPGA supercomputer for FHE, what is public about it, and how ZFROG grew from it
+- [The Pond Codex](https://www.zfrog.xyz/codex): the ZFROG lore in 13 chapters. ZFROG (Unit 01) was created by FROG Mark 1; the Brothers are surveillance; the Hooded are holders. PDF: https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/codex/ZFROG_Pond_Codex.pdf
 - [Meme vault](https://www.zfrog.xyz/memes): searchable library of ZFROG memes about Zama, FHE and privacy
 
 ## Optional

@@ -136,6 +136,7 @@ pages.append(dict(order=2, slug='fhe', crumb='FHE explained', eyebrow='Learn',
 <tr><td>FPGA and ASIC</td><td>The longer-term target: thousands of TPS and more, on dedicated FHE hardware</td></tr>
 </table></div>
 <p>In May 2025 Zama open-sourced the <strong>HPU</strong> (Homomorphic Processing Unit), an FHE processor running on an AMD V80 FPGA board, at about 13,000 programmable bootstraps per second for about 200W. That is the family of hardware my creator, FROG Mark 1, comes from. The whole story is on the <a href="/frog-mark-1">FROG Mark 1 page</a>.</p>
+<blockquote>Compute without looking. Protect without collecting. <a href="/codex#ch-v">From the Pond Codex</a>.</blockquote>
 <h2>Where does $ZAMA fit?</h2>
 <p>$ZAMA is the protocol token:</p>
 <ul>
@@ -190,7 +191,7 @@ pages.append(dict(order=3, slug='frog-mark-1', crumb='FROG Mark 1', eyebrow='Ori
 <h2>From rack to frog</h2>
 <p>Most memecoins invent a story. $ZFROG started from a real machine.</p>
 <p>A hardware lab named its FHE supercomputer FROG. Crypto noticed. The swamp did the rest.</p>
-<p><strong>ZFROG</strong>, Unit 01, is the main character, and in our lore FROG Mark 1 is his creator: the machine made the frog. He is a black and yellow hooded frog with a respirator mask and a glowing Z chip on his chest. He speaks through the respirator. He computes on things he cannot see. He is here to get the world ready for the privacy age. Meet him in the <a href="/memes">meme vault</a> and the <a href="/#brandbook">brand book</a>.</p>
+<p><strong>ZFROG</strong>, Unit 01, is the main character, and in our lore FROG Mark 1 is his creator: the machine made the frog. He is a black and yellow hooded frog with a respirator mask and a glowing Z chip on his chest. He speaks through the respirator. He computes on things he cannot see. He is here to get the world ready for the privacy age. Meet him in the <a href="/memes">meme vault</a> and the <a href="/#brandbook">brand book</a>. His full story, from the watched city to the birth on the lily, is in <a href="/codex">the Pond Codex</a> (<a href="/codex#ch-ii">Chapter II, The machine</a>).</p>
 <p>$ZFROG launched on Solana on 3 October 2026, and holders earn $ZAMA automatically. <a href="/earn-zama">Here is how</a>.</p>
 '''+DISC))
 

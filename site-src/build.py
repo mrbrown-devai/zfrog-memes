@@ -88,8 +88,26 @@ def load_pages():
     PAGES.sort(key=lambda p: p.get('order', 99))
 
 
-NAV_LINKS = [('/earn-zama', 'Earn $ZAMA'), ('/fhe', 'FHE explained'), ('/frog-mark-1', 'FROG Mark 1'), ('/memes', 'Memes')]
+NAV_LINKS = [('/earn-zama', 'Earn $ZAMA'), ('/fhe', 'FHE explained'), ('/frog-mark-1', 'FROG Mark 1'), ('/codex', 'Lore'), ('/memes', 'Memes')]
 
+
+CODEX_RAW = RAW + 'codex/'
+CODEX_BLOCK = f'''  <section id="codex" style="padding-top:0">
+    <div class="wrap book">
+      <a class="book-cover chip" href="/codex"><img src="{CODEX_RAW}cover.webp" alt="Cover of the Pond Codex: ZFROG peeking over an ancient book" loading="lazy" width="1200" height="800"></a>
+      <div class="head">
+        <span class="eyebrow">The Pond Codex</span>
+        <h2>Privacy is not a right. <em>It is a fight.</em></h2>
+        <p>The lore of ZFROG in thirteen chapters: the watched city, FROG Mark 1, the birth on the lily, the creed, the Brothers and the Hooded. Read it online or take the PDF with you.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary chip" href="/codex">Read the Codex</a>
+          <a class="btn btn-ghost chip" href="{CODEX_RAW}ZFROG_Pond_Codex.pdf" target="_blank" rel="noopener">Download the PDF</a>
+        </div>
+        <p class="book-meta">PDF · 16 pages · 3.6 MB · Second edition, Oct 2026</p>
+      </div>
+    </div>
+  </section>
+'''
 
 # ---------------------------------------------------------------- homepage
 def build_home():
@@ -123,6 +141,14 @@ def build_home():
     s = sub(s, '      <div class="ca chip" role="group" aria-label="Contract address">',
             '      <div class="ca chip" role="group" aria-label="Official $ZFROG contract address on Solana">')
     # character naming: the hero is ZFROG; FROG Mark 1 is his creator
+    # Pond Codex: nav, footer, lore CTA, codex block before the brand book
+    s = sub(s, '      <a href="/fhe">FHE explained</a>\n      <a href="/memes">Memes</a>',
+            '      <a href="/fhe">FHE explained</a>\n      <a href="/codex">Lore</a>\n      <a href="/memes">Memes</a>')
+    s = sub(s, '        <a href="/frog-mark-1">FROG Mark 1</a>\n        <a href="/memes">Memes</a>',
+            '        <a href="/frog-mark-1">FROG Mark 1</a>\n        <a href="/codex">The Pond Codex</a>\n        <a href="/memes">Memes</a>')
+    s = sub(s, '        <span class="eyebrow">Lore</span>\n        <h2>Tales from <em>the swamp.</em></h2>\n      </div>',
+            '        <span class="eyebrow">Lore</span>\n        <h2>Tales from <em>the swamp.</em></h2>\n        <p>Every episode comes from the Pond Codex, the full story of ZFROG. <a href="/codex">Read the Codex</a>.</p>\n      </div>')
+    s = sub(s, '  <section id="brandbook" style="padding-top:0">', CODEX_BLOCK + '\n  <section id="brandbook" style="padding-top:0">')
     s = sub(s, 'alt="Cover of the ZFROG brand book: Mark, the hooded frog, next to the ZFROG wordmark"',
             'alt="Cover of the ZFROG brand book: ZFROG, the hooded frog, next to the ZFROG wordmark"')
     s = sub(s, "Mark's character sheet", "ZFROG's character sheet")
@@ -244,7 +270,7 @@ def build_article(p):
 <div class="foot-top">
 <a class="brand" href="/"><img src="/media/logo.jpg" alt="" width="42" height="42">ZFROG</a>
 <div class="foot-links">
-<a href="/earn-zama">Earn $ZAMA</a><a href="/fhe">FHE explained</a><a href="/frog-mark-1">FROG Mark 1</a><a href="/memes">Memes</a><a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a><a href="https://x.com/FrogMark1" target="_blank" rel="noopener">X</a>
+<a href="/earn-zama">Earn $ZAMA</a><a href="/fhe">FHE explained</a><a href="/frog-mark-1">FROG Mark 1</a><a href="/codex">The Pond Codex</a><a href="/memes">Memes</a><a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a><a href="https://x.com/FrogMark1" target="_blank" rel="noopener">X</a>
 </div>
 </div>
 <p class="disclaimer">$ZFROG is a community memecoin with no intrinsic value and no expectation of financial return. It is not affiliated with, endorsed by or operated by Zama. For official Zama information go to <a href="https://www.zama.org" rel="noopener">zama.org</a>. Crypto assets are highly volatile and you can lose everything you put in. Nothing on this site is financial advice. © 2026 ZFROG.</p>
