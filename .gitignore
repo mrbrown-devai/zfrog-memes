@@ -1,0 +1,3 @@
+site-src/out/
+site-src/__pycache__/
+site-src/memes.json
