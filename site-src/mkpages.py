@@ -16,7 +16,8 @@ pages.append(dict(order=1, slug='earn-zama', published='2026-10-18', crumb='Earn
  faq=[
   ('How do I earn $ZAMA with $ZFROG?','Hold at least $20 worth of $ZFROG in a Solana wallet. $ZAMA from the reward pot is sent to you automatically, in proportion to your holdings.'),
   ('Do I need to claim or stake anything?','No. Distribution is automatic. There is nothing to claim and nothing to lock.'),
-  ('Where does the $ZAMA come from?','From the 3% transfer fee on $ZFROG. About 2.5% covers network and operating costs; the rest is swapped to $ZAMA by stonk.fun and sent to holders.'),
+  ('Where does the $ZAMA come from?','From the 3% transfer tax on $ZFROG. 2.5% of that tax (0.075% of each transfer) covers network and operating costs. The other 2.925% is swapped to $ZAMA by stonk.fun and sent to holders.'),
+  ('How much of the 3% tax goes to holders?','2.925%. 3% is collected on every transfer, 2.5% of that 3% (0.075%) pays network and operating costs, and 3% minus 0.075% = 2.925% is paid in $ZAMA to wallets holding at least $20 of $ZFROG. On a $1,000 trade that is $29.25 for holders.'),
   ('What is the official $ZFROG contract address?',f'{CA} on Solana. Ignore any other token using the ZFROG name.'),
   ('Which wallets work?','Any Solana wallet that supports Token-2022 tokens, including Phantom, Solflare and Backpack.'),
   ('Why does Raydium show a warning?','$ZFROG uses the Token-2022 standard. Raydium asks you to confirm before trading any Token-2022 token, and you add it by pasting the contract address.'),
@@ -28,17 +29,27 @@ pages.append(dict(order=1, slug='earn-zama', published='2026-10-18', crumb='Earn
 <p>$ZFROG is a Solana Token-2022 token with a transfer fee built in. Here is the loop:</p>
 <ol>
 <li><strong>3% is withheld on every transfer.</strong> Buys, sells and wallet-to-wallet moves all count. This uses Solana's <a href="https://solana.com/docs/tokens/extensions/transfer-fees" rel="noopener">Token-2022 transfer fee extension</a>.</li>
-<li><strong>About 2.5% covers network and operating costs.</strong> The rest goes into the reward pot.</li>
+<li><strong>2.5% of that 3% covers network and operating costs.</strong> That is 0.075% of each transfer, not 2.5 points.</li>
+<li><strong>The other 2.925% goes into the reward pot.</strong> That is what holders receive.</li>
 <li><strong>stonk.fun swaps the pot into $ZAMA.</strong></li>
 <li><strong>$ZAMA is sent automatically,</strong> pro rata, to every wallet holding at least <strong>$20 of $ZFROG</strong>.</li>
 </ol>
 <p>No staking. No claim button. No lockup. If your wallet holds the minimum, $ZAMA shows up. More volume in the swamp means a bigger pot. The live total paid to holders is on the <a href="/#rewards">homepage counter</a>.</p>
+<h3>Where the 3% goes</h3>
+<div class="tablewrap"><table>
+<tr><th></th><th>Share of each transfer</th><th>On a $1,000 trade</th></tr>
+<tr><th>Transfer tax collected</th><td>3%</td><td>$30.00</td></tr>
+<tr><th>Network and operating costs (2.5% of the tax)</th><td>0.075%</td><td>$0.75</td></tr>
+<tr><th>Paid to holders in $ZAMA</th><td>2.925%</td><td>$29.25</td></tr>
+</table></div>
+<p>To receive your share, hold at least <strong>$20 of $ZFROG</strong>. The $ZAMA is split pro rata between every eligible wallet.</p>
 <div class="tablewrap"><table>
 <tr><th>Chain</th><td>Solana</td></tr>
 <tr><th>Official $ZFROG contract</th><td><code>{CA}</code></td></tr>
 <tr><th>Launched</th><td>3 October 2026</td></tr>
 <tr><th>Main pool</th><td>Raydium</td></tr>
 <tr><th>Reward token</th><td>$ZAMA (official Solana mint <code>{ZM}</code>)</td></tr>
+<tr><th>Transfer tax</th><td>3% (2.925% to holders, 0.075% to costs)</td></tr>
 <tr><th>Minimum to earn</th><td>$20 of $ZFROG</td></tr>
 </table></div>
 <h2>How to buy $ZFROG on Raydium</h2>
