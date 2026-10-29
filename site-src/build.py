@@ -306,6 +306,7 @@ def main():
     files = {'index.html': build_home(), 'memes/index.html': build_memes(memes), '404.html': build_404()}
     for p in PAGES:
         files[p['slug'] + '/index.html'] = build_article(p)
+    files['breakpoint/index.html'] = open(os.path.join(HERE, 'breakpoint.html'), encoding='utf-8').read()
     from chrome import unify
     for rel in list(files):
         key = 'home' if rel == 'index.html' else ('404' if rel == '404.html' else rel.split('/')[0])
