@@ -1,6 +1,6 @@
 // Breakpoint London airdrop sign-up. POST registers an entry, GET returns the public count.
 // Entries are private blobs: breakpoint/w/<wallet>.json, plus breakpoint/x/<handle> markers for dedupe.
-const { put, list, head } = require('@vercel/blob');
+const { put, list, head, BlobNotFoundError } = require('@vercel/blob');
 const crypto = require('crypto');
 
 const B58 = '123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz';
@@ -19,7 +19,7 @@ function send(res, code, obj, cache) {
 }
 async function exists(pathname) {
   try { await head(pathname); return true; } catch (e) {
-    if (e && (e.name === 'BlobNotFoundError' || /not.?found/i.test(String(e.message)))) return false;
+    if ((BlobNotFoundError && e instanceof BlobNotFoundError) || /not.?found|does not exist/i.test(String(e && e.message))) return false;
     throw e;
   }
 }
