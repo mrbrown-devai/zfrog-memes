@@ -1,2181 +1,2466 @@
 {
-  "updated": "2026-10-28T12:06:40Z",
-  "categories": [
-    {
-      "id": "zama-news",
-      "label": "Zama news",
-      "folder": "zama-news",
-      "blurb": "Ecosystem headlines, frog edition."
-    },
-    {
-      "id": "privacy-mood",
-      "label": "Privacy mood",
-      "folder": "privacy-mood",
-      "blurb": "Everyday life, encrypted."
-    },
-    {
-      "id": "the-pond",
-      "label": "The Pond",
-      "folder": "the-pond",
-      "blurb": "Community and recruitment."
-    },
-    {
-      "id": "lore",
-      "label": "Lore",
-      "folder": "lore",
-      "blurb": "Scenes from the swamp saga."
-    },
-    {
-      "id": "reactions",
-      "label": "Reactions",
-      "folder": "reactions",
-      "blurb": "Reply ammo. Hood up, mask on."
-    }
-  ],
-  "memes": [
-    {
-      "id": "laptop-on-the-throne",
-      "file": "memes/privacy-mood/laptop-on-the-throne.png",
-      "category": "privacy-mood",
-      "title": "Laptop on the throne",
-      "caption": "Feet up, laptop on, the Pond keeps watch.",
-      "tags": [
-        "laptop",
-        "couch",
-        "relax",
-        "frens",
-        "builder"
-      ],
-      "added": "2026-10-28",
-      "w": 1254,
-      "h": 1254,
-      "hash": "2379eeaec322eaad2d70f91066a18e8cb0335e4c",
-      "thumb": "thumbs/laptop-on-the-throne.webp"
-    },
-    {
-      "id": "16-confidential-vaults",
-      "file": "memes/zama-news/16-confidential-vaults.jpg",
-      "category": "zama-news",
-      "title": "16 confidential vaults",
-      "caption": "Zama: 16 confidential vaults. Me: one for every mood.",
-      "tags": [
-        "vaults",
-        "confidential",
-        "16",
-        "yield",
-        "zama"
-      ],
-      "added": "2026-10-28",
-      "w": 1254,
-      "h": 1254,
-      "hash": "d143656916b767036422e1ef1b65f27b75930ca7",
-      "thumb": "thumbs/16-confidential-vaults.webp"
-    },
-    {
-      "id": "best-i-can-do-is-sealed",
-      "file": "memes/zama-news/best-i-can-do-is-sealed.jpg",
-      "category": "zama-news",
-      "title": "Best I can do is sealed",
-      "caption": "Public DeFi: show the whole trade. Zama: best I can do is sealed.",
-      "tags": [
-        "sealed",
-        "trade",
-        "public defi",
-        "confidential",
-        "zama"
-      ],
-      "added": "2026-10-28",
-      "w": 1254,
-      "h": 1254,
-      "hash": "a747e4848e4994fd45ae3b89e1ea1de98a3a5ed1",
-      "thumb": "thumbs/best-i-can-do-is-sealed.webp"
-    },
-    {
-      "id": "merkl-rewards-quietly",
-      "file": "memes/zama-news/merkl-rewards-quietly.jpg",
-      "category": "zama-news",
-      "title": "Claiming Merkl rewards quietly",
-      "caption": "Claiming my Merkl rewards without claiming everyone's attention.",
-      "tags": [
-        "merkl",
-        "rewards",
-        "claim",
-        "confidential",
-        "zama"
-      ],
-      "added": "2026-10-28",
-      "w": 1254,
-      "h": 1254,
-      "hash": "cbc9cad5881f456842f994e91fa9e581388821e4",
-      "thumb": "thumbs/merkl-rewards-quietly.webp"
-    },
-    {
-      "id": "tvl-still-growing",
-      "file": "memes/zama-news/tvl-still-growing.jpg",
-      "category": "zama-news",
-      "title": "Checking Zama TVL",
-      "caption": "Me checking if Zama TVL stopped growing. It didn't.",
-      "tags": [
-        "tvl",
-        "growth",
-        "chart",
-        "coffee",
-        "zama"
-      ],
-      "added": "2026-10-28",
-      "w": 1254,
-      "h": 1254,
-      "hash": "bccb92b7172580426a43d4fcec3af3b001869bf9",
-      "thumb": "thumbs/tvl-still-growing.webp"
-    },
-    {
-      "id": "zama-on-solana-fast-lane",
-      "file": "memes/zama-news/zama-on-solana-fast-lane.jpg",
-      "category": "zama-news",
-      "title": "$ZAMA on Solana",
-      "caption": "$ZAMA on Solana. The pond found a fast lane.",
-      "tags": [
-        "solana",
-        "surf",
-        "fast lane",
-        "bridge",
-        "zama"
-      ],
-      "added": "2026-10-28",
-      "w": 1254,
-      "h": 1254,
-      "hash": "f50c7179879b2bfb7daa13bb95b5951ca92139a0",
-      "thumb": "thumbs/zama-on-solana-fast-lane.webp"
-    },
-    {
-      "id": "always-has-been",
-      "file": "memes/lore/always-has-been.jpg",
-      "category": "lore",
-      "title": "Always has been",
-      "caption": "Wait, it was all the pond? Always has been.",
-      "tags": [
-        "always has been",
-        "space",
-        "astronaut",
-        "rocket"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "1c95fc0ba32d604a4767db259aa1add6690fb961",
-      "thumb": "thumbs/always-has-been.webp"
-    },
-    {
-      "id": "mind-link",
-      "file": "memes/lore/mind-link.jpg",
-      "category": "lore",
-      "title": "Mind link",
-      "caption": "Two Hooded, one thought, zero leaks.",
-      "tags": [
-        "telepathy",
-        "lightning",
-        "x-ray",
-        "connection",
-        "lore"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "b45b12bb751e84c6300905f026c294f0aad5fb87",
-      "thumb": "thumbs/mind-link.webp"
-    },
-    {
-      "id": "the-final-boss",
-      "file": "memes/lore/the-final-boss.jpg",
-      "category": "lore",
-      "title": "The final boss",
-      "caption": "He grows taller the longer you hold.",
-      "tags": [
-        "final boss",
-        "giant",
-        "fog",
-        "hero",
-        "lore"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "149c58420f93a448d08575e29e6688ffe24dd27f",
-      "thumb": "thumbs/the-final-boss.webp"
-    },
-    {
-      "id": "buff-on-the-laptop",
-      "file": "memes/privacy-mood/buff-on-the-laptop.jpg",
-      "category": "privacy-mood",
-      "title": "Buff on the laptop",
-      "caption": "Muscles for lifting bags, laptop for buying more.",
-      "tags": [
-        "buff",
-        "laptop",
-        "couch",
-        "builder",
-        "gym"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "668ca0d5b516805bd7868c5342782353dc2a27b7",
-      "thumb": "thumbs/buff-on-the-laptop.webp"
-    },
-    {
-      "id": "fleece-vest-mode",
-      "file": "memes/privacy-mood/fleece-vest-mode.jpg",
-      "category": "privacy-mood",
-      "title": "Fleece vest mode",
-      "caption": "Badge on, coffee in hand, still hooded.",
-      "tags": [
-        "vest",
-        "office",
-        "coffee",
-        "finance",
-        "badge"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "cdb60ee0638f75ca5f0420eb363b0c5c3784f6ed",
-      "thumb": "thumbs/fleece-vest-mode.webp"
-    },
-    {
-      "id": "fried-rice-flip",
-      "file": "memes/privacy-mood/fried-rice-flip.jpg",
-      "category": "privacy-mood",
-      "title": "Fried rice flip",
-      "caption": "Wok on, hood up.",
-      "tags": [
-        "cooking",
-        "fried rice",
-        "wok",
-        "let him cook",
-        "chef"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "e4b69b35beb00739eeb3faad926c14fc2897d423",
-      "thumb": "thumbs/fried-rice-flip.webp"
-    },
-    {
-      "id": "generational-nap",
-      "file": "memes/privacy-mood/generational-nap.jpg",
-      "category": "privacy-mood",
-      "title": "Generational nap",
-      "caption": "Wake me up when it is shielded and mooning.",
-      "tags": [
-        "nap",
-        "sleep",
-        "bed",
-        "hold"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "92d1a4ccf5c5a42d01c2f57a8bce27e1d4f889bc",
-      "thumb": "thumbs/generational-nap.webp"
-    },
-    {
-      "id": "house-on-fire",
-      "file": "memes/privacy-mood/house-on-fire.jpg",
-      "category": "privacy-mood",
-      "title": "House on fire",
-      "caption": "The room is burning. The ZFROG tab stays open.",
-      "tags": [
-        "fire",
-        "computer",
-        "obsessed",
-        "distracted"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "d4c1c2894fe9ec2164a28ed780e2e3ffcc745e2e",
-      "thumb": "thumbs/house-on-fire.webp"
-    },
-    {
-      "id": "no-life-at-the-desk",
-      "file": "memes/privacy-mood/no-life-at-the-desk.jpg",
-      "category": "privacy-mood",
-      "title": "No life at the desk",
-      "caption": "Hours logged. Energy drinks empty. Still online.",
-      "tags": [
-        "gamer",
-        "desk",
-        "keyboard",
-        "grind",
-        "couch"
-      ],
-      "added": "2026-10-21",
-      "w": 1280,
-      "h": 1154,
-      "hash": "c36cc00b685c483aae873bf51325a3f8324d3d86",
-      "thumb": "thumbs/no-life-at-the-desk.webp"
-    },
-    {
-      "id": "plush-third-wheel",
-      "file": "memes/privacy-mood/plush-third-wheel.jpg",
-      "category": "privacy-mood",
-      "title": "Plush third wheel",
-      "caption": "She brought the ZFROG plush. He brought nothing.",
-      "tags": [
-        "plush",
-        "date",
-        "couple",
-        "third wheel",
-        "merch"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "4d701ebbc5196044a6fe114ca4836323bbd68515",
-      "thumb": "thumbs/plush-third-wheel.webp"
-    },
-    {
-      "id": "public-vs-shielded",
-      "file": "memes/privacy-mood/public-vs-shielded.jpg",
-      "category": "privacy-mood",
-      "title": "Public vs shielded balance",
-      "caption": "Public balance: everyone can see it. Shielded with Zama: ok.",
-      "tags": [
-        "shielded",
-        "balance",
-        "encrypted",
-        "zama",
-        "wojak"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "ecf1218f4149d4f2e97c429e82b8b6a598c15184",
-      "thumb": "thumbs/public-vs-shielded.webp"
-    },
-    {
-      "id": "shh",
-      "file": "memes/privacy-mood/shh.jpg",
-      "category": "privacy-mood",
-      "title": "Shh",
-      "caption": "Some things stay between you and the pond.",
-      "tags": [
-        "shh",
-        "secret",
-        "silence",
-        "private"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "8e318739cc626a89338a2abd8ccb0991bf62b605",
-      "thumb": "thumbs/shh.webp"
-    },
-    {
-      "id": "shower-in-the-hood",
-      "file": "memes/privacy-mood/shower-in-the-hood.jpg",
-      "category": "privacy-mood",
-      "title": "Shower in the hood",
-      "caption": "The hood stays on. Even here.",
-      "tags": [
-        "shower",
-        "hood",
-        "routine",
-        "commitment"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "0287dd73e9575080e11f71e03c454f83d2960b4a",
-      "thumb": "thumbs/shower-in-the-hood.webp"
-    },
-    {
-      "id": "sleeping-shielded",
-      "file": "memes/privacy-mood/sleeping-shielded.jpg",
-      "category": "privacy-mood",
-      "title": "Sleeping shielded",
-      "caption": "Green candle outside, ZFROG in bed.",
-      "tags": [
-        "shielded",
-        "sleep",
-        "green candle",
-        "calm"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "617fad5da09570e3339428c88e7e29ed28ebc5a3",
-      "thumb": "thumbs/sleeping-shielded.webp"
-    },
-    {
-      "id": "therapy-couch",
-      "file": "memes/privacy-mood/therapy-couch.jpg",
-      "category": "privacy-mood",
-      "title": "Therapy couch",
-      "caption": "Lying on the couch, telling the bear nothing.",
-      "tags": [
-        "therapy",
-        "couch",
-        "bear",
-        "feelings"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "7ac885b13e99213e1025feb1ca323e1beb902122",
-      "thumb": "thumbs/therapy-couch.webp"
-    },
-    {
-      "id": "copium-tube",
-      "file": "memes/reactions/copium-tube.jpg",
-      "category": "reactions",
-      "title": "Copium tube",
-      "caption": "Prescribed for red days.",
-      "tags": [
-        "copium",
-        "cope",
-        "tube",
-        "red days"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "669a992effda61c26868d84389fc5f10cbd03c20",
-      "thumb": "thumbs/copium-tube.webp"
-    },
-    {
-      "id": "dam-bro-thats-crazy",
-      "file": "memes/reactions/dam-bro-thats-crazy.jpg",
-      "category": "reactions",
-      "title": "Dam bro that's crazy",
-      "caption": "Maximum interest, minimum effort.",
-      "tags": [
-        "crazy",
-        "unbothered",
-        "reply",
-        "sarcasm"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "2baf4052fd3a1f17591cdbd1c376d2f73dabd838",
-      "thumb": "thumbs/dam-bro-thats-crazy.webp"
-    },
-    {
-      "id": "dance-floor-with-cat",
-      "file": "memes/reactions/dance-floor-with-cat.jpg",
-      "category": "reactions",
-      "title": "Dance floor with cat",
-      "caption": "Him, the cat and the frog own the floor.",
-      "tags": [
-        "dance",
-        "party",
-        "cat",
-        "club",
-        "vibes"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "7517e46b566c445099f8ee183050c84e3bb27a59",
-      "thumb": "thumbs/dance-floor-with-cat.webp"
-    },
-    {
-      "id": "dont-even-have-a-meme-for-this",
-      "file": "memes/reactions/dont-even-have-a-meme-for-this.jpg",
-      "category": "reactions",
-      "title": "I don't even have a meme for this",
-      "caption": "Speechless, but still masked.",
-      "tags": [
-        "speechless",
-        "shrug",
-        "no meme",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "a14dac3d63b6a066fbd21f9e557bb48d35073fea",
-      "thumb": "thumbs/dont-even-have-a-meme-for-this.webp"
-    },
-    {
-      "id": "ethereum-is-good",
-      "file": "memes/reactions/ethereum-is-good.jpg",
-      "category": "reactions",
-      "title": "Ethereum is good",
-      "caption": "Riding the bull, sign included.",
-      "tags": [
-        "ethereum",
-        "bull",
-        "sign",
-        "ride",
-        "bullish"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "6c3849fa31cad445e2aac701ff3d03caeb4dc23a",
-      "thumb": "thumbs/ethereum-is-good.webp"
-    },
-    {
-      "id": "feelings",
-      "file": "memes/reactions/feelings.jpg",
-      "category": "reactions",
-      "title": "Feelings",
-      "caption": "Party hat on. Feelings encrypted anyway.",
-      "tags": [
-        "feelings",
-        "party",
-        "blush",
-        "celebration",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "06295897cbadd39af20f812bdf3cd406c6cd5da7",
-      "thumb": "thumbs/feelings.webp"
-    },
-    {
-      "id": "go-find-god",
-      "file": "memes/reactions/go-find-god.jpg",
-      "category": "reactions",
-      "title": "Go find god",
-      "caption": "Written on yellow paper so you take it seriously.",
-      "tags": [
-        "note",
-        "advice",
-        "paper",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "9806e90757ffdee7afb001316416fbaa3a6c404e",
-      "thumb": "thumbs/go-find-god.webp"
-    },
-    {
-      "id": "gotta-get-off-this-planet",
-      "file": "memes/reactions/gotta-get-off-this-planet.jpg",
-      "category": "reactions",
-      "title": "I gotta get off this planet",
-      "caption": "*sighs* at the blinds.",
-      "tags": [
-        "sigh",
-        "planet",
-        "office",
-        "tired",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "a7e0c6d6e029b43b586d4fc04dec78ec06a3e64e",
-      "thumb": "thumbs/gotta-get-off-this-planet.webp"
-    },
-    {
-      "id": "hands-off-the-frog",
-      "file": "memes/reactions/hands-off-the-frog.jpg",
-      "category": "reactions",
-      "title": "Hands off the frog",
-      "caption": "Squish the cheeks, take the slap.",
-      "tags": [
-        "squish",
-        "cheeks",
-        "slap",
-        "comic",
-        "protect"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "74f25fdcb3ee619cfad22a6466e49526b861caec",
-      "thumb": "thumbs/hands-off-the-frog.webp"
-    },
-    {
-      "id": "hear-me-out",
-      "file": "memes/reactions/hear-me-out.jpg",
-      "category": "reactions",
-      "title": "Hear me out",
-      "caption": "A pitch nobody asked for.",
-      "tags": [
-        "hear me out",
-        "pitch",
-        "idea",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "61fa8b746027ed19d653ba635ef7b70421887e2f",
-      "thumb": "thumbs/hear-me-out.webp"
-    },
-    {
-      "id": "hear-that-little-buddy",
-      "file": "memes/reactions/hear-that-little-buddy.jpg",
-      "category": "reactions",
-      "title": "Hear that little buddy",
-      "caption": "Big pants, bigger listening.",
-      "tags": [
-        "listen",
-        "beach",
-        "little buddy",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "4935b373f37adef2bd89f7289adc5cda83a63951",
-      "thumb": "thumbs/hear-that-little-buddy.webp"
-    },
-    {
-      "id": "heavy-breathing",
-      "file": "memes/reactions/heavy-breathing.jpg",
-      "category": "reactions",
-      "title": "Heavy breathing",
-      "caption": "When the chart finally does the thing.",
-      "tags": [
-        "breathing",
-        "excited",
-        "steam",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "3d8e7d255e83314b55062fb04ae488c97f36f7d3",
-      "thumb": "thumbs/heavy-breathing.webp"
-    },
-    {
-      "id": "huge",
-      "file": "memes/reactions/huge.jpg",
-      "category": "reactions",
-      "title": "Huge",
-      "caption": "Yuge, even.",
-      "tags": [
-        "huge",
-        "hair",
-        "big",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "e40287d4f8efe3922073fdfe676c251585aaf0b2",
-      "thumb": "thumbs/huge.webp"
-    },
-    {
-      "id": "in-case-of-fomo",
-      "file": "memes/reactions/in-case-of-fomo.jpg",
-      "category": "reactions",
-      "title": "In case of FOMO, break glass",
-      "caption": "Emergency ZFROG behind the glass.",
-      "tags": [
-        "fomo",
-        "break glass",
-        "emergency",
-        "buy"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "cfc0805fc88a8b1187a4fb80be87320124715a36",
-      "thumb": "thumbs/in-case-of-fomo.webp"
-    },
-    {
-      "id": "interdasting",
-      "file": "memes/reactions/interdasting.jpg",
-      "category": "reactions",
-      "title": "Interdasting",
-      "caption": "Lying on a mattress among empty cans. Very interdasting.",
-      "tags": [
-        "interesting",
-        "mattress",
-        "mess",
-        "laptop",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "b0f928c1041f305b4ecda3724b427a3b243ab07f",
-      "thumb": "thumbs/interdasting.webp"
-    },
-    {
-      "id": "its-joever",
-      "file": "memes/reactions/its-joever.jpg",
-      "category": "reactions",
-      "title": "It's joever",
-      "caption": "Press conference from the hood.",
-      "tags": [
-        "joever",
-        "over",
-        "podium",
-        "press",
-        "bearish"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "7f509288e4e1d88331e8b64b485fd37555cd718c",
-      "thumb": "thumbs/its-joever.webp"
-    },
-    {
-      "id": "just-a-chill-guy",
-      "file": "memes/reactions/just-a-chill-guy.jpg",
-      "category": "reactions",
-      "title": "I'm just a chill guy",
-      "caption": "Hands in pockets, mask on, no stress.",
-      "tags": [
-        "chill guy",
-        "relaxed",
-        "sweater",
-        "vibes"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "919ea31f75fdb426b88cf2e267c1b0e6d4a6704c",
-      "thumb": "thumbs/just-a-chill-guy.webp"
-    },
-    {
-      "id": "keep-it-in-the-bedroom",
-      "file": "memes/reactions/keep-it-in-the-bedroom.jpg",
-      "category": "reactions",
-      "title": "Keep it in the bedroom",
-      "caption": "Side-eye from the hood.",
-      "tags": [
-        "side eye",
-        "judging",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "6df2d52b0c6bd76f13057cf18da056aeb58dfa21",
-      "thumb": "thumbs/keep-it-in-the-bedroom.webp"
-    },
-    {
-      "id": "lets-spread-some-misinformation",
-      "file": "memes/reactions/lets-spread-some-misinformation.jpg",
-      "category": "reactions",
-      "title": "Let's spread some misinformation",
-      "caption": "On a dolphin. Over a rainbow. Obviously.",
-      "tags": [
-        "misinformation",
-        "dolphin",
-        "rainbow",
-        "fud",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "eb4e356863775796addd7acb19c328ec0f238e23",
-      "thumb": "thumbs/lets-spread-some-misinformation.webp"
-    },
-    {
-      "id": "nervous-sweat",
-      "file": "memes/reactions/nervous-sweat.jpg",
-      "category": "reactions",
-      "title": "Nervous sweat",
-      "caption": "When the fluffy one gets too close to your wallet.",
-      "tags": [
-        "sweat",
-        "nervous",
-        "dog",
-        "awkward",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "c3e84524c1fbc59a6b7a6ce0416ac9a84be284c1",
-      "thumb": "thumbs/nervous-sweat.webp"
-    },
-    {
-      "id": "never-cook-again",
-      "file": "memes/reactions/never-cook-again.jpg",
-      "category": "reactions",
-      "title": "Never cook again",
-      "caption": "Even the ghost of the pond says no.",
-      "tags": [
-        "cook",
-        "ghost",
-        "fail",
-        "never again",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "5c923fba76a4000b7e9f0c8805c44ef452575f6c",
-      "thumb": "thumbs/never-cook-again.webp"
-    },
-    {
-      "id": "please-be-patient",
-      "file": "memes/reactions/please-be-patient.jpg",
-      "category": "reactions",
-      "title": "Please be patient",
-      "caption": "Blue cap, teary eyes, full send.",
-      "tags": [
-        "patience",
-        "cap",
-        "crying",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "e8fa33f733759e2f3d88243e82e3189e1fac3f03",
-      "thumb": "thumbs/please-be-patient.webp"
-    },
-    {
-      "id": "reviewing-the-notes",
-      "file": "memes/reactions/reviewing-the-notes.jpg",
-      "category": "reactions",
-      "title": "Reviewing the notes",
-      "caption": "Glasses on, pencil in the mask, red ink pending.",
-      "tags": [
-        "review",
-        "notes",
-        "glasses",
-        "pencil",
-        "professor"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "af39350ed4e4361827447232d345380c0436cd68",
-      "thumb": "thumbs/reviewing-the-notes.webp"
-    },
-    {
-      "id": "shh-iss-oke",
-      "file": "memes/reactions/shh-iss-oke.jpg",
-      "category": "reactions",
-      "title": "Shh iss oke",
-      "caption": "The hood consoles the crying wojak.",
-      "tags": [
-        "wojak",
-        "comfort",
-        "crying",
-        "hug",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "a6b81ee74b54732f6a2b6582e8894e2558036bed",
-      "thumb": "thumbs/shh-iss-oke.webp"
-    },
-    {
-      "id": "sometimes-i-think",
-      "file": "memes/reactions/sometimes-i-think.jpg",
-      "category": "reactions",
-      "title": "Sometimes I think, and then I forget",
-      "caption": "Rain on the hood, empty thoughts.",
-      "tags": [
-        "think",
-        "forget",
-        "rain",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "cb22dd03fe747879eeeede904546b1575594acb4",
-      "thumb": "thumbs/sometimes-i-think.webp"
-    },
-    {
-      "id": "stop-the-cap",
-      "file": "memes/reactions/stop-the-cap.jpg",
-      "category": "reactions",
-      "title": "Stop the cap",
-      "caption": "Crossing guard for bad takes.",
-      "tags": [
-        "cap",
-        "lies",
-        "stop sign",
-        "crossing guard",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "f633ebd3aa9d5e0fe6c7bed5fba66aff568d145d",
-      "thumb": "thumbs/stop-the-cap.webp"
-    },
-    {
-      "id": "trying-to-find-who-asked",
-      "file": "memes/reactions/trying-to-find-who-asked.jpg",
-      "category": "reactions",
-      "title": "Trying to find who asked",
-      "caption": "Searched all of Pond 101. Nobody asked.",
-      "tags": [
-        "who asked",
-        "book",
-        "glasses",
-        "pond 101",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "da003813cdac27c0db8545bc327845f6149695c9",
-      "thumb": "thumbs/trying-to-find-who-asked.webp"
-    },
-    {
-      "id": "yall-got-anymore-of-that",
-      "file": "memes/reactions/yall-got-anymore-of-that.jpg",
-      "category": "reactions",
-      "title": "Y'all got anymore of that",
-      "caption": "Beanie on, asking for more.",
-      "tags": [
-        "more",
-        "beanie",
-        "addicted",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "db51ed14a66b6f60cbd74e135ab6f4b0dfd3f01b",
-      "thumb": "thumbs/yall-got-anymore-of-that.webp"
-    },
-    {
-      "id": "youre-pretty-ugly",
-      "file": "memes/reactions/youre-pretty-ugly.jpg",
-      "category": "reactions",
-      "title": "You're pretty ugly",
-      "caption": "Compliment loading. Compliment cancelled.",
-      "tags": [
-        "roast",
-        "compliment",
-        "ugly",
-        "reply"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "097c95a2d46f4b3a1cc74af1cfbd7b1613b2b33f",
-      "thumb": "thumbs/youre-pretty-ugly.webp"
-    },
-    {
-      "id": "99k-100k-01m",
-      "file": "memes/the-pond/99k-100k-01m.jpg",
-      "category": "the-pond",
-      "title": "$99K, $100K, $0.1M",
-      "caption": "Same number, different energy.",
-      "tags": [
-        "market cap",
-        "100k",
-        "milestone",
-        "chart"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "04a13bb4fd916ee6712063ce108b2305f80d2f53",
-      "thumb": "thumbs/99k-100k-01m.webp"
-    },
-    {
-      "id": "bearded-zfrog",
-      "file": "memes/the-pond/bearded-zfrog.jpg",
-      "category": "the-pond",
-      "title": "Bearded ZFROG",
-      "caption": "Golden hair, golden beard, same mask.",
-      "tags": [
-        "beard",
-        "hair",
-        "portrait",
-        "profile pic",
-        "pfp"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "ff769724b65728fc5eeb1bec9f9ab9cf7d8513d5",
-      "thumb": "thumbs/bearded-zfrog.webp"
-    },
-    {
-      "id": "green-candle",
-      "file": "memes/the-pond/green-candle.jpg",
-      "category": "the-pond",
-      "title": "Green candle",
-      "caption": "Holding one. Want more.",
-      "tags": [
-        "green candle",
-        "chart",
-        "pump",
-        "bullish"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "65a03260c6ff54a53b4fe545c0c0e5c34886ec56",
-      "thumb": "thumbs/green-candle.webp"
-    },
-    {
-      "id": "idol-debut",
-      "file": "memes/the-pond/idol-debut.jpg",
-      "category": "the-pond",
-      "title": "Idol debut",
-      "caption": "The new center of the group.",
-      "tags": [
-        "idol",
-        "group",
-        "debut",
-        "famous",
-        "kpop"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "fc621198f2ceb172b77a9e7364c31bc6b93d7426",
-      "thumb": "thumbs/idol-debut.webp"
-    },
-    {
-      "id": "make-crypto-great-again",
-      "file": "memes/the-pond/make-crypto-great-again.jpg",
-      "category": "the-pond",
-      "title": "Make crypto great again",
-      "caption": "The Hooded hold the flag.",
-      "tags": [
-        "politics",
-        "flag",
-        "rally",
-        "crypto",
-        "poster"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "de5462b4119bd0f4bef50997fcb1ac98192a3e4f",
-      "thumb": "thumbs/make-crypto-great-again.webp"
-    },
-    {
-      "id": "the-pond-has-your-back",
-      "file": "memes/the-pond/the-pond-has-your-back.jpg",
-      "category": "the-pond",
-      "title": "The pond has your back",
-      "caption": "Heart broken, then the Hooded show up.",
-      "tags": [
-        "wojak",
-        "heart",
-        "community",
-        "support",
-        "hooded"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "34da2437e3b81b1f6dbc168b636f48697a28cfc0",
-      "thumb": "thumbs/the-pond-has-your-back.webp"
-    },
-    {
-      "id": "watermelon-stack",
-      "file": "memes/the-pond/watermelon-stack.jpg",
-      "category": "the-pond",
-      "title": "Watermelon stack",
-      "caption": "Two frogs, one watermelon, zero plan.",
-      "tags": [
-        "watermelon",
-        "teamwork",
-        "forest",
-        "frens"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "1e1637b438685bf64ecb2ae89fc5d32dd34a0f4d",
-      "thumb": "thumbs/watermelon-stack.webp"
-    },
-    {
-      "id": "yacht-day",
-      "file": "memes/the-pond/yacht-day.jpg",
-      "category": "the-pond",
-      "title": "Yacht day",
-      "caption": "Selfie on deck with the Hooded.",
-      "tags": [
-        "yacht",
-        "selfie",
-        "sunglasses",
-        "boat",
-        "frens"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "85ff1f96b4ab1a80c901d290ed18da4faaa379f4",
-      "thumb": "thumbs/yacht-day.webp"
-    },
-    {
-      "id": "zfrog-gold-chain",
-      "file": "memes/the-pond/zfrog-gold-chain.jpg",
-      "category": "the-pond",
-      "title": "$ZFROG gold chain",
-      "caption": "Gold bars, gold watches, gold ticker.",
-      "tags": [
-        "gold",
-        "chain",
-        "rich",
-        "ticker",
-        "bling"
-      ],
-      "added": "2026-10-21",
-      "w": 1254,
-      "h": 1254,
-      "hash": "a71f652edc779443181af98dc69d003836eedc7c",
-      "thumb": "thumbs/zfrog-gold-chain.webp"
-    },
-    {
-      "id": "frog-telepathy",
-      "file": "memes/lore/frog-telepathy.jpg",
-      "category": "lore",
-      "title": "Frog telepathy",
-      "caption": "Two frogs, one encrypted link.",
-      "tags": [
-        "telepathy",
-        "galaxy",
-        "space",
-        "connection",
-        "mind link",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1536,
-      "h": 1024,
-      "hash": "bebfee7a7947de5a50480ba6cf133a66ffc3cb97",
-      "thumb": "thumbs/frog-telepathy.webp"
-    },
-    {
-      "id": "king-in-the-reflection",
-      "file": "memes/lore/king-in-the-reflection.jpg",
-      "category": "lore",
-      "title": "King in the reflection",
-      "caption": "Paper crown on the bus. Real crown in the reflection.",
-      "tags": [
-        "crown",
-        "king",
-        "bus",
-        "rain",
-        "reflection",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1122,
-      "h": 1402,
-      "hash": "d12b1a49c728e61d90129cdad4a50cd02281da06",
-      "thumb": "thumbs/king-in-the-reflection.webp"
-    },
-    {
-      "id": "reading-the-ancient-book",
-      "file": "memes/lore/reading-the-ancient-book.jpg",
-      "category": "lore",
-      "title": "Reading the ancient book",
-      "caption": "Studying the ancient texts of encryption.",
-      "tags": [
-        "book",
-        "library",
-        "research",
-        "whitepaper",
-        "study",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1536,
-      "h": 1024,
-      "hash": "d5d80460ce2f258be4a91230d3e5e35e74d3f1b5",
-      "thumb": "thumbs/reading-the-ancient-book.webp"
-    },
-    {
-      "id": "storm-watch",
-      "file": "memes/lore/storm-watch.jpg",
-      "category": "lore",
-      "title": "Storm watch",
-      "caption": "Looking up into the storm. The Z chip keeps glowing.",
-      "tags": [
-        "rain",
-        "storm",
-        "night",
-        "city",
-        "z chip",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1122,
-      "h": 1402,
-      "hash": "5d8a0800b55f1f58c7edfd7a9c3277c36dfedbab",
-      "thumb": "thumbs/storm-watch.webp"
-    },
-    {
-      "id": "the-giant",
-      "file": "memes/lore/the-giant.jpg",
-      "category": "lore",
-      "title": "The giant",
-      "caption": "Some frogs are bigger than the swamp.",
-      "tags": [
-        "giant",
-        "colossus",
-        "fog",
-        "wanderer",
-        "epic",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1122,
-      "h": 1402,
-      "hash": "d424284f7a7c127a50f6dc0f08c1ff8770e20b71",
-      "thumb": "thumbs/the-giant.webp"
-    },
-    {
-      "id": "the-yellow-wave",
-      "file": "memes/lore/the-yellow-wave.jpg",
-      "category": "lore",
-      "title": "The yellow wave",
-      "caption": "The yellow wave is coming.",
-      "tags": [
-        "wave",
-        "tsunami",
-        "coast",
-        "yellow",
-        "send it",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1672,
-      "h": 941,
-      "hash": "8c9c4590141bed116f6386bb4f6f5fc1ad8d14d9",
-      "thumb": "thumbs/the-yellow-wave.webp"
-    },
-    {
-      "id": "writing-the-lore",
-      "file": "memes/lore/writing-the-lore.jpg",
-      "category": "lore",
-      "title": "Writing the lore",
-      "caption": "The lore is written in fire.",
-      "tags": [
-        "quill",
-        "fire",
-        "writing",
-        "library",
-        "candles",
-        "lore"
-      ],
-      "added": "2026-10-17",
-      "w": 1536,
-      "h": 1024,
-      "hash": "a9af652cc49183d04e448bf19bece81a4bf897fb",
-      "thumb": "thumbs/writing-the-lore.webp"
-    },
-    {
-      "id": "cutting-the-feeds",
-      "file": "memes/privacy-mood/cutting-the-feeds.jpg",
-      "category": "privacy-mood",
-      "title": "Cutting the feeds",
-      "caption": "One cable at a time, the cameras go dark.",
-      "tags": [
-        "surveillance",
-        "cctv",
-        "cameras",
-        "unplug",
-        "static",
-        "hacker"
-      ],
-      "added": "2026-10-17",
-      "w": 1672,
-      "h": 941,
-      "hash": "25791c2644d1f1780c7ebb961aebb32dfb782870",
-      "thumb": "thumbs/cutting-the-feeds.webp"
-    },
-    {
-      "id": "hiding-in-a-box",
-      "file": "memes/privacy-mood/hiding-in-a-box.jpg",
-      "category": "privacy-mood",
-      "title": "Hiding in a box",
-      "caption": "Hiding from the cameras like a pro.",
-      "tags": [
-        "box",
-        "hiding",
-        "stealth",
-        "cctv",
-        "office",
-        "metal gear"
-      ],
-      "added": "2026-10-17",
-      "w": 1672,
-      "h": 941,
-      "hash": "5219bb223e2502f7b5a3c3bb549dc08dcdcc6453",
-      "thumb": "thumbs/hiding-in-a-box.webp"
-    },
-    {
-      "id": "late-night-scroll",
-      "file": "memes/privacy-mood/late-night-scroll.jpg",
-      "category": "privacy-mood",
-      "title": "Late night scroll",
-      "caption": "Still scrolling under the blanket at 3am.",
-      "tags": [
-        "bed",
-        "night",
-        "phone",
-        "scroll",
-        "3am",
-        "insomnia"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "119a21800d94ed34a20e53c74575625c3ea575e8",
-      "thumb": "thumbs/late-night-scroll.webp"
-    },
-    {
-      "id": "off-duty",
-      "file": "memes/privacy-mood/off-duty.jpg",
-      "category": "privacy-mood",
-      "title": "Off duty",
-      "caption": "Off duty. Still encrypted.",
-      "tags": [
-        "gaming",
-        "couch",
-        "pizza",
-        "chill",
-        "weekend",
-        "cartoon"
-      ],
-      "added": "2026-10-17",
-      "w": 1672,
-      "h": 941,
-      "hash": "e1aad6a36c64a04e14eca14a657f1475cfbd9c35",
-      "thumb": "thumbs/off-duty.webp"
-    },
-    {
-      "id": "peephole",
-      "file": "memes/privacy-mood/peephole.jpg",
-      "category": "privacy-mood",
-      "title": "Peephole",
-      "caption": "Who is it? Encrypted.",
-      "tags": [
-        "peephole",
-        "door",
-        "knock knock",
-        "fisheye",
-        "visitor"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "23e3e412e2e1fabeea7d3675852adf9b2c9bdbcb",
-      "thumb": "thumbs/peephole.webp"
-    },
-    {
-      "id": "pixelated-yacht-selfie",
-      "file": "memes/privacy-mood/pixelated-yacht-selfie.jpg",
-      "category": "privacy-mood",
-      "title": "Pixelated in the group selfie",
-      "caption": "Everyone in the group selfie, except me. Shielded.",
-      "tags": [
-        "yacht",
-        "selfie",
-        "pixelated",
-        "blurred",
-        "vacation",
-        "summer"
-      ],
-      "added": "2026-10-17",
-      "w": 1672,
-      "h": 941,
-      "hash": "7c9247c823ed938666d903ddaddd7eb39fbffaca",
-      "thumb": "thumbs/pixelated-yacht-selfie.webp"
-    },
-    {
-      "id": "redacted-scroll",
-      "file": "memes/privacy-mood/redacted-scroll.jpg",
-      "category": "privacy-mood",
-      "title": "Redacted scroll",
-      "caption": "Reading the terms. Everything is redacted.",
-      "tags": [
-        "redacted",
-        "scroll",
-        "terms",
-        "documents",
-        "confused",
-        "cartoon"
-      ],
-      "added": "2026-10-17",
-      "w": 1536,
-      "h": 1024,
-      "hash": "f0473cb686bc45f5f77aa7b4b955bb72f81512cf",
-      "thumb": "thumbs/redacted-scroll.webp"
-    },
-    {
-      "id": "shredder",
-      "file": "memes/privacy-mood/shredder.jpg",
-      "category": "privacy-mood",
-      "title": "Shredder",
-      "caption": "No paper trail. Just shredded paper.",
-      "tags": [
-        "shredder",
-        "paper trail",
-        "documents",
-        "office",
-        "redacted",
-        "cartoon"
-      ],
-      "added": "2026-10-17",
-      "w": 1536,
-      "h": 1024,
-      "hash": "bf85261310f1c0a75cf8fd427af421f32547bd17",
-      "thumb": "thumbs/shredder.webp"
-    },
-    {
-      "id": "absolute-privacy",
-      "file": "memes/reactions/absolute-privacy.jpg",
-      "category": "reactions",
-      "title": "Absolute privacy",
-      "caption": "Absolute privacy.",
-      "tags": [
-        "absolute privacy",
-        "hands up",
-        "black and white",
-        "reaction",
-        "no comment"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "083e8beca688ae08a115c271d2e04ff859f5b63d",
-      "thumb": "thumbs/absolute-privacy.webp"
-    },
-    {
-      "id": "any-minute-now",
-      "file": "memes/reactions/any-minute-now.jpg",
-      "category": "reactions",
-      "title": "Any minute now",
-      "caption": "Any minute now.",
-      "tags": [
-        "waiting",
-        "pocket watch",
-        "soon",
-        "patience",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1122,
-      "h": 1402,
-      "hash": "4cc199a13ed0cfef645d990e7b8c4781d0774154",
-      "thumb": "thumbs/any-minute-now.webp"
-    },
-    {
-      "id": "closing-the-laptop",
-      "file": "memes/reactions/closing-the-laptop.jpg",
-      "category": "reactions",
-      "title": "Closing the laptop",
-      "caption": "Closing the laptop. You saw nothing.",
-      "tags": [
-        "laptop",
-        "closing",
-        "you saw nothing",
-        "pov",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "2dff72f37f94b983ec2ee83c617657e1835d4d39",
-      "thumb": "thumbs/closing-the-laptop.webp"
-    },
-    {
-      "id": "clown-selfie",
-      "file": "memes/reactions/clown-selfie.jpg",
-      "category": "reactions",
-      "title": "Clown selfie",
-      "caption": "Me after aping without reading.",
-      "tags": [
-        "clown",
-        "selfie",
-        "mirror",
-        "fumble",
-        "rekt",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "9e386e22ac490222799dde1725761a5ff07fe5ea",
-      "thumb": "thumbs/clown-selfie.webp"
-    },
-    {
-      "id": "couch-builder",
-      "file": "memes/reactions/couch-builder.jpg",
-      "category": "reactions",
-      "title": "Couch builder",
-      "caption": "Shipping from the couch.",
-      "tags": [
-        "laptop",
-        "couch",
-        "builder",
-        "working",
-        "buff",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "10d4c86c7e1a00dd56d166916be470661e6622f2",
-      "thumb": "thumbs/couch-builder.webp"
-    },
-    {
-      "id": "crying-with-money",
-      "file": "memes/reactions/crying-with-money.jpg",
-      "category": "reactions",
-      "title": "Crying with money",
-      "caption": "Crying, but in profit.",
-      "tags": [
-        "money",
-        "cash",
-        "crying",
-        "profit",
-        "tears",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "78302a6f7101bb12c6e1b73e8a07785025aeb5a0",
-      "thumb": "thumbs/crying-with-money.webp"
-    },
-    {
-      "id": "delete-this",
-      "file": "memes/reactions/delete-this.jpg",
-      "category": "reactions",
-      "title": "Delete this",
-      "caption": "Delete this.",
-      "tags": [
-        "delete this",
-        "sign",
-        "spongebob",
-        "reaction",
-        "cringe"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "675e1311431089fd9999512cdac709f434b6b37a",
-      "thumb": "thumbs/delete-this.webp"
-    },
-    {
-      "id": "fried-rice",
-      "file": "memes/reactions/fried-rice.jpg",
-      "category": "reactions",
-      "title": "Cooking",
-      "caption": "He is literally cooking. The recipe stays encrypted.",
-      "tags": [
-        "let him cook",
-        "cooking",
-        "wok",
-        "fried rice",
-        "kitchen",
-        "builder"
-      ],
-      "added": "2026-10-17",
-      "w": 1122,
-      "h": 1402,
-      "hash": "a8ed3958a55afa3c0c58f97a8d727a5cbc2f8ca6",
-      "thumb": "thumbs/fried-rice.webp"
-    },
-    {
-      "id": "let-him-cook-red-chair",
-      "file": "memes/reactions/let-him-cook-red-chair.jpg",
-      "category": "reactions",
-      "title": "Let him cook (red chair)",
-      "caption": "Let him cook.",
-      "tags": [
-        "let him cook",
-        "builder",
-        "patience",
-        "reaction",
-        "chair"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "9cf37b6507488b4c8419227817a0ad2ce812d9ed",
-      "thumb": "thumbs/let-him-cook-red-chair.webp"
-    },
-    {
-      "id": "loading",
-      "file": "memes/reactions/loading.jpg",
-      "category": "reactions",
-      "title": "Loading",
-      "caption": "Brain loading. Please wait.",
-      "tags": [
-        "loading",
-        "thinking",
-        "glasses",
-        "confused",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "8984dc91073487362c63c998a954730d39f3843d",
-      "thumb": "thumbs/loading.webp"
-    },
-    {
-      "id": "peeking-from-the-curtain",
-      "file": "memes/reactions/peeking-from-the-curtain.jpg",
-      "category": "reactions",
-      "title": "Peeking from the curtain",
-      "caption": "Watching from behind the curtain.",
-      "tags": [
-        "peek",
-        "curtain",
-        "lurking",
-        "watching",
-        "cartoon",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1536,
-      "h": 1024,
-      "hash": "35b5de2c66840a92ec1fdb9d51d4eb9972745365",
-      "thumb": "thumbs/peeking-from-the-curtain.webp"
-    },
-    {
-      "id": "popcorn",
-      "file": "memes/reactions/popcorn.jpg",
-      "category": "reactions",
-      "title": "Popcorn",
-      "caption": "Grabbing popcorn for this.",
-      "tags": [
-        "popcorn",
-        "cinema",
-        "watching the drama",
-        "drama",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "4500533a3ce94941f509c8011537f0e4f09a3f47",
-      "thumb": "thumbs/popcorn.webp"
-    },
-    {
-      "id": "silence",
-      "file": "memes/reactions/silence.jpg",
-      "category": "reactions",
-      "title": "Silence",
-      "caption": "Silence.",
-      "tags": [
-        "silence",
-        "shh",
-        "quiet",
-        "reaction",
-        "hood"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "ed85d12eabf5d99fefcc727f41962f4716cfe927",
-      "thumb": "thumbs/silence.webp"
-    },
-    {
-      "id": "soul-left-the-chat",
-      "file": "memes/reactions/soul-left-the-chat.jpg",
-      "category": "reactions",
-      "title": "Soul left the chat",
-      "caption": "When the soul leaves the body at 4am.",
-      "tags": [
-        "tired",
-        "burnout",
-        "ghost",
-        "desk",
-        "soul left",
-        "reaction"
-      ],
-      "added": "2026-10-17",
-      "w": 1254,
-      "h": 1254,
-      "hash": "92a2ea63e8f2385e4ea5e05380486c78019b8580",
-      "thumb": "thumbs/soul-left-the-chat.webp"
-    },
-    {
-      "id": "privacy-is-not-a-side-quest",
-      "file": "memes/privacy-mood/privacy-is-not-a-side-quest.jpg",
-      "category": "privacy-mood",
-      "title": "Privacy is not a side quest",
-      "caption": "Zama: make onchain encryption normal. Privacy is not a side quest.",
-      "tags": [
-        "encryption",
-        "groceries"
-      ],
-      "added": "2026-10-16",
-      "w": 1254,
-      "h": 1254,
-      "hash": "5137df1b3a76cb5cb8779ef65df0b4df7034607e",
-      "thumb": "thumbs/privacy-is-not-a-side-quest.webp"
-    },
-    {
-      "id": "confidential-distributions",
-      "file": "memes/zama-news/confidential-distributions.jpg",
-      "category": "zama-news",
-      "title": "Confidential distributions",
-      "caption": "Zama + TokenOps: confidential distributions. My allocation doesn't need a press tour.",
-      "tags": [
-        "tokenops",
-        "distributions",
-        "allocation"
-      ],
-      "added": "2026-10-16",
-      "w": 1254,
-      "h": 1254,
-      "hash": "05d40015072525624aab353af576988363afc964",
-      "thumb": "thumbs/confidential-distributions.webp"
-    },
-    {
-      "id": "gpu-benchmark-1000-tps",
-      "file": "memes/zama-news/gpu-benchmark-1000-tps.jpg",
-      "category": "zama-news",
-      "title": "GPU benchmark: 1,000 TPS",
-      "caption": "Zama GPU benchmark: 1,000 TPS. Even my secrets have a fast lane.",
-      "tags": [
-        "gpu",
-        "benchmark",
-        "tps",
-        "speed"
-      ],
-      "added": "2026-10-16",
-      "w": 1254,
-      "h": 1254,
-      "hash": "7e343c7932d6ca858689f607967a45c763a732bd",
-      "thumb": "thumbs/gpu-benchmark-1000-tps.webp"
-    },
-    {
-      "id": "shield-in-one-transaction",
-      "file": "memes/zama-news/shield-in-one-transaction.jpg",
-      "category": "zama-news",
-      "title": "Shield in one transaction",
-      "caption": "Zama: shield in one transaction. My wallet learned to close the blinds.",
-      "tags": [
-        "shield",
-        "wallet",
-        "blinds"
-      ],
-      "added": "2026-10-16",
-      "w": 1254,
-      "h": 1254,
-      "hash": "5919babf4744e14fa41a81093c72a6c6a4efec78",
-      "thumb": "thumbs/shield-in-one-transaction.webp"
-    },
-    {
-      "id": "confidential-rewards",
-      "file": "memes/zama-news/confidential-rewards.jpg",
-      "category": "zama-news",
-      "title": "Confidential rewards",
-      "caption": "Zama + Merkl: confidential rewards. I came for rewards, not a leaderboard.",
-      "tags": [
-        "rewards",
-        "merkl",
-        "apr"
-      ],
-      "added": "2026-10-13",
-      "w": 1254,
-      "h": 1254,
-      "hash": "02cbd5bde6e7b3569856428dc41b10f5db39a9e2",
-      "thumb": "thumbs/confidential-rewards.webp"
-    },
-    {
-      "id": "confidential-vesting",
-      "file": "memes/zama-news/confidential-vesting.jpg",
-      "category": "zama-news",
-      "title": "Confidential vesting",
-      "caption": "Zama + TokenOps: confidential vesting. My allocation doesn't need a comment section.",
-      "tags": [
-        "vesting",
-        "tokenops"
-      ],
-      "added": "2026-10-13",
-      "w": 1254,
-      "h": 1254,
-      "hash": "27dbdfb66124a8b7ece708de2b2253e9e1c1518f",
-      "thumb": "thumbs/confidential-vesting.webp"
-    },
-    {
-      "id": "privacy-with-accountability",
-      "file": "memes/zama-news/privacy-with-accountability.jpg",
-      "category": "zama-news",
-      "title": "Privacy with accountability",
-      "caption": "Zama: privacy with accountability. The auditor is invited. The group chat isn't.",
-      "tags": [
-        "auditor",
-        "compliance"
-      ],
-      "added": "2026-10-13",
-      "w": 1254,
-      "h": 1254,
-      "hash": "f6f56975b6f270d891e9eb4c8ba65f6f307c9a08",
-      "thumb": "thumbs/privacy-with-accountability.webp"
-    },
-    {
-      "id": "join-the-pond",
-      "file": "memes/the-pond/join-the-pond.jpg",
-      "category": "the-pond",
-      "title": "Join the pond",
-      "caption": "Our Telegram channel is now open. Stop lurking. Join the pond.",
-      "tags": [
-        "telegram",
-        "community"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "6e9105498e5a18f2ee055ba8654ecacc22014849",
-      "thumb": "thumbs/join-the-pond.webp"
-    },
-    {
-      "id": "zolana",
-      "file": "memes/zama-news/zolana.jpg",
-      "category": "zama-news",
-      "title": "Zolana",
-      "caption": "Zama is now trading on Solana. New chain. Same introvert.",
-      "tags": [
-        "solana",
-        "listing"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "356d89043f51d4a4916aa0a5c3de204f66c8fc4f",
-      "thumb": "thumbs/zolana.webp"
-    },
-    {
-      "id": "nice-try",
-      "file": "memes/privacy-mood/nice-try.jpg",
-      "category": "privacy-mood",
-      "title": "Nice try",
-      "caption": "Things to say to a wallet tracker: Nice try. Ask the frog. That's encrypted.",
-      "tags": [
-        "wallet tracker"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "b23a9fa26ac9b59986eb2e8f6cc82792a598c1a5",
-      "thumb": "thumbs/nice-try.webp"
-    },
-    {
-      "id": "608m-shielded-volume",
-      "file": "memes/zama-news/608m-shielded-volume.jpg",
-      "category": "zama-news",
-      "title": "$608.5M shielded volume",
-      "caption": "Zama: $608.5M cumulative shielded volume. Busy network. Boring day for gossip.",
-      "tags": [
-        "volume",
-        "stats"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "9ce1bbf1697acbacb8a61f4e68a7162d44c3e1e4",
-      "thumb": "thumbs/608m-shielded-volume.webp"
-    },
-    {
-      "id": "privacy-is-suspicious",
-      "file": "memes/privacy-mood/privacy-is-suspicious.jpg",
-      "category": "privacy-mood",
-      "title": "Privacy is suspicious",
-      "caption": "'Privacy is suspicious.' Bro, you have curtains.",
-      "tags": [
-        "privacy"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "4d187c65c0dab014426777ddd376f9a3ea41aa89",
-      "thumb": "thumbs/privacy-is-suspicious.webp"
-    },
-    {
-      "id": "tvl-115m",
-      "file": "memes/zama-news/tvl-115m.jpg",
-      "category": "zama-news",
-      "title": "$115.7M shielded TVL",
-      "caption": "Zama's shielded TVL: $115.7M. That's a lot of 'none of your business'.",
-      "tags": [
-        "tvl",
-        "stats"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "b3c2e9014937fa09bd11eb1d8fb21cf7c155de53",
-      "thumb": "thumbs/tvl-115m.webp"
-    },
-    {
-      "id": "feelings-not-shielded",
-      "file": "memes/privacy-mood/feelings-not-shielded.jpg",
-      "category": "privacy-mood",
-      "title": "Feelings not shielded",
-      "caption": "My data is shielded. My feelings are not.",
-      "tags": [
-        "shielded"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "4f016558b8f20ec85ba0950b1d0f312d03da74d7",
-      "thumb": "thumbs/feelings-not-shielded.webp"
-    },
-    {
-      "id": "telepathy",
-      "file": "memes/zama-news/telepathy.jpg",
-      "category": "zama-news",
-      "title": "Copy traders need telepathy",
-      "caption": "Zama made swaps confidential. Copy traders now need telepathy.",
-      "tags": [
-        "swaps",
-        "copy trading"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "97ae72818b93aa00b45ca437e5cc672aaa7f8f70",
-      "thumb": "thumbs/telepathy.webp"
-    },
-    {
-      "id": "let-him-cook",
-      "file": "memes/privacy-mood/let-him-cook.jpg",
-      "category": "privacy-mood",
-      "title": "Let him cook",
-      "caption": "Let him cook. The ingredients stay encrypted.",
-      "tags": [
-        "fhe"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "a911bc8d11e57ea8726f8a708f016cdd84ce6aef",
-      "thumb": "thumbs/let-him-cook.webp"
-    },
-    {
-      "id": "wbtc-vault",
-      "file": "memes/zama-news/wbtc-vault.jpg",
-      "category": "zama-news",
-      "title": "Confidential WBTC vault",
-      "caption": "Zama's confidential WBTC vault. My BTC has a 'do not disturb' sign.",
-      "tags": [
-        "btc",
-        "vault"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "def255779999e216f563193c33e6efbf950c60e2",
-      "thumb": "thumbs/wbtc-vault.webp"
-    },
-    {
-      "id": "therapy",
-      "file": "memes/privacy-mood/therapy.jpg",
-      "category": "privacy-mood",
-      "title": "Therapy",
-      "caption": "Therapist: 'Open up.' Me: 'The data stays encrypted.'",
-      "tags": [],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "65a083cbc9f546ef9f50ef986dfe9c9d68a2c57e",
-      "thumb": "thumbs/therapy.webp"
-    },
-    {
-      "id": "blockscout",
-      "file": "memes/zama-news/blockscout.jpg",
-      "category": "zama-news",
-      "title": "Blockscout + Zama",
-      "caption": "Blockscout + Zama: confidential tokens. The explorer works. The gossip doesn't.",
-      "tags": [
-        "explorer",
-        "tokens"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "0518bf428eccd24eabccfb492935449c97bb04ab",
-      "thumb": "thumbs/blockscout.webp"
-    },
-    {
-      "id": "poker",
-      "file": "memes/privacy-mood/poker.jpg",
-      "category": "privacy-mood",
-      "title": "Poker face",
-      "caption": "Poker face: public. Poker hand: private.",
-      "tags": [],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "2e7062b1d271c327285adbfe726db3946b8e10a3",
-      "thumb": "thumbs/poker.webp"
-    },
-    {
-      "id": "confidential-payroll",
-      "file": "memes/zama-news/confidential-payroll.jpg",
-      "category": "zama-news",
-      "title": "Confidential payroll",
-      "caption": "Zama + Bron: confidential payroll. My salary is not office lore.",
-      "tags": [
-        "payroll",
-        "bron"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "7bb52eeb76ed21d6fbc9fe01f6693cdfb09213c0",
-      "thumb": "thumbs/confidential-payroll.webp"
-    },
-    {
-      "id": "bad-takes-public",
-      "file": "memes/privacy-mood/bad-takes-public.jpg",
-      "category": "privacy-mood",
-      "title": "Bad takes are public",
-      "caption": "My data is encrypted. My bad takes are public.",
-      "tags": [],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "1f841e39ce75ff77b254798ab4af058e3a90d255",
-      "thumb": "thumbs/bad-takes-public.webp"
-    },
-    {
-      "id": "defillama",
-      "file": "memes/zama-news/defillama.jpg",
-      "category": "zama-news",
-      "title": "DefiLlama report",
-      "caption": "Zama in the DefiLlama report. Confidential DeFi. The category got famous. My wallet got shy.",
-      "tags": [
-        "defillama",
-        "defi"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "0359392e25bbd44cc43e588709d531e8e953dc1a",
-      "thumb": "thumbs/defillama.webp"
-    },
-    {
-      "id": "raining-data-requests",
-      "file": "memes/privacy-mood/raining-data-requests.jpg",
-      "category": "privacy-mood",
-      "title": "Raining data requests",
-      "caption": "It's raining data requests. Good thing I am shielded.",
-      "tags": [
-        "shielded"
-      ],
-      "added": "2026-10-12",
-      "w": 1408,
-      "h": 1408,
-      "hash": "85b09600ab4b75590f2d063bbe1393241f2cc659",
-      "thumb": "thumbs/raining-data-requests.webp"
-    },
-    {
-      "id": "ai-agents",
-      "file": "memes/zama-news/ai-agents.jpg",
-      "category": "zama-news",
-      "title": "AI agents pay for data",
-      "caption": "AI agents can pay for data. My search history is not for sale.",
-      "tags": [
-        "ai",
-        "agents"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "f442fd76105550fb89dc183be9e939782102de83",
-      "thumb": "thumbs/ai-agents.webp"
-    },
-    {
-      "id": "bars-are-public",
-      "file": "memes/privacy-mood/bars-are-public.jpg",
-      "category": "privacy-mood",
-      "title": "The bars are public",
-      "caption": "When the data is encrypted but the bars are public.",
-      "tags": [
-        "pepe"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "88d8a9b68099af5f132f5f743815abd12c9cb46d",
-      "thumb": "thumbs/bars-are-public.webp"
-    },
-    {
-      "id": "confidential-vaults",
-      "file": "memes/zama-news/confidential-vaults.jpg",
-      "category": "zama-news",
-      "title": "More confidential vaults",
-      "caption": "Zama added more confidential vaults. Now my overthinking has options.",
-      "tags": [
-        "vaults"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "449954896d9d8f2490c36494d648fab62734ca67",
-      "thumb": "thumbs/confidential-vaults.webp"
-    },
-    {
-      "id": "incognito-mode",
-      "file": "memes/privacy-mood/incognito-mode.jpg",
-      "category": "privacy-mood",
-      "title": "Incognito mode",
-      "caption": "When they say 'just use incognito mode'.",
-      "tags": [],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "774c6ebe19d138147d8818ba39e7228267b8d9d2",
-      "thumb": "thumbs/incognito-mode.webp"
-    },
-    {
-      "id": "quantum",
-      "file": "memes/zama-news/quantum.jpg",
-      "category": "zama-news",
-      "title": "Wrong pond",
-      "caption": "Quantum computers are coming. Zama FHE: wrong pond.",
-      "tags": [
-        "quantum",
-        "fhe"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "9a8cc67d17dbe6d9de95ca5e53b9a17831d4b26f",
-      "thumb": "thumbs/quantum.webp"
-    },
-    {
-      "id": "no-sleep",
-      "file": "memes/privacy-mood/no-sleep.jpg",
-      "category": "privacy-mood",
-      "title": "One last scroll",
-      "caption": "Me: just one last scroll. Also me at 3am:",
-      "tags": [],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "d2a3a48ef973389b267a32f8e1423e0c4c631a5b",
-      "thumb": "thumbs/no-sleep.webp"
-    },
-    {
-      "id": "still-the-pond",
-      "file": "memes/the-pond/still-the-pond.jpg",
-      "category": "the-pond",
-      "title": "Still the pond",
-      "caption": "If you log out, it's still the pond.",
-      "tags": [
-        "community"
-      ],
-      "added": "2026-10-12",
-      "w": 1254,
-      "h": 1254,
-      "hash": "e646038c739a872ceb4e8f03ee9f3405b12f9e30",
-      "thumb": "thumbs/still-the-pond.webp"
-    }
-  ]
+ "updated": "2026-10-30T16:11:14Z",
+ "categories": [
+  {
+   "id": "zama-news",
+   "label": "Zama news",
+   "folder": "zama-news",
+   "blurb": "Ecosystem headlines, frog edition."
+  },
+  {
+   "id": "privacy-mood",
+   "label": "Privacy mood",
+   "folder": "privacy-mood",
+   "blurb": "Everyday life, encrypted."
+  },
+  {
+   "id": "the-pond",
+   "label": "The Pond",
+   "folder": "the-pond",
+   "blurb": "Community and recruitment."
+  },
+  {
+   "id": "lore",
+   "label": "Lore",
+   "folder": "lore",
+   "blurb": "Scenes from the swamp saga."
+  },
+  {
+   "id": "reactions",
+   "label": "Reactions",
+   "folder": "reactions",
+   "blurb": "Reply ammo. Hood up, mask on."
+  }
+ ],
+ "memes": [
+  {
+   "id": "cooking-encrypted-data",
+   "file": "memes/lore/cooking-encrypted-data.jpg",
+   "category": "lore",
+   "title": "Cooking encrypted data",
+   "caption": "Stirring the cauldron. The data stays encrypted, the frogs stay confused.",
+   "tags": [
+    "cooking",
+    "cauldron",
+    "fhe",
+    "encrypted",
+    "lore"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "c046c38b65bcf7a954f5d5fb9e04a54b519e4e55",
+   "thumb": "thumbs/cooking-encrypted-data.webp"
+  },
+  {
+   "id": "planting-the-privacy-seed",
+   "file": "memes/lore/planting-the-privacy-seed.jpg",
+   "category": "lore",
+   "title": "Planting the privacy seed",
+   "caption": "A tree of locks, and one more seed in the ground.",
+   "tags": [
+    "tree",
+    "seed",
+    "locks",
+    "growth",
+    "lore"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "5f5dca5047db7e7d5e7eafa52ac71deb416575ee",
+   "thumb": "thumbs/planting-the-privacy-seed.webp"
+  },
+  {
+   "id": "quantum-shield",
+   "file": "memes/lore/quantum-shield.jpg",
+   "category": "lore",
+   "title": "Quantum shield",
+   "caption": "The math hits the shield. The shield holds.",
+   "tags": [
+    "quantum",
+    "shield",
+    "fhe",
+    "post-quantum",
+    "lore"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "35344b138aa020448b507a1131281ac6513f7040",
+   "thumb": "thumbs/quantum-shield.webp"
+  },
+  {
+   "id": "the-z-signal",
+   "file": "memes/lore/the-z-signal.png",
+   "category": "lore",
+   "title": "The Z signal",
+   "caption": "The signal is in the sky. The frog is on the roof.",
+   "tags": [
+    "signal",
+    "city",
+    "night",
+    "hero",
+    "lore"
+   ],
+   "added": "2026-10-30",
+   "w": 1280,
+   "h": 720,
+   "hash": "632c343c61dd86e13bbb97ee023da21ec0c2e9eb",
+   "thumb": "thumbs/the-z-signal.webp"
+  },
+  {
+   "id": "throne-of-the-pond",
+   "file": "memes/lore/throne-of-the-pond.jpg",
+   "category": "lore",
+   "title": "Throne of the Pond",
+   "caption": "ZFROG on the throne, coins for every hooded frog in line.",
+   "tags": [
+    "throne",
+    "coins",
+    "drops",
+    "holders",
+    "lore"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "8dc882a53827ed9ce467654945457932410d22bb",
+   "thumb": "thumbs/throne-of-the-pond.webp"
+  },
+  {
+   "id": "umbrella-under-surveillance",
+   "file": "memes/lore/umbrella-under-surveillance.jpg",
+   "category": "lore",
+   "title": "Umbrella under surveillance",
+   "caption": "Cameras everywhere. ZFROG keeps the little frogs dry.",
+   "tags": [
+    "umbrella",
+    "cameras",
+    "surveillance",
+    "rain",
+    "lore"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "05153503efe84f2b9a9e6baff9a3173da4613944",
+   "thumb": "thumbs/umbrella-under-surveillance.webp"
+  },
+  {
+   "id": "more-tabs-open",
+   "file": "memes/privacy-mood/more-tabs-open.jpg",
+   "category": "privacy-mood",
+   "title": "More tabs open",
+   "caption": "One privacy thread later. Me: I need more tabs open.",
+   "tags": [
+    "research",
+    "thread",
+    "tabs",
+    "reading",
+    "privacy"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a67bb7f30afccbdd235f370c37b134ce36b4b76e",
+   "thumb": "thumbs/more-tabs-open.webp"
+  },
+  {
+   "id": "privacy-still-matters",
+   "file": "memes/privacy-mood/privacy-still-matters.jpg",
+   "category": "privacy-mood",
+   "title": "Privacy still matters",
+   "caption": "The market changes mood again. ZFROG: privacy still matters.",
+   "tags": [
+    "market",
+    "storm",
+    "bear",
+    "privacy",
+    "vault"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "dec098a76943a0bd99f3b520468c5ea14911db5f",
+   "thumb": "thumbs/privacy-still-matters.webp"
+  },
+  {
+   "id": "sealed-deposit",
+   "file": "memes/privacy-mood/sealed-deposit.jpg",
+   "category": "privacy-mood",
+   "title": "Sealed deposit",
+   "caption": "The whole bank is staring. The box stays shut.",
+   "tags": [
+    "bank",
+    "deposit",
+    "sealed",
+    "staring",
+    "privacy"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "6940379ba26b9310f8e2c60dbfc2d336f4fea5e3",
+   "thumb": "thumbs/sealed-deposit.webp"
+  },
+  {
+   "id": "wallet-watchers-lose-hobby",
+   "file": "memes/privacy-mood/wallet-watchers-lose-hobby.jpg",
+   "category": "privacy-mood",
+   "title": "Wallet watchers lose their hobby",
+   "caption": "When your balance goes private, wallet watchers lose their favorite hobby.",
+   "tags": [
+    "balance",
+    "wallet tracker",
+    "shielded",
+    "curtain",
+    "privacy"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "10d5bf54dbc37dac3e9e7de171616f712f9f0119",
+   "thumb": "thumbs/wallet-watchers-lose-hobby.webp"
+  },
+  {
+   "id": "pond-express",
+   "file": "memes/the-pond/pond-express.jpg",
+   "category": "the-pond",
+   "title": "Pond express",
+   "caption": "All aboard. The Pond express does not stop.",
+   "tags": [
+    "train",
+    "express",
+    "frens",
+    "momentum",
+    "pond"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9aff2787e6da1115066f07464938133a2f7d9843",
+   "thumb": "thumbs/pond-express.webp"
+  },
+  {
+   "id": "surfing-the-fast-lane",
+   "file": "memes/the-pond/surfing-the-fast-lane.png",
+   "category": "the-pond",
+   "title": "Surfing the fast lane",
+   "caption": "No caption, just the wave. Write your own.",
+   "tags": [
+    "surf",
+    "wave",
+    "solana",
+    "template",
+    "pond"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a41275d464b4d6cbe9009d392e176cc138175193",
+   "thumb": "thumbs/surfing-the-fast-lane.webp"
+  },
+  {
+   "id": "salary-not-office-gossip",
+   "file": "memes/zama-news/salary-not-office-gossip.jpg",
+   "category": "zama-news",
+   "title": "Onchain payday",
+   "caption": "Onchain payday. Your salary should not be office gossip.",
+   "tags": [
+    "payroll",
+    "salary",
+    "payday",
+    "confidential",
+    "zama"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9bc47c1423e070b398d0964a7c60dca2c6d5355d",
+   "thumb": "thumbs/salary-not-office-gossip.webp"
+  },
+  {
+   "id": "watching-the-tvl-climb",
+   "file": "memes/zama-news/watching-the-tvl-climb.png",
+   "category": "zama-news",
+   "title": "Watching the TVL climb",
+   "caption": "Coffee in hand, TVL pillar rising. Write your own caption.",
+   "tags": [
+    "tvl",
+    "growth",
+    "coffee",
+    "template",
+    "zama"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "bb617fac3fb3fe3f5b06a3362026dac62d75b5c7",
+   "thumb": "thumbs/watching-the-tvl-climb.webp"
+  },
+  {
+   "id": "yield-arrived-bag-private",
+   "file": "memes/zama-news/yield-arrived-bag-private.jpg",
+   "category": "zama-news",
+   "title": "The bag stayed private",
+   "caption": "Claiming onchain rewards. The yield arrived. The bag stayed private.",
+   "tags": [
+    "rewards",
+    "yield",
+    "claim",
+    "confidential",
+    "zama"
+   ],
+   "added": "2026-10-30",
+   "w": 1254,
+   "h": 1254,
+   "hash": "10e6998ccc7024a68e034fda2ec2e9b9767667a5",
+   "thumb": "thumbs/yield-arrived-bag-private.webp"
+  },
+  {
+   "id": "laptop-on-the-throne",
+   "file": "memes/privacy-mood/laptop-on-the-throne.png",
+   "category": "privacy-mood",
+   "title": "Laptop on the throne",
+   "caption": "Feet up, laptop on, the Pond keeps watch.",
+   "tags": [
+    "laptop",
+    "couch",
+    "relax",
+    "frens",
+    "builder"
+   ],
+   "added": "2026-10-28",
+   "w": 1254,
+   "h": 1254,
+   "hash": "2379eeaec322eaad2d70f91066a18e8cb0335e4c",
+   "thumb": "thumbs/laptop-on-the-throne.webp"
+  },
+  {
+   "id": "16-confidential-vaults",
+   "file": "memes/zama-news/16-confidential-vaults.jpg",
+   "category": "zama-news",
+   "title": "16 confidential vaults",
+   "caption": "Zama: 16 confidential vaults. Me: one for every mood.",
+   "tags": [
+    "vaults",
+    "confidential",
+    "16",
+    "yield",
+    "zama"
+   ],
+   "added": "2026-10-28",
+   "w": 1254,
+   "h": 1254,
+   "hash": "d143656916b767036422e1ef1b65f27b75930ca7",
+   "thumb": "thumbs/16-confidential-vaults.webp"
+  },
+  {
+   "id": "best-i-can-do-is-sealed",
+   "file": "memes/zama-news/best-i-can-do-is-sealed.jpg",
+   "category": "zama-news",
+   "title": "Best I can do is sealed",
+   "caption": "Public DeFi: show the whole trade. Zama: best I can do is sealed.",
+   "tags": [
+    "sealed",
+    "trade",
+    "public defi",
+    "confidential",
+    "zama"
+   ],
+   "added": "2026-10-28",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a747e4848e4994fd45ae3b89e1ea1de98a3a5ed1",
+   "thumb": "thumbs/best-i-can-do-is-sealed.webp"
+  },
+  {
+   "id": "merkl-rewards-quietly",
+   "file": "memes/zama-news/merkl-rewards-quietly.jpg",
+   "category": "zama-news",
+   "title": "Claiming Merkl rewards quietly",
+   "caption": "Claiming my Merkl rewards without claiming everyone's attention.",
+   "tags": [
+    "merkl",
+    "rewards",
+    "claim",
+    "confidential",
+    "zama"
+   ],
+   "added": "2026-10-28",
+   "w": 1254,
+   "h": 1254,
+   "hash": "cbc9cad5881f456842f994e91fa9e581388821e4",
+   "thumb": "thumbs/merkl-rewards-quietly.webp"
+  },
+  {
+   "id": "tvl-still-growing",
+   "file": "memes/zama-news/tvl-still-growing.jpg",
+   "category": "zama-news",
+   "title": "Checking Zama TVL",
+   "caption": "Me checking if Zama TVL stopped growing. It didn't.",
+   "tags": [
+    "tvl",
+    "growth",
+    "chart",
+    "coffee",
+    "zama"
+   ],
+   "added": "2026-10-28",
+   "w": 1254,
+   "h": 1254,
+   "hash": "bccb92b7172580426a43d4fcec3af3b001869bf9",
+   "thumb": "thumbs/tvl-still-growing.webp"
+  },
+  {
+   "id": "zama-on-solana-fast-lane",
+   "file": "memes/zama-news/zama-on-solana-fast-lane.jpg",
+   "category": "zama-news",
+   "title": "$ZAMA on Solana",
+   "caption": "$ZAMA on Solana. The pond found a fast lane.",
+   "tags": [
+    "solana",
+    "surf",
+    "fast lane",
+    "bridge",
+    "zama"
+   ],
+   "added": "2026-10-28",
+   "w": 1254,
+   "h": 1254,
+   "hash": "f50c7179879b2bfb7daa13bb95b5951ca92139a0",
+   "thumb": "thumbs/zama-on-solana-fast-lane.webp"
+  },
+  {
+   "id": "always-has-been",
+   "file": "memes/lore/always-has-been.jpg",
+   "category": "lore",
+   "title": "Always has been",
+   "caption": "Wait, it was all the pond? Always has been.",
+   "tags": [
+    "always has been",
+    "space",
+    "astronaut",
+    "rocket"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "1c95fc0ba32d604a4767db259aa1add6690fb961",
+   "thumb": "thumbs/always-has-been.webp"
+  },
+  {
+   "id": "mind-link",
+   "file": "memes/lore/mind-link.jpg",
+   "category": "lore",
+   "title": "Mind link",
+   "caption": "Two Hooded, one thought, zero leaks.",
+   "tags": [
+    "telepathy",
+    "lightning",
+    "x-ray",
+    "connection",
+    "lore"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "b45b12bb751e84c6300905f026c294f0aad5fb87",
+   "thumb": "thumbs/mind-link.webp"
+  },
+  {
+   "id": "the-final-boss",
+   "file": "memes/lore/the-final-boss.jpg",
+   "category": "lore",
+   "title": "The final boss",
+   "caption": "He grows taller the longer you hold.",
+   "tags": [
+    "final boss",
+    "giant",
+    "fog",
+    "hero",
+    "lore"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "149c58420f93a448d08575e29e6688ffe24dd27f",
+   "thumb": "thumbs/the-final-boss.webp"
+  },
+  {
+   "id": "buff-on-the-laptop",
+   "file": "memes/privacy-mood/buff-on-the-laptop.jpg",
+   "category": "privacy-mood",
+   "title": "Buff on the laptop",
+   "caption": "Muscles for lifting bags, laptop for buying more.",
+   "tags": [
+    "buff",
+    "laptop",
+    "couch",
+    "builder",
+    "gym"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "668ca0d5b516805bd7868c5342782353dc2a27b7",
+   "thumb": "thumbs/buff-on-the-laptop.webp"
+  },
+  {
+   "id": "fleece-vest-mode",
+   "file": "memes/privacy-mood/fleece-vest-mode.jpg",
+   "category": "privacy-mood",
+   "title": "Fleece vest mode",
+   "caption": "Badge on, coffee in hand, still hooded.",
+   "tags": [
+    "vest",
+    "office",
+    "coffee",
+    "finance",
+    "badge"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "cdb60ee0638f75ca5f0420eb363b0c5c3784f6ed",
+   "thumb": "thumbs/fleece-vest-mode.webp"
+  },
+  {
+   "id": "fried-rice-flip",
+   "file": "memes/privacy-mood/fried-rice-flip.jpg",
+   "category": "privacy-mood",
+   "title": "Fried rice flip",
+   "caption": "Wok on, hood up.",
+   "tags": [
+    "cooking",
+    "fried rice",
+    "wok",
+    "let him cook",
+    "chef"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "e4b69b35beb00739eeb3faad926c14fc2897d423",
+   "thumb": "thumbs/fried-rice-flip.webp"
+  },
+  {
+   "id": "generational-nap",
+   "file": "memes/privacy-mood/generational-nap.jpg",
+   "category": "privacy-mood",
+   "title": "Generational nap",
+   "caption": "Wake me up when it is shielded and mooning.",
+   "tags": [
+    "nap",
+    "sleep",
+    "bed",
+    "hold"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "92d1a4ccf5c5a42d01c2f57a8bce27e1d4f889bc",
+   "thumb": "thumbs/generational-nap.webp"
+  },
+  {
+   "id": "house-on-fire",
+   "file": "memes/privacy-mood/house-on-fire.jpg",
+   "category": "privacy-mood",
+   "title": "House on fire",
+   "caption": "The room is burning. The ZFROG tab stays open.",
+   "tags": [
+    "fire",
+    "computer",
+    "obsessed",
+    "distracted"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "d4c1c2894fe9ec2164a28ed780e2e3ffcc745e2e",
+   "thumb": "thumbs/house-on-fire.webp"
+  },
+  {
+   "id": "no-life-at-the-desk",
+   "file": "memes/privacy-mood/no-life-at-the-desk.jpg",
+   "category": "privacy-mood",
+   "title": "No life at the desk",
+   "caption": "Hours logged. Energy drinks empty. Still online.",
+   "tags": [
+    "gamer",
+    "desk",
+    "keyboard",
+    "grind",
+    "couch"
+   ],
+   "added": "2026-10-21",
+   "w": 1280,
+   "h": 1154,
+   "hash": "c36cc00b685c483aae873bf51325a3f8324d3d86",
+   "thumb": "thumbs/no-life-at-the-desk.webp"
+  },
+  {
+   "id": "plush-third-wheel",
+   "file": "memes/privacy-mood/plush-third-wheel.jpg",
+   "category": "privacy-mood",
+   "title": "Plush third wheel",
+   "caption": "She brought the ZFROG plush. He brought nothing.",
+   "tags": [
+    "plush",
+    "date",
+    "couple",
+    "third wheel",
+    "merch"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "4d701ebbc5196044a6fe114ca4836323bbd68515",
+   "thumb": "thumbs/plush-third-wheel.webp"
+  },
+  {
+   "id": "public-vs-shielded",
+   "file": "memes/privacy-mood/public-vs-shielded.jpg",
+   "category": "privacy-mood",
+   "title": "Public vs shielded balance",
+   "caption": "Public balance: everyone can see it. Shielded with Zama: ok.",
+   "tags": [
+    "shielded",
+    "balance",
+    "encrypted",
+    "zama",
+    "wojak"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "ecf1218f4149d4f2e97c429e82b8b6a598c15184",
+   "thumb": "thumbs/public-vs-shielded.webp"
+  },
+  {
+   "id": "shh",
+   "file": "memes/privacy-mood/shh.jpg",
+   "category": "privacy-mood",
+   "title": "Shh",
+   "caption": "Some things stay between you and the pond.",
+   "tags": [
+    "shh",
+    "secret",
+    "silence",
+    "private"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "8e318739cc626a89338a2abd8ccb0991bf62b605",
+   "thumb": "thumbs/shh.webp"
+  },
+  {
+   "id": "shower-in-the-hood",
+   "file": "memes/privacy-mood/shower-in-the-hood.jpg",
+   "category": "privacy-mood",
+   "title": "Shower in the hood",
+   "caption": "The hood stays on. Even here.",
+   "tags": [
+    "shower",
+    "hood",
+    "routine",
+    "commitment"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "0287dd73e9575080e11f71e03c454f83d2960b4a",
+   "thumb": "thumbs/shower-in-the-hood.webp"
+  },
+  {
+   "id": "sleeping-shielded",
+   "file": "memes/privacy-mood/sleeping-shielded.jpg",
+   "category": "privacy-mood",
+   "title": "Sleeping shielded",
+   "caption": "Green candle outside, ZFROG in bed.",
+   "tags": [
+    "shielded",
+    "sleep",
+    "green candle",
+    "calm"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "617fad5da09570e3339428c88e7e29ed28ebc5a3",
+   "thumb": "thumbs/sleeping-shielded.webp"
+  },
+  {
+   "id": "therapy-couch",
+   "file": "memes/privacy-mood/therapy-couch.jpg",
+   "category": "privacy-mood",
+   "title": "Therapy couch",
+   "caption": "Lying on the couch, telling the bear nothing.",
+   "tags": [
+    "therapy",
+    "couch",
+    "bear",
+    "feelings"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "7ac885b13e99213e1025feb1ca323e1beb902122",
+   "thumb": "thumbs/therapy-couch.webp"
+  },
+  {
+   "id": "copium-tube",
+   "file": "memes/reactions/copium-tube.jpg",
+   "category": "reactions",
+   "title": "Copium tube",
+   "caption": "Prescribed for red days.",
+   "tags": [
+    "copium",
+    "cope",
+    "tube",
+    "red days"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "669a992effda61c26868d84389fc5f10cbd03c20",
+   "thumb": "thumbs/copium-tube.webp"
+  },
+  {
+   "id": "dam-bro-thats-crazy",
+   "file": "memes/reactions/dam-bro-thats-crazy.jpg",
+   "category": "reactions",
+   "title": "Dam bro that's crazy",
+   "caption": "Maximum interest, minimum effort.",
+   "tags": [
+    "crazy",
+    "unbothered",
+    "reply",
+    "sarcasm"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "2baf4052fd3a1f17591cdbd1c376d2f73dabd838",
+   "thumb": "thumbs/dam-bro-thats-crazy.webp"
+  },
+  {
+   "id": "dance-floor-with-cat",
+   "file": "memes/reactions/dance-floor-with-cat.jpg",
+   "category": "reactions",
+   "title": "Dance floor with cat",
+   "caption": "Him, the cat and the frog own the floor.",
+   "tags": [
+    "dance",
+    "party",
+    "cat",
+    "club",
+    "vibes"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "7517e46b566c445099f8ee183050c84e3bb27a59",
+   "thumb": "thumbs/dance-floor-with-cat.webp"
+  },
+  {
+   "id": "dont-even-have-a-meme-for-this",
+   "file": "memes/reactions/dont-even-have-a-meme-for-this.jpg",
+   "category": "reactions",
+   "title": "I don't even have a meme for this",
+   "caption": "Speechless, but still masked.",
+   "tags": [
+    "speechless",
+    "shrug",
+    "no meme",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a14dac3d63b6a066fbd21f9e557bb48d35073fea",
+   "thumb": "thumbs/dont-even-have-a-meme-for-this.webp"
+  },
+  {
+   "id": "ethereum-is-good",
+   "file": "memes/reactions/ethereum-is-good.jpg",
+   "category": "reactions",
+   "title": "Ethereum is good",
+   "caption": "Riding the bull, sign included.",
+   "tags": [
+    "ethereum",
+    "bull",
+    "sign",
+    "ride",
+    "bullish"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "6c3849fa31cad445e2aac701ff3d03caeb4dc23a",
+   "thumb": "thumbs/ethereum-is-good.webp"
+  },
+  {
+   "id": "feelings",
+   "file": "memes/reactions/feelings.jpg",
+   "category": "reactions",
+   "title": "Feelings",
+   "caption": "Party hat on. Feelings encrypted anyway.",
+   "tags": [
+    "feelings",
+    "party",
+    "blush",
+    "celebration",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "06295897cbadd39af20f812bdf3cd406c6cd5da7",
+   "thumb": "thumbs/feelings.webp"
+  },
+  {
+   "id": "go-find-god",
+   "file": "memes/reactions/go-find-god.jpg",
+   "category": "reactions",
+   "title": "Go find god",
+   "caption": "Written on yellow paper so you take it seriously.",
+   "tags": [
+    "note",
+    "advice",
+    "paper",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9806e90757ffdee7afb001316416fbaa3a6c404e",
+   "thumb": "thumbs/go-find-god.webp"
+  },
+  {
+   "id": "gotta-get-off-this-planet",
+   "file": "memes/reactions/gotta-get-off-this-planet.jpg",
+   "category": "reactions",
+   "title": "I gotta get off this planet",
+   "caption": "*sighs* at the blinds.",
+   "tags": [
+    "sigh",
+    "planet",
+    "office",
+    "tired",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a7e0c6d6e029b43b586d4fc04dec78ec06a3e64e",
+   "thumb": "thumbs/gotta-get-off-this-planet.webp"
+  },
+  {
+   "id": "hands-off-the-frog",
+   "file": "memes/reactions/hands-off-the-frog.jpg",
+   "category": "reactions",
+   "title": "Hands off the frog",
+   "caption": "Squish the cheeks, take the slap.",
+   "tags": [
+    "squish",
+    "cheeks",
+    "slap",
+    "comic",
+    "protect"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "74f25fdcb3ee619cfad22a6466e49526b861caec",
+   "thumb": "thumbs/hands-off-the-frog.webp"
+  },
+  {
+   "id": "hear-me-out",
+   "file": "memes/reactions/hear-me-out.jpg",
+   "category": "reactions",
+   "title": "Hear me out",
+   "caption": "A pitch nobody asked for.",
+   "tags": [
+    "hear me out",
+    "pitch",
+    "idea",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "61fa8b746027ed19d653ba635ef7b70421887e2f",
+   "thumb": "thumbs/hear-me-out.webp"
+  },
+  {
+   "id": "hear-that-little-buddy",
+   "file": "memes/reactions/hear-that-little-buddy.jpg",
+   "category": "reactions",
+   "title": "Hear that little buddy",
+   "caption": "Big pants, bigger listening.",
+   "tags": [
+    "listen",
+    "beach",
+    "little buddy",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "4935b373f37adef2bd89f7289adc5cda83a63951",
+   "thumb": "thumbs/hear-that-little-buddy.webp"
+  },
+  {
+   "id": "heavy-breathing",
+   "file": "memes/reactions/heavy-breathing.jpg",
+   "category": "reactions",
+   "title": "Heavy breathing",
+   "caption": "When the chart finally does the thing.",
+   "tags": [
+    "breathing",
+    "excited",
+    "steam",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "3d8e7d255e83314b55062fb04ae488c97f36f7d3",
+   "thumb": "thumbs/heavy-breathing.webp"
+  },
+  {
+   "id": "huge",
+   "file": "memes/reactions/huge.jpg",
+   "category": "reactions",
+   "title": "Huge",
+   "caption": "Yuge, even.",
+   "tags": [
+    "huge",
+    "hair",
+    "big",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "e40287d4f8efe3922073fdfe676c251585aaf0b2",
+   "thumb": "thumbs/huge.webp"
+  },
+  {
+   "id": "in-case-of-fomo",
+   "file": "memes/reactions/in-case-of-fomo.jpg",
+   "category": "reactions",
+   "title": "In case of FOMO, break glass",
+   "caption": "Emergency ZFROG behind the glass.",
+   "tags": [
+    "fomo",
+    "break glass",
+    "emergency",
+    "buy"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "cfc0805fc88a8b1187a4fb80be87320124715a36",
+   "thumb": "thumbs/in-case-of-fomo.webp"
+  },
+  {
+   "id": "interdasting",
+   "file": "memes/reactions/interdasting.jpg",
+   "category": "reactions",
+   "title": "Interdasting",
+   "caption": "Lying on a mattress among empty cans. Very interdasting.",
+   "tags": [
+    "interesting",
+    "mattress",
+    "mess",
+    "laptop",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "b0f928c1041f305b4ecda3724b427a3b243ab07f",
+   "thumb": "thumbs/interdasting.webp"
+  },
+  {
+   "id": "its-joever",
+   "file": "memes/reactions/its-joever.jpg",
+   "category": "reactions",
+   "title": "It's joever",
+   "caption": "Press conference from the hood.",
+   "tags": [
+    "joever",
+    "over",
+    "podium",
+    "press",
+    "bearish"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "7f509288e4e1d88331e8b64b485fd37555cd718c",
+   "thumb": "thumbs/its-joever.webp"
+  },
+  {
+   "id": "just-a-chill-guy",
+   "file": "memes/reactions/just-a-chill-guy.jpg",
+   "category": "reactions",
+   "title": "I'm just a chill guy",
+   "caption": "Hands in pockets, mask on, no stress.",
+   "tags": [
+    "chill guy",
+    "relaxed",
+    "sweater",
+    "vibes"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "919ea31f75fdb426b88cf2e267c1b0e6d4a6704c",
+   "thumb": "thumbs/just-a-chill-guy.webp"
+  },
+  {
+   "id": "keep-it-in-the-bedroom",
+   "file": "memes/reactions/keep-it-in-the-bedroom.jpg",
+   "category": "reactions",
+   "title": "Keep it in the bedroom",
+   "caption": "Side-eye from the hood.",
+   "tags": [
+    "side eye",
+    "judging",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "6df2d52b0c6bd76f13057cf18da056aeb58dfa21",
+   "thumb": "thumbs/keep-it-in-the-bedroom.webp"
+  },
+  {
+   "id": "lets-spread-some-misinformation",
+   "file": "memes/reactions/lets-spread-some-misinformation.jpg",
+   "category": "reactions",
+   "title": "Let's spread some misinformation",
+   "caption": "On a dolphin. Over a rainbow. Obviously.",
+   "tags": [
+    "misinformation",
+    "dolphin",
+    "rainbow",
+    "fud",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "eb4e356863775796addd7acb19c328ec0f238e23",
+   "thumb": "thumbs/lets-spread-some-misinformation.webp"
+  },
+  {
+   "id": "nervous-sweat",
+   "file": "memes/reactions/nervous-sweat.jpg",
+   "category": "reactions",
+   "title": "Nervous sweat",
+   "caption": "When the fluffy one gets too close to your wallet.",
+   "tags": [
+    "sweat",
+    "nervous",
+    "dog",
+    "awkward",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "c3e84524c1fbc59a6b7a6ce0416ac9a84be284c1",
+   "thumb": "thumbs/nervous-sweat.webp"
+  },
+  {
+   "id": "never-cook-again",
+   "file": "memes/reactions/never-cook-again.jpg",
+   "category": "reactions",
+   "title": "Never cook again",
+   "caption": "Even the ghost of the pond says no.",
+   "tags": [
+    "cook",
+    "ghost",
+    "fail",
+    "never again",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "5c923fba76a4000b7e9f0c8805c44ef452575f6c",
+   "thumb": "thumbs/never-cook-again.webp"
+  },
+  {
+   "id": "please-be-patient",
+   "file": "memes/reactions/please-be-patient.jpg",
+   "category": "reactions",
+   "title": "Please be patient",
+   "caption": "Blue cap, teary eyes, full send.",
+   "tags": [
+    "patience",
+    "cap",
+    "crying",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "e8fa33f733759e2f3d88243e82e3189e1fac3f03",
+   "thumb": "thumbs/please-be-patient.webp"
+  },
+  {
+   "id": "reviewing-the-notes",
+   "file": "memes/reactions/reviewing-the-notes.jpg",
+   "category": "reactions",
+   "title": "Reviewing the notes",
+   "caption": "Glasses on, pencil in the mask, red ink pending.",
+   "tags": [
+    "review",
+    "notes",
+    "glasses",
+    "pencil",
+    "professor"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "af39350ed4e4361827447232d345380c0436cd68",
+   "thumb": "thumbs/reviewing-the-notes.webp"
+  },
+  {
+   "id": "shh-iss-oke",
+   "file": "memes/reactions/shh-iss-oke.jpg",
+   "category": "reactions",
+   "title": "Shh iss oke",
+   "caption": "The hood consoles the crying wojak.",
+   "tags": [
+    "wojak",
+    "comfort",
+    "crying",
+    "hug",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a6b81ee74b54732f6a2b6582e8894e2558036bed",
+   "thumb": "thumbs/shh-iss-oke.webp"
+  },
+  {
+   "id": "sometimes-i-think",
+   "file": "memes/reactions/sometimes-i-think.jpg",
+   "category": "reactions",
+   "title": "Sometimes I think, and then I forget",
+   "caption": "Rain on the hood, empty thoughts.",
+   "tags": [
+    "think",
+    "forget",
+    "rain",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "cb22dd03fe747879eeeede904546b1575594acb4",
+   "thumb": "thumbs/sometimes-i-think.webp"
+  },
+  {
+   "id": "stop-the-cap",
+   "file": "memes/reactions/stop-the-cap.jpg",
+   "category": "reactions",
+   "title": "Stop the cap",
+   "caption": "Crossing guard for bad takes.",
+   "tags": [
+    "cap",
+    "lies",
+    "stop sign",
+    "crossing guard",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "f633ebd3aa9d5e0fe6c7bed5fba66aff568d145d",
+   "thumb": "thumbs/stop-the-cap.webp"
+  },
+  {
+   "id": "trying-to-find-who-asked",
+   "file": "memes/reactions/trying-to-find-who-asked.jpg",
+   "category": "reactions",
+   "title": "Trying to find who asked",
+   "caption": "Searched all of Pond 101. Nobody asked.",
+   "tags": [
+    "who asked",
+    "book",
+    "glasses",
+    "pond 101",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "da003813cdac27c0db8545bc327845f6149695c9",
+   "thumb": "thumbs/trying-to-find-who-asked.webp"
+  },
+  {
+   "id": "yall-got-anymore-of-that",
+   "file": "memes/reactions/yall-got-anymore-of-that.jpg",
+   "category": "reactions",
+   "title": "Y'all got anymore of that",
+   "caption": "Beanie on, asking for more.",
+   "tags": [
+    "more",
+    "beanie",
+    "addicted",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "db51ed14a66b6f60cbd74e135ab6f4b0dfd3f01b",
+   "thumb": "thumbs/yall-got-anymore-of-that.webp"
+  },
+  {
+   "id": "youre-pretty-ugly",
+   "file": "memes/reactions/youre-pretty-ugly.jpg",
+   "category": "reactions",
+   "title": "You're pretty ugly",
+   "caption": "Compliment loading. Compliment cancelled.",
+   "tags": [
+    "roast",
+    "compliment",
+    "ugly",
+    "reply"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "097c95a2d46f4b3a1cc74af1cfbd7b1613b2b33f",
+   "thumb": "thumbs/youre-pretty-ugly.webp"
+  },
+  {
+   "id": "99k-100k-01m",
+   "file": "memes/the-pond/99k-100k-01m.jpg",
+   "category": "the-pond",
+   "title": "$99K, $100K, $0.1M",
+   "caption": "Same number, different energy.",
+   "tags": [
+    "market cap",
+    "100k",
+    "milestone",
+    "chart"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "04a13bb4fd916ee6712063ce108b2305f80d2f53",
+   "thumb": "thumbs/99k-100k-01m.webp"
+  },
+  {
+   "id": "bearded-zfrog",
+   "file": "memes/the-pond/bearded-zfrog.jpg",
+   "category": "the-pond",
+   "title": "Bearded ZFROG",
+   "caption": "Golden hair, golden beard, same mask.",
+   "tags": [
+    "beard",
+    "hair",
+    "portrait",
+    "profile pic",
+    "pfp"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "ff769724b65728fc5eeb1bec9f9ab9cf7d8513d5",
+   "thumb": "thumbs/bearded-zfrog.webp"
+  },
+  {
+   "id": "green-candle",
+   "file": "memes/the-pond/green-candle.jpg",
+   "category": "the-pond",
+   "title": "Green candle",
+   "caption": "Holding one. Want more.",
+   "tags": [
+    "green candle",
+    "chart",
+    "pump",
+    "bullish"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "65a03260c6ff54a53b4fe545c0c0e5c34886ec56",
+   "thumb": "thumbs/green-candle.webp"
+  },
+  {
+   "id": "idol-debut",
+   "file": "memes/the-pond/idol-debut.jpg",
+   "category": "the-pond",
+   "title": "Idol debut",
+   "caption": "The new center of the group.",
+   "tags": [
+    "idol",
+    "group",
+    "debut",
+    "famous",
+    "kpop"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "fc621198f2ceb172b77a9e7364c31bc6b93d7426",
+   "thumb": "thumbs/idol-debut.webp"
+  },
+  {
+   "id": "make-crypto-great-again",
+   "file": "memes/the-pond/make-crypto-great-again.jpg",
+   "category": "the-pond",
+   "title": "Make crypto great again",
+   "caption": "The Hooded hold the flag.",
+   "tags": [
+    "politics",
+    "flag",
+    "rally",
+    "crypto",
+    "poster"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "de5462b4119bd0f4bef50997fcb1ac98192a3e4f",
+   "thumb": "thumbs/make-crypto-great-again.webp"
+  },
+  {
+   "id": "the-pond-has-your-back",
+   "file": "memes/the-pond/the-pond-has-your-back.jpg",
+   "category": "the-pond",
+   "title": "The pond has your back",
+   "caption": "Heart broken, then the Hooded show up.",
+   "tags": [
+    "wojak",
+    "heart",
+    "community",
+    "support",
+    "hooded"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "34da2437e3b81b1f6dbc168b636f48697a28cfc0",
+   "thumb": "thumbs/the-pond-has-your-back.webp"
+  },
+  {
+   "id": "watermelon-stack",
+   "file": "memes/the-pond/watermelon-stack.jpg",
+   "category": "the-pond",
+   "title": "Watermelon stack",
+   "caption": "Two frogs, one watermelon, zero plan.",
+   "tags": [
+    "watermelon",
+    "teamwork",
+    "forest",
+    "frens"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "1e1637b438685bf64ecb2ae89fc5d32dd34a0f4d",
+   "thumb": "thumbs/watermelon-stack.webp"
+  },
+  {
+   "id": "yacht-day",
+   "file": "memes/the-pond/yacht-day.jpg",
+   "category": "the-pond",
+   "title": "Yacht day",
+   "caption": "Selfie on deck with the Hooded.",
+   "tags": [
+    "yacht",
+    "selfie",
+    "sunglasses",
+    "boat",
+    "frens"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "85ff1f96b4ab1a80c901d290ed18da4faaa379f4",
+   "thumb": "thumbs/yacht-day.webp"
+  },
+  {
+   "id": "zfrog-gold-chain",
+   "file": "memes/the-pond/zfrog-gold-chain.jpg",
+   "category": "the-pond",
+   "title": "$ZFROG gold chain",
+   "caption": "Gold bars, gold watches, gold ticker.",
+   "tags": [
+    "gold",
+    "chain",
+    "rich",
+    "ticker",
+    "bling"
+   ],
+   "added": "2026-10-21",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a71f652edc779443181af98dc69d003836eedc7c",
+   "thumb": "thumbs/zfrog-gold-chain.webp"
+  },
+  {
+   "id": "frog-telepathy",
+   "file": "memes/lore/frog-telepathy.jpg",
+   "category": "lore",
+   "title": "Frog telepathy",
+   "caption": "Two frogs, one encrypted link.",
+   "tags": [
+    "telepathy",
+    "galaxy",
+    "space",
+    "connection",
+    "mind link",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1536,
+   "h": 1024,
+   "hash": "bebfee7a7947de5a50480ba6cf133a66ffc3cb97",
+   "thumb": "thumbs/frog-telepathy.webp"
+  },
+  {
+   "id": "king-in-the-reflection",
+   "file": "memes/lore/king-in-the-reflection.jpg",
+   "category": "lore",
+   "title": "King in the reflection",
+   "caption": "Paper crown on the bus. Real crown in the reflection.",
+   "tags": [
+    "crown",
+    "king",
+    "bus",
+    "rain",
+    "reflection",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1122,
+   "h": 1402,
+   "hash": "d12b1a49c728e61d90129cdad4a50cd02281da06",
+   "thumb": "thumbs/king-in-the-reflection.webp"
+  },
+  {
+   "id": "reading-the-ancient-book",
+   "file": "memes/lore/reading-the-ancient-book.jpg",
+   "category": "lore",
+   "title": "Reading the ancient book",
+   "caption": "Studying the ancient texts of encryption.",
+   "tags": [
+    "book",
+    "library",
+    "research",
+    "whitepaper",
+    "study",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1536,
+   "h": 1024,
+   "hash": "d5d80460ce2f258be4a91230d3e5e35e74d3f1b5",
+   "thumb": "thumbs/reading-the-ancient-book.webp"
+  },
+  {
+   "id": "storm-watch",
+   "file": "memes/lore/storm-watch.jpg",
+   "category": "lore",
+   "title": "Storm watch",
+   "caption": "Looking up into the storm. The Z chip keeps glowing.",
+   "tags": [
+    "rain",
+    "storm",
+    "night",
+    "city",
+    "z chip",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1122,
+   "h": 1402,
+   "hash": "5d8a0800b55f1f58c7edfd7a9c3277c36dfedbab",
+   "thumb": "thumbs/storm-watch.webp"
+  },
+  {
+   "id": "the-giant",
+   "file": "memes/lore/the-giant.jpg",
+   "category": "lore",
+   "title": "The giant",
+   "caption": "Some frogs are bigger than the swamp.",
+   "tags": [
+    "giant",
+    "colossus",
+    "fog",
+    "wanderer",
+    "epic",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1122,
+   "h": 1402,
+   "hash": "d424284f7a7c127a50f6dc0f08c1ff8770e20b71",
+   "thumb": "thumbs/the-giant.webp"
+  },
+  {
+   "id": "the-yellow-wave",
+   "file": "memes/lore/the-yellow-wave.jpg",
+   "category": "lore",
+   "title": "The yellow wave",
+   "caption": "The yellow wave is coming.",
+   "tags": [
+    "wave",
+    "tsunami",
+    "coast",
+    "yellow",
+    "send it",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1672,
+   "h": 941,
+   "hash": "8c9c4590141bed116f6386bb4f6f5fc1ad8d14d9",
+   "thumb": "thumbs/the-yellow-wave.webp"
+  },
+  {
+   "id": "writing-the-lore",
+   "file": "memes/lore/writing-the-lore.jpg",
+   "category": "lore",
+   "title": "Writing the lore",
+   "caption": "The lore is written in fire.",
+   "tags": [
+    "quill",
+    "fire",
+    "writing",
+    "library",
+    "candles",
+    "lore"
+   ],
+   "added": "2026-10-17",
+   "w": 1536,
+   "h": 1024,
+   "hash": "a9af652cc49183d04e448bf19bece81a4bf897fb",
+   "thumb": "thumbs/writing-the-lore.webp"
+  },
+  {
+   "id": "cutting-the-feeds",
+   "file": "memes/privacy-mood/cutting-the-feeds.jpg",
+   "category": "privacy-mood",
+   "title": "Cutting the feeds",
+   "caption": "One cable at a time, the cameras go dark.",
+   "tags": [
+    "surveillance",
+    "cctv",
+    "cameras",
+    "unplug",
+    "static",
+    "hacker"
+   ],
+   "added": "2026-10-17",
+   "w": 1672,
+   "h": 941,
+   "hash": "25791c2644d1f1780c7ebb961aebb32dfb782870",
+   "thumb": "thumbs/cutting-the-feeds.webp"
+  },
+  {
+   "id": "hiding-in-a-box",
+   "file": "memes/privacy-mood/hiding-in-a-box.jpg",
+   "category": "privacy-mood",
+   "title": "Hiding in a box",
+   "caption": "Hiding from the cameras like a pro.",
+   "tags": [
+    "box",
+    "hiding",
+    "stealth",
+    "cctv",
+    "office",
+    "metal gear"
+   ],
+   "added": "2026-10-17",
+   "w": 1672,
+   "h": 941,
+   "hash": "5219bb223e2502f7b5a3c3bb549dc08dcdcc6453",
+   "thumb": "thumbs/hiding-in-a-box.webp"
+  },
+  {
+   "id": "late-night-scroll",
+   "file": "memes/privacy-mood/late-night-scroll.jpg",
+   "category": "privacy-mood",
+   "title": "Late night scroll",
+   "caption": "Still scrolling under the blanket at 3am.",
+   "tags": [
+    "bed",
+    "night",
+    "phone",
+    "scroll",
+    "3am",
+    "insomnia"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "119a21800d94ed34a20e53c74575625c3ea575e8",
+   "thumb": "thumbs/late-night-scroll.webp"
+  },
+  {
+   "id": "off-duty",
+   "file": "memes/privacy-mood/off-duty.jpg",
+   "category": "privacy-mood",
+   "title": "Off duty",
+   "caption": "Off duty. Still encrypted.",
+   "tags": [
+    "gaming",
+    "couch",
+    "pizza",
+    "chill",
+    "weekend",
+    "cartoon"
+   ],
+   "added": "2026-10-17",
+   "w": 1672,
+   "h": 941,
+   "hash": "e1aad6a36c64a04e14eca14a657f1475cfbd9c35",
+   "thumb": "thumbs/off-duty.webp"
+  },
+  {
+   "id": "peephole",
+   "file": "memes/privacy-mood/peephole.jpg",
+   "category": "privacy-mood",
+   "title": "Peephole",
+   "caption": "Who is it? Encrypted.",
+   "tags": [
+    "peephole",
+    "door",
+    "knock knock",
+    "fisheye",
+    "visitor"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "23e3e412e2e1fabeea7d3675852adf9b2c9bdbcb",
+   "thumb": "thumbs/peephole.webp"
+  },
+  {
+   "id": "pixelated-yacht-selfie",
+   "file": "memes/privacy-mood/pixelated-yacht-selfie.jpg",
+   "category": "privacy-mood",
+   "title": "Pixelated in the group selfie",
+   "caption": "Everyone in the group selfie, except me. Shielded.",
+   "tags": [
+    "yacht",
+    "selfie",
+    "pixelated",
+    "blurred",
+    "vacation",
+    "summer"
+   ],
+   "added": "2026-10-17",
+   "w": 1672,
+   "h": 941,
+   "hash": "7c9247c823ed938666d903ddaddd7eb39fbffaca",
+   "thumb": "thumbs/pixelated-yacht-selfie.webp"
+  },
+  {
+   "id": "redacted-scroll",
+   "file": "memes/privacy-mood/redacted-scroll.jpg",
+   "category": "privacy-mood",
+   "title": "Redacted scroll",
+   "caption": "Reading the terms. Everything is redacted.",
+   "tags": [
+    "redacted",
+    "scroll",
+    "terms",
+    "documents",
+    "confused",
+    "cartoon"
+   ],
+   "added": "2026-10-17",
+   "w": 1536,
+   "h": 1024,
+   "hash": "f0473cb686bc45f5f77aa7b4b955bb72f81512cf",
+   "thumb": "thumbs/redacted-scroll.webp"
+  },
+  {
+   "id": "shredder",
+   "file": "memes/privacy-mood/shredder.jpg",
+   "category": "privacy-mood",
+   "title": "Shredder",
+   "caption": "No paper trail. Just shredded paper.",
+   "tags": [
+    "shredder",
+    "paper trail",
+    "documents",
+    "office",
+    "redacted",
+    "cartoon"
+   ],
+   "added": "2026-10-17",
+   "w": 1536,
+   "h": 1024,
+   "hash": "bf85261310f1c0a75cf8fd427af421f32547bd17",
+   "thumb": "thumbs/shredder.webp"
+  },
+  {
+   "id": "absolute-privacy",
+   "file": "memes/reactions/absolute-privacy.jpg",
+   "category": "reactions",
+   "title": "Absolute privacy",
+   "caption": "Absolute privacy.",
+   "tags": [
+    "absolute privacy",
+    "hands up",
+    "black and white",
+    "reaction",
+    "no comment"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "083e8beca688ae08a115c271d2e04ff859f5b63d",
+   "thumb": "thumbs/absolute-privacy.webp"
+  },
+  {
+   "id": "any-minute-now",
+   "file": "memes/reactions/any-minute-now.jpg",
+   "category": "reactions",
+   "title": "Any minute now",
+   "caption": "Any minute now.",
+   "tags": [
+    "waiting",
+    "pocket watch",
+    "soon",
+    "patience",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1122,
+   "h": 1402,
+   "hash": "4cc199a13ed0cfef645d990e7b8c4781d0774154",
+   "thumb": "thumbs/any-minute-now.webp"
+  },
+  {
+   "id": "closing-the-laptop",
+   "file": "memes/reactions/closing-the-laptop.jpg",
+   "category": "reactions",
+   "title": "Closing the laptop",
+   "caption": "Closing the laptop. You saw nothing.",
+   "tags": [
+    "laptop",
+    "closing",
+    "you saw nothing",
+    "pov",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "2dff72f37f94b983ec2ee83c617657e1835d4d39",
+   "thumb": "thumbs/closing-the-laptop.webp"
+  },
+  {
+   "id": "clown-selfie",
+   "file": "memes/reactions/clown-selfie.jpg",
+   "category": "reactions",
+   "title": "Clown selfie",
+   "caption": "Me after aping without reading.",
+   "tags": [
+    "clown",
+    "selfie",
+    "mirror",
+    "fumble",
+    "rekt",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9e386e22ac490222799dde1725761a5ff07fe5ea",
+   "thumb": "thumbs/clown-selfie.webp"
+  },
+  {
+   "id": "couch-builder",
+   "file": "memes/reactions/couch-builder.jpg",
+   "category": "reactions",
+   "title": "Couch builder",
+   "caption": "Shipping from the couch.",
+   "tags": [
+    "laptop",
+    "couch",
+    "builder",
+    "working",
+    "buff",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "10d4c86c7e1a00dd56d166916be470661e6622f2",
+   "thumb": "thumbs/couch-builder.webp"
+  },
+  {
+   "id": "crying-with-money",
+   "file": "memes/reactions/crying-with-money.jpg",
+   "category": "reactions",
+   "title": "Crying with money",
+   "caption": "Crying, but in profit.",
+   "tags": [
+    "money",
+    "cash",
+    "crying",
+    "profit",
+    "tears",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "78302a6f7101bb12c6e1b73e8a07785025aeb5a0",
+   "thumb": "thumbs/crying-with-money.webp"
+  },
+  {
+   "id": "delete-this",
+   "file": "memes/reactions/delete-this.jpg",
+   "category": "reactions",
+   "title": "Delete this",
+   "caption": "Delete this.",
+   "tags": [
+    "delete this",
+    "sign",
+    "spongebob",
+    "reaction",
+    "cringe"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "675e1311431089fd9999512cdac709f434b6b37a",
+   "thumb": "thumbs/delete-this.webp"
+  },
+  {
+   "id": "fried-rice",
+   "file": "memes/reactions/fried-rice.jpg",
+   "category": "reactions",
+   "title": "Cooking",
+   "caption": "He is literally cooking. The recipe stays encrypted.",
+   "tags": [
+    "let him cook",
+    "cooking",
+    "wok",
+    "fried rice",
+    "kitchen",
+    "builder"
+   ],
+   "added": "2026-10-17",
+   "w": 1122,
+   "h": 1402,
+   "hash": "a8ed3958a55afa3c0c58f97a8d727a5cbc2f8ca6",
+   "thumb": "thumbs/fried-rice.webp"
+  },
+  {
+   "id": "let-him-cook-red-chair",
+   "file": "memes/reactions/let-him-cook-red-chair.jpg",
+   "category": "reactions",
+   "title": "Let him cook (red chair)",
+   "caption": "Let him cook.",
+   "tags": [
+    "let him cook",
+    "builder",
+    "patience",
+    "reaction",
+    "chair"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9cf37b6507488b4c8419227817a0ad2ce812d9ed",
+   "thumb": "thumbs/let-him-cook-red-chair.webp"
+  },
+  {
+   "id": "loading",
+   "file": "memes/reactions/loading.jpg",
+   "category": "reactions",
+   "title": "Loading",
+   "caption": "Brain loading. Please wait.",
+   "tags": [
+    "loading",
+    "thinking",
+    "glasses",
+    "confused",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "8984dc91073487362c63c998a954730d39f3843d",
+   "thumb": "thumbs/loading.webp"
+  },
+  {
+   "id": "peeking-from-the-curtain",
+   "file": "memes/reactions/peeking-from-the-curtain.jpg",
+   "category": "reactions",
+   "title": "Peeking from the curtain",
+   "caption": "Watching from behind the curtain.",
+   "tags": [
+    "peek",
+    "curtain",
+    "lurking",
+    "watching",
+    "cartoon",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1536,
+   "h": 1024,
+   "hash": "35b5de2c66840a92ec1fdb9d51d4eb9972745365",
+   "thumb": "thumbs/peeking-from-the-curtain.webp"
+  },
+  {
+   "id": "popcorn",
+   "file": "memes/reactions/popcorn.jpg",
+   "category": "reactions",
+   "title": "Popcorn",
+   "caption": "Grabbing popcorn for this.",
+   "tags": [
+    "popcorn",
+    "cinema",
+    "watching the drama",
+    "drama",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "4500533a3ce94941f509c8011537f0e4f09a3f47",
+   "thumb": "thumbs/popcorn.webp"
+  },
+  {
+   "id": "silence",
+   "file": "memes/reactions/silence.jpg",
+   "category": "reactions",
+   "title": "Silence",
+   "caption": "Silence.",
+   "tags": [
+    "silence",
+    "shh",
+    "quiet",
+    "reaction",
+    "hood"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "ed85d12eabf5d99fefcc727f41962f4716cfe927",
+   "thumb": "thumbs/silence.webp"
+  },
+  {
+   "id": "soul-left-the-chat",
+   "file": "memes/reactions/soul-left-the-chat.jpg",
+   "category": "reactions",
+   "title": "Soul left the chat",
+   "caption": "When the soul leaves the body at 4am.",
+   "tags": [
+    "tired",
+    "burnout",
+    "ghost",
+    "desk",
+    "soul left",
+    "reaction"
+   ],
+   "added": "2026-10-17",
+   "w": 1254,
+   "h": 1254,
+   "hash": "92a2ea63e8f2385e4ea5e05380486c78019b8580",
+   "thumb": "thumbs/soul-left-the-chat.webp"
+  },
+  {
+   "id": "privacy-is-not-a-side-quest",
+   "file": "memes/privacy-mood/privacy-is-not-a-side-quest.jpg",
+   "category": "privacy-mood",
+   "title": "Privacy is not a side quest",
+   "caption": "Zama: make onchain encryption normal. Privacy is not a side quest.",
+   "tags": [
+    "encryption",
+    "groceries"
+   ],
+   "added": "2026-10-16",
+   "w": 1254,
+   "h": 1254,
+   "hash": "5137df1b3a76cb5cb8779ef65df0b4df7034607e",
+   "thumb": "thumbs/privacy-is-not-a-side-quest.webp"
+  },
+  {
+   "id": "confidential-distributions",
+   "file": "memes/zama-news/confidential-distributions.jpg",
+   "category": "zama-news",
+   "title": "Confidential distributions",
+   "caption": "Zama + TokenOps: confidential distributions. My allocation doesn't need a press tour.",
+   "tags": [
+    "tokenops",
+    "distributions",
+    "allocation"
+   ],
+   "added": "2026-10-16",
+   "w": 1254,
+   "h": 1254,
+   "hash": "05d40015072525624aab353af576988363afc964",
+   "thumb": "thumbs/confidential-distributions.webp"
+  },
+  {
+   "id": "gpu-benchmark-1000-tps",
+   "file": "memes/zama-news/gpu-benchmark-1000-tps.jpg",
+   "category": "zama-news",
+   "title": "GPU benchmark: 1,000 TPS",
+   "caption": "Zama GPU benchmark: 1,000 TPS. Even my secrets have a fast lane.",
+   "tags": [
+    "gpu",
+    "benchmark",
+    "tps",
+    "speed"
+   ],
+   "added": "2026-10-16",
+   "w": 1254,
+   "h": 1254,
+   "hash": "7e343c7932d6ca858689f607967a45c763a732bd",
+   "thumb": "thumbs/gpu-benchmark-1000-tps.webp"
+  },
+  {
+   "id": "shield-in-one-transaction",
+   "file": "memes/zama-news/shield-in-one-transaction.jpg",
+   "category": "zama-news",
+   "title": "Shield in one transaction",
+   "caption": "Zama: shield in one transaction. My wallet learned to close the blinds.",
+   "tags": [
+    "shield",
+    "wallet",
+    "blinds"
+   ],
+   "added": "2026-10-16",
+   "w": 1254,
+   "h": 1254,
+   "hash": "5919babf4744e14fa41a81093c72a6c6a4efec78",
+   "thumb": "thumbs/shield-in-one-transaction.webp"
+  },
+  {
+   "id": "confidential-rewards",
+   "file": "memes/zama-news/confidential-rewards.jpg",
+   "category": "zama-news",
+   "title": "Confidential rewards",
+   "caption": "Zama + Merkl: confidential rewards. I came for rewards, not a leaderboard.",
+   "tags": [
+    "rewards",
+    "merkl",
+    "apr"
+   ],
+   "added": "2026-10-13",
+   "w": 1254,
+   "h": 1254,
+   "hash": "02cbd5bde6e7b3569856428dc41b10f5db39a9e2",
+   "thumb": "thumbs/confidential-rewards.webp"
+  },
+  {
+   "id": "confidential-vesting",
+   "file": "memes/zama-news/confidential-vesting.jpg",
+   "category": "zama-news",
+   "title": "Confidential vesting",
+   "caption": "Zama + TokenOps: confidential vesting. My allocation doesn't need a comment section.",
+   "tags": [
+    "vesting",
+    "tokenops"
+   ],
+   "added": "2026-10-13",
+   "w": 1254,
+   "h": 1254,
+   "hash": "27dbdfb66124a8b7ece708de2b2253e9e1c1518f",
+   "thumb": "thumbs/confidential-vesting.webp"
+  },
+  {
+   "id": "privacy-with-accountability",
+   "file": "memes/zama-news/privacy-with-accountability.jpg",
+   "category": "zama-news",
+   "title": "Privacy with accountability",
+   "caption": "Zama: privacy with accountability. The auditor is invited. The group chat isn't.",
+   "tags": [
+    "auditor",
+    "compliance"
+   ],
+   "added": "2026-10-13",
+   "w": 1254,
+   "h": 1254,
+   "hash": "f6f56975b6f270d891e9eb4c8ba65f6f307c9a08",
+   "thumb": "thumbs/privacy-with-accountability.webp"
+  },
+  {
+   "id": "join-the-pond",
+   "file": "memes/the-pond/join-the-pond.jpg",
+   "category": "the-pond",
+   "title": "Join the pond",
+   "caption": "Our Telegram channel is now open. Stop lurking. Join the pond.",
+   "tags": [
+    "telegram",
+    "community"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "6e9105498e5a18f2ee055ba8654ecacc22014849",
+   "thumb": "thumbs/join-the-pond.webp"
+  },
+  {
+   "id": "zolana",
+   "file": "memes/zama-news/zolana.jpg",
+   "category": "zama-news",
+   "title": "Zolana",
+   "caption": "Zama is now trading on Solana. New chain. Same introvert.",
+   "tags": [
+    "solana",
+    "listing"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "356d89043f51d4a4916aa0a5c3de204f66c8fc4f",
+   "thumb": "thumbs/zolana.webp"
+  },
+  {
+   "id": "nice-try",
+   "file": "memes/privacy-mood/nice-try.jpg",
+   "category": "privacy-mood",
+   "title": "Nice try",
+   "caption": "Things to say to a wallet tracker: Nice try. Ask the frog. That's encrypted.",
+   "tags": [
+    "wallet tracker"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "b23a9fa26ac9b59986eb2e8f6cc82792a598c1a5",
+   "thumb": "thumbs/nice-try.webp"
+  },
+  {
+   "id": "608m-shielded-volume",
+   "file": "memes/zama-news/608m-shielded-volume.jpg",
+   "category": "zama-news",
+   "title": "$608.5M shielded volume",
+   "caption": "Zama: $608.5M cumulative shielded volume. Busy network. Boring day for gossip.",
+   "tags": [
+    "volume",
+    "stats"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9ce1bbf1697acbacb8a61f4e68a7162d44c3e1e4",
+   "thumb": "thumbs/608m-shielded-volume.webp"
+  },
+  {
+   "id": "privacy-is-suspicious",
+   "file": "memes/privacy-mood/privacy-is-suspicious.jpg",
+   "category": "privacy-mood",
+   "title": "Privacy is suspicious",
+   "caption": "'Privacy is suspicious.' Bro, you have curtains.",
+   "tags": [
+    "privacy"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "4d187c65c0dab014426777ddd376f9a3ea41aa89",
+   "thumb": "thumbs/privacy-is-suspicious.webp"
+  },
+  {
+   "id": "tvl-115m",
+   "file": "memes/zama-news/tvl-115m.jpg",
+   "category": "zama-news",
+   "title": "$115.7M shielded TVL",
+   "caption": "Zama's shielded TVL: $115.7M. That's a lot of 'none of your business'.",
+   "tags": [
+    "tvl",
+    "stats"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "b3c2e9014937fa09bd11eb1d8fb21cf7c155de53",
+   "thumb": "thumbs/tvl-115m.webp"
+  },
+  {
+   "id": "feelings-not-shielded",
+   "file": "memes/privacy-mood/feelings-not-shielded.jpg",
+   "category": "privacy-mood",
+   "title": "Feelings not shielded",
+   "caption": "My data is shielded. My feelings are not.",
+   "tags": [
+    "shielded"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "4f016558b8f20ec85ba0950b1d0f312d03da74d7",
+   "thumb": "thumbs/feelings-not-shielded.webp"
+  },
+  {
+   "id": "telepathy",
+   "file": "memes/zama-news/telepathy.jpg",
+   "category": "zama-news",
+   "title": "Copy traders need telepathy",
+   "caption": "Zama made swaps confidential. Copy traders now need telepathy.",
+   "tags": [
+    "swaps",
+    "copy trading"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "97ae72818b93aa00b45ca437e5cc672aaa7f8f70",
+   "thumb": "thumbs/telepathy.webp"
+  },
+  {
+   "id": "let-him-cook",
+   "file": "memes/privacy-mood/let-him-cook.jpg",
+   "category": "privacy-mood",
+   "title": "Let him cook",
+   "caption": "Let him cook. The ingredients stay encrypted.",
+   "tags": [
+    "fhe"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "a911bc8d11e57ea8726f8a708f016cdd84ce6aef",
+   "thumb": "thumbs/let-him-cook.webp"
+  },
+  {
+   "id": "wbtc-vault",
+   "file": "memes/zama-news/wbtc-vault.jpg",
+   "category": "zama-news",
+   "title": "Confidential WBTC vault",
+   "caption": "Zama's confidential WBTC vault. My BTC has a 'do not disturb' sign.",
+   "tags": [
+    "btc",
+    "vault"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "def255779999e216f563193c33e6efbf950c60e2",
+   "thumb": "thumbs/wbtc-vault.webp"
+  },
+  {
+   "id": "therapy",
+   "file": "memes/privacy-mood/therapy.jpg",
+   "category": "privacy-mood",
+   "title": "Therapy",
+   "caption": "Therapist: 'Open up.' Me: 'The data stays encrypted.'",
+   "tags": [],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "65a083cbc9f546ef9f50ef986dfe9c9d68a2c57e",
+   "thumb": "thumbs/therapy.webp"
+  },
+  {
+   "id": "blockscout",
+   "file": "memes/zama-news/blockscout.jpg",
+   "category": "zama-news",
+   "title": "Blockscout + Zama",
+   "caption": "Blockscout + Zama: confidential tokens. The explorer works. The gossip doesn't.",
+   "tags": [
+    "explorer",
+    "tokens"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "0518bf428eccd24eabccfb492935449c97bb04ab",
+   "thumb": "thumbs/blockscout.webp"
+  },
+  {
+   "id": "poker",
+   "file": "memes/privacy-mood/poker.jpg",
+   "category": "privacy-mood",
+   "title": "Poker face",
+   "caption": "Poker face: public. Poker hand: private.",
+   "tags": [],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "2e7062b1d271c327285adbfe726db3946b8e10a3",
+   "thumb": "thumbs/poker.webp"
+  },
+  {
+   "id": "confidential-payroll",
+   "file": "memes/zama-news/confidential-payroll.jpg",
+   "category": "zama-news",
+   "title": "Confidential payroll",
+   "caption": "Zama + Bron: confidential payroll. My salary is not office lore.",
+   "tags": [
+    "payroll",
+    "bron"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "7bb52eeb76ed21d6fbc9fe01f6693cdfb09213c0",
+   "thumb": "thumbs/confidential-payroll.webp"
+  },
+  {
+   "id": "bad-takes-public",
+   "file": "memes/privacy-mood/bad-takes-public.jpg",
+   "category": "privacy-mood",
+   "title": "Bad takes are public",
+   "caption": "My data is encrypted. My bad takes are public.",
+   "tags": [],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "1f841e39ce75ff77b254798ab4af058e3a90d255",
+   "thumb": "thumbs/bad-takes-public.webp"
+  },
+  {
+   "id": "defillama",
+   "file": "memes/zama-news/defillama.jpg",
+   "category": "zama-news",
+   "title": "DefiLlama report",
+   "caption": "Zama in the DefiLlama report. Confidential DeFi. The category got famous. My wallet got shy.",
+   "tags": [
+    "defillama",
+    "defi"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "0359392e25bbd44cc43e588709d531e8e953dc1a",
+   "thumb": "thumbs/defillama.webp"
+  },
+  {
+   "id": "raining-data-requests",
+   "file": "memes/privacy-mood/raining-data-requests.jpg",
+   "category": "privacy-mood",
+   "title": "Raining data requests",
+   "caption": "It's raining data requests. Good thing I am shielded.",
+   "tags": [
+    "shielded"
+   ],
+   "added": "2026-10-12",
+   "w": 1408,
+   "h": 1408,
+   "hash": "85b09600ab4b75590f2d063bbe1393241f2cc659",
+   "thumb": "thumbs/raining-data-requests.webp"
+  },
+  {
+   "id": "ai-agents",
+   "file": "memes/zama-news/ai-agents.jpg",
+   "category": "zama-news",
+   "title": "AI agents pay for data",
+   "caption": "AI agents can pay for data. My search history is not for sale.",
+   "tags": [
+    "ai",
+    "agents"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "f442fd76105550fb89dc183be9e939782102de83",
+   "thumb": "thumbs/ai-agents.webp"
+  },
+  {
+   "id": "bars-are-public",
+   "file": "memes/privacy-mood/bars-are-public.jpg",
+   "category": "privacy-mood",
+   "title": "The bars are public",
+   "caption": "When the data is encrypted but the bars are public.",
+   "tags": [
+    "pepe"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "88d8a9b68099af5f132f5f743815abd12c9cb46d",
+   "thumb": "thumbs/bars-are-public.webp"
+  },
+  {
+   "id": "confidential-vaults",
+   "file": "memes/zama-news/confidential-vaults.jpg",
+   "category": "zama-news",
+   "title": "More confidential vaults",
+   "caption": "Zama added more confidential vaults. Now my overthinking has options.",
+   "tags": [
+    "vaults"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "449954896d9d8f2490c36494d648fab62734ca67",
+   "thumb": "thumbs/confidential-vaults.webp"
+  },
+  {
+   "id": "incognito-mode",
+   "file": "memes/privacy-mood/incognito-mode.jpg",
+   "category": "privacy-mood",
+   "title": "Incognito mode",
+   "caption": "When they say 'just use incognito mode'.",
+   "tags": [],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "774c6ebe19d138147d8818ba39e7228267b8d9d2",
+   "thumb": "thumbs/incognito-mode.webp"
+  },
+  {
+   "id": "quantum",
+   "file": "memes/zama-news/quantum.jpg",
+   "category": "zama-news",
+   "title": "Wrong pond",
+   "caption": "Quantum computers are coming. Zama FHE: wrong pond.",
+   "tags": [
+    "quantum",
+    "fhe"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "9a8cc67d17dbe6d9de95ca5e53b9a17831d4b26f",
+   "thumb": "thumbs/quantum.webp"
+  },
+  {
+   "id": "no-sleep",
+   "file": "memes/privacy-mood/no-sleep.jpg",
+   "category": "privacy-mood",
+   "title": "One last scroll",
+   "caption": "Me: just one last scroll. Also me at 3am:",
+   "tags": [],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "d2a3a48ef973389b267a32f8e1423e0c4c631a5b",
+   "thumb": "thumbs/no-sleep.webp"
+  },
+  {
+   "id": "still-the-pond",
+   "file": "memes/the-pond/still-the-pond.jpg",
+   "category": "the-pond",
+   "title": "Still the pond",
+   "caption": "If you log out, it's still the pond.",
+   "tags": [
+    "community"
+   ],
+   "added": "2026-10-12",
+   "w": 1254,
+   "h": 1254,
+   "hash": "e646038c739a872ceb4e8f03ee9f3405b12f9e30",
+   "thumb": "thumbs/still-the-pond.webp"
+  }
+ ]
 }
