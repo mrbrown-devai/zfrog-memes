@@ -220,8 +220,8 @@ form.bp-form{display:grid;gap:16px}
         <div>
           <form class="bp-form" id="bpForm" novalidate>
             <div class="field" data-f="x"><label for="fX">X handle</label><input id="fX" name="x" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="@yourhandle" required><small>The account that did the tasks.</small></div>
-            <div class="field" data-f="wallet"><label for="fWallet">Solana wallet address</label><input id="fWallet" name="wallet" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste your Solana address" required><small>Phantom, Solflare or Backpack. For the $ZFROG.</small></div>
-            <div class="field" data-f="eth"><label for="fEth">Ethereum wallet address</label><input id="fEth" name="eth" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="0x…" required><small>MetaMask, Rabby, Phantom or any wallet you control. For the Genesis NFT.</small></div>
+            <div class="field" data-f="wallet"><label for="fWallet">Solana wallet address</label><input id="fWallet" name="wallet" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Paste your Solana address" required><small>Any Solana wallet, like Phantom, Solflare or Backpack. For the $ZFROG.</small></div>
+            <div class="field" data-f="eth"><label for="fEth">Ethereum wallet address</label><input id="fEth" name="eth" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="0x…" required><small>Any Ethereum wallet, like MetaMask, Rabby or Phantom. For the Genesis NFT.</small></div>
             <div class="field" data-f="tweet"><label for="fTweet">Link to your sticker tweet <span class="opt">optional</span></label><input id="fTweet" name="tweet" type="url" inputmode="url" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="https://x.com/you/status/…"><small>Speeds up the check.</small></div>
             <div class="hp" aria-hidden="true"><label for="fSite">Website</label><input id="fSite" name="website" tabindex="-1" autocomplete="off"></div>
             <label class="check" data-f="agree"><input type="checkbox" id="fAgree"> <span>I followed @FrogMark1, liked, quoted and commented on the Breakpoint post, and tweeted my sticker tagging @FrogMark1. One entry per person.</span></label>
@@ -275,7 +275,7 @@ form.bp-form{display:grid;gap:16px}
       <details><summary>What can I win?</summary><p>$ZFROG, sent to your Solana wallet, and a ZFROG Genesis NFT, sent to your Ethereum wallet.</p></details>
       <details><summary>How do I know if I won?</summary><p>Winners are announced on <a href="https://x.com/FrogMark1" target="_blank" rel="noopener">@FrogMark1</a> and in the <a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram channel</a>, and prizes go straight to the wallets you entered. We never DM first.</p></details>
       <details><summary>Why do you need my X handle and two wallets?</summary><p>The X handle is how we check the follow, like, quote, comment and sticker tweet. The Solana address receives $ZFROG and the Ethereum address receives the NFT. They are stored privately and only used for this draw.</p></details>
-      <details><summary>Which wallets should I use?</summary><p>For Solana, a wallet you control that supports Token-2022 tokens: Phantom, Solflare or Backpack. For Ethereum, any wallet you control, like MetaMask, Rabby or Phantom. Not exchange deposit addresses, which may not credit the prizes.</p></details>
+      <details><summary>Which wallets should I use?</summary><p>Any Solana wallet you control works, like Phantom, Solflare or Backpack. Same for Ethereum: any wallet you control, like MetaMask, Rabby or Phantom. Not exchange deposit addresses, which may not credit the prizes.</p></details>
       <details><summary>What are the $ZAMA drops?</summary><p>Every $ZFROG transfer pays a 3% tax. 2.5% of that tax covers network and operating costs, and the other 2.925% of the transfer is swapped to $ZAMA and sent to every wallet holding at least $20 of $ZFROG. The full breakdown is in the <a href="/earn-zama">rewards guide</a>.</p></details>
       <details><summary>Is this run by Zama or Breakpoint?</summary><p>No. ZFROG is an independent community project. It is not affiliated with, endorsed by or sponsored by Zama, the Solana Foundation or Breakpoint.</p></details>
       <p class="fine">$ZFROG is a community memecoin with no intrinsic value and no expectation of financial return. The value of any prize can go up or down, and $ZAMA drops are never guaranteed. Nothing on this page is financial advice. Not affiliated with Zama, the Solana Foundation or Breakpoint. We may remove any entry that breaks the rules, and the campaign can end early if abused.</p>
@@ -288,7 +288,7 @@ form.bp-form{display:grid;gap:16px}
 <script>
 (function(){
   // Campaign settings live in the repo, so they change without a redeploy:
-  // edit brand/breakpoint/config.json (post_url, logo, genesis, h1_html, lede) on the branch below.
+  // edit brand/breakpoint/config.json (post_url, logo, genesis, h1_html, lede, copy) on the branch below.
   var BASE = 'https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/breakpoint-activation/brand/breakpoint/';
   var CFG = {post_url:'', logo:'https://solana.com/breakpoint-assets/assets/breakpoint-footer-logo-desktop.svg', genesis:['genesis-1.gif','genesis-2.gif','genesis-3.gif','genesis-4.gif','genesis-5.gif','genesis-6.gif','genesis-7.gif']};
   var QUOTE_TEXT = 'The hooded frog is loose at #Breakpoint2026 London 🐸\n\n@FrogMark1 $ZFROG';
@@ -313,6 +313,8 @@ form.bp-form{display:grid;gap:16px}
     }
     if(c.h1_html) $('bpH1').innerHTML = c.h1_html;
     if(c.lede) $('bpLede').textContent = c.lede;
+    // copy: {"css selector": "new text"} rewrites any line of the page.
+    Object.keys(c.copy || {}).forEach(function(sel){ try { document.querySelectorAll(sel).forEach(function(el){ el.textContent = c.copy[sel]; }); } catch(e) {} });
     // Artwork only shows once it has loaded, so a missing file never leaves a hole.
     if(c.logo){ var lg = new Image(); lg.onload = function(){ $('bpLogo').src = lg.src; $('lockup').hidden = false; }; lg.src = abs(c.logo); }
     (c.genesis || []).slice(0, 12).forEach(function(name, i){
