@@ -1,5 +1,5 @@
-// Breakpoint London airdrop sign-up. POST registers an entry, GET returns the public count.
-// Entries are private blobs: breakpoint/w/<wallet>.json, plus breakpoint/x/<handle> markers for dedupe.
+// Breakpoint London prize draw sign-up. POST registers an entry, GET returns the public count.
+// Entries are private blobs: breakpoint/w/<solana wallet>.json, plus breakpoint/x/<handle> and breakpoint/e/<eth wallet> markers for dedupe.
 const { put, list, head, BlobNotFoundError } = require('@vercel/blob');
 const crypto = require('crypto');
 
@@ -49,25 +49,33 @@ module.exports = async (req, res) => {
     const wallet = clean(b.wallet, 60);
     const x = clean(b.x, 80).replace(/^@/, '').replace(/^(https?:\/\/)?(www\.)?(x|twitter)\.com\//i, '').split(/[/?#]/)[0];
     const tg = clean(b.tg, 80).replace(/^@/, '').replace(/^(https?:\/\/)?t\.me\//i, '').split(/[/?#]/)[0];
+    const eth = clean(b.eth, 60);
+    const tweet = clean(b.tweet, 200);
 
     if (!/^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(wallet) || b58Bytes(wallet) !== 32)
       return send(res, 400, { error: 'That does not look like a Solana wallet address. Copy it from Phantom, Solflare or Backpack.', field: 'wallet' });
     if (!/^[A-Za-z0-9_]{1,15}$/.test(x))
       return send(res, 400, { error: 'Enter your X handle, like @FrogMark1.', field: 'x' });
-    if (!/^[A-Za-z0-9_]{5,32}$/.test(tg))
+    if (!/^0x[0-9a-fA-F]{40}$/.test(eth))
+      return send(res, 400, { error: 'That does not look like an Ethereum address. It starts with 0x and has 42 characters.', field: 'eth' });
+    if (tweet && !/^https?:\/\/(www\.|mobile\.)?(x|twitter)\.com\/[A-Za-z0-9_]{1,15}\/status\/\d+/i.test(tweet))
+      return send(res, 400, { error: 'Paste the link to your sticker tweet, or leave it empty.', field: 'tweet' });
+    if (tg && !/^[A-Za-z0-9_]{5,32}$/.test(tg))
       return send(res, 400, { error: 'Enter your Telegram username (5 to 32 letters, numbers or _).', field: 'tg' });
     if (b.agree !== true)
-      return send(res, 400, { error: 'Tick the box to confirm you did the three tasks.', field: 'agree' });
+      return send(res, 400, { error: 'Tick the box to confirm you did the tasks.', field: 'agree' });
 
     const wPath = `breakpoint/w/${wallet}.json`;
     const xPath = `breakpoint/x/${x.toLowerCase()}.json`;
+    const ePath = `breakpoint/e/${eth.toLowerCase()}.json`;
     if (await exists(wPath)) return send(res, 409, { error: 'This wallet is already in the pond. One entry per wallet.', field: 'wallet' });
     if (await exists(xPath)) return send(res, 409, { error: 'This X account is already in the pond. One entry per person.', field: 'x' });
+    if (await exists(ePath)) return send(res, 409, { error: 'This Ethereum wallet is already in the pond. One entry per person.', field: 'eth' });
 
     const ip = String(req.headers['x-forwarded-for'] || '').split(',')[0].trim();
     const salt = process.env.ADMIN_KEY || 'zfrog';
     const entry = {
-      wallet, x, tg,
+      wallet, eth, x, tweet: tweet.split(/[?#]/)[0], tg,
       at: new Date().toISOString(),
       country: clean(req.headers['x-vercel-ip-country'], 4),
       ref: clean(b.ref, 40).replace(/[^\w-]/g, ''),
@@ -77,9 +85,10 @@ module.exports = async (req, res) => {
     const opts = { access: 'private', addRandomSuffix: false, allowOverwrite: false, contentType: 'application/json' };
     await put(wPath, JSON.stringify(entry), opts);
     await put(xPath, JSON.stringify({ wallet, at: entry.at }), opts);
+    await put(ePath, JSON.stringify({ wallet, at: entry.at }), opts);
     return send(res, 200, { ok: true });
   } catch (e) {
-    if (e && /already exists/i.test(String(e.message))) return send(res, 409, { error: 'Already registered. One entry per wallet and per X account.' });
+    if (e && /already exists/i.test(String(e.message))) return send(res, 409, { error: 'Already registered. One entry per X account and per wallet.' });
     console.error('claim error', e);
     return send(res, 500, { error: 'The pond is busy. Try again in a minute.' });
   }

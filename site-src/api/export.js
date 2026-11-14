@@ -34,8 +34,8 @@ module.exports = async (req, res) => {
       res.setHeader('content-type', 'application/json; charset=utf-8');
       return res.end(JSON.stringify({ count: rows.length, entries: rows }, null, 1));
     }
-    const cols = ['at', 'wallet', 'x', 'tg', 'country', 'ref', 'sameIp', 'ipHash', 'ua'];
-    const head = ['submitted_at', 'wallet', 'x_handle', 'telegram', 'country', 'ref', 'entries_same_ip', 'ip_hash', 'user_agent'];
+    const cols = ['at', 'x', 'wallet', 'eth', 'tweet', 'tg', 'country', 'ref', 'sameIp', 'ipHash', 'ua'];
+    const head = ['submitted_at', 'x_handle', 'solana_wallet', 'eth_wallet', 'sticker_tweet', 'telegram', 'country', 'ref', 'entries_same_ip', 'ip_hash', 'user_agent'];
     const csv = [head.join(',')].concat(rows.map((r) => cols.map((c) => csvCell(r[c])).join(','))).join('\n') + '\n';
     res.setHeader('content-type', 'text/csv; charset=utf-8');
     res.setHeader('content-disposition', `attachment; filename="zfrog-breakpoint-${new Date().toISOString().slice(0, 10)}.csv"`);
