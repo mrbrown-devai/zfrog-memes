@@ -41,10 +41,6 @@
 .btn-primary:hover{background:#fff27a}
 .btn-ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--toxic-dim)}
 .btn-ghost:hover{box-shadow:inset 0 0 0 1px var(--toxic);color:var(--toxic)}
-.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);padding:1px;margin:0}
-.facts div{background:var(--panel);padding:16px 18px;display:grid;gap:4px}
-.facts dt{font:600 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
-.facts dd{margin:0;font:700 clamp(22px,2.4vw,30px)/1.1 var(--display);color:var(--toxic)}
 .sec{padding-block:clamp(64px,8vw,112px)}
 .sec-head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px);max-width:760px}
 .sec-head h2{font-size:clamp(34px,5vw,64px);text-transform:uppercase}
@@ -56,35 +52,14 @@
 .st h3{font-size:22px;text-transform:uppercase}
 .st p{margin:0;color:var(--muted);font-size:16px}
 .band{background:var(--bog);border-block:1px solid var(--line)}
-.ones{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.4vw,16px)}
-.ones figure{margin:0;display:grid;gap:8px}
-.ones img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block;background:var(--panel)}
-.ones figcaption{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase}
-.ones figcaption small{display:block;color:var(--muted);font-weight:400;letter-spacing:.04em;text-transform:none;margin-top:3px}
-.honor{margin-top:clamp(20px,3vw,32px);color:var(--muted);max-width:80ch}
-.honor b{color:var(--fg)}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
-.tags span{font:600 12px/1 var(--mono);letter-spacing:.06em;padding:8px 10px;box-shadow:inset 0 0 0 1px var(--line);color:var(--fg)}
 .glitches{display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(8px,1.2vw,14px)}
 .glitches figure{margin:0;display:grid;gap:8px}
 .glitches img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block}
 .glitches figcaption{font:700 15px/1.1 var(--display);text-transform:uppercase}
-.glitches figcaption small{display:block;font:400 12px/1.4 var(--mono);color:var(--muted);text-transform:none;margin-top:4px}
-.traits{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px)}
-.tcard{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:18px 20px 20px;min-width:0}
-.tcard h3{font-size:18px;text-transform:uppercase;margin-bottom:10px;display:flex;justify-content:space-between;gap:10px}
-.tcard h3 span{font:400 12px var(--mono);color:var(--muted);text-transform:none}
-.tcard ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
-.tcard li{display:grid;grid-template-columns:1fr auto;gap:10px;font-size:15px;position:relative;padding:3px 0}
-.tcard li b{font:600 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
-.tcard li i{position:absolute;left:0;bottom:0;height:2px;background:var(--toxic-dim);opacity:.6}
-.inks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
-.inks div{aspect-ratio:2/1;display:flex;align-items:flex-end;justify-content:space-between;padding:8px 10px;font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
 .hoods{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(8px,1.2vw,14px)}
 .hoods figure{margin:0;display:grid;gap:6px}
 .hoods img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block}
 .hoods figcaption{font:600 12px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.06em}
-.hoods figcaption small{display:block;color:var(--muted);font-weight:400;text-transform:none}
 .contract{display:flex;align-items:stretch;max-width:640px;background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);--notch:10px}
 .contract span{font:600 11px/1 var(--mono);letter-spacing:.16em;color:var(--void);background:var(--toxic);padding:0 12px;display:flex;align-items:center}
 .contract code{flex:1;min-width:0;font:400 14px/1 var(--mono);padding:15px 14px;overflow-x:auto;white-space:nowrap;user-select:all;scrollbar-width:none}
@@ -95,9 +70,9 @@
 .faq details p{margin:12px 0 0;color:var(--muted);max-width:72ch}
 .faq a{color:var(--toxic)}
 .fine{font-size:14px;color:var(--muted);max-width:90ch;border-top:1px dashed var(--line);padding-top:20px;margin:clamp(36px,5vw,56px) 0 0}
-@media (max-width:980px){.glitches{grid-template-columns:repeat(4,1fr)}.hoods{grid-template-columns:repeat(4,1fr)}.ones{grid-template-columns:repeat(3,1fr)}}
-@media (max-width:860px){.g-hero .wrap{grid-template-columns:1fr}.wall{transform:none;grid-template-columns:repeat(4,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.steps3,.traits{grid-template-columns:1fr}.inks{grid-template-columns:repeat(2,1fr)}}
-@media (max-width:520px){.glitches{grid-template-columns:repeat(2,1fr)}.hoods{grid-template-columns:repeat(3,1fr)}.ones{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:980px){.glitches{grid-template-columns:repeat(4,1fr)}.hoods{grid-template-columns:repeat(4,1fr)}}
+@media (max-width:860px){.g-hero .wrap{grid-template-columns:1fr}.wall{transform:none;grid-template-columns:repeat(4,1fr)}.steps3{grid-template-columns:1fr}}
+@media (max-width:520px){.glitches{grid-template-columns:repeat(2,1fr)}.hoods{grid-template-columns:repeat(3,1fr)}}
 </style>
 
 <link rel="stylesheet" href="/assets/chrome.css">
@@ -135,7 +110,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="sec" id="shielded">
     <div class="wrap">
@@ -192,54 +166,6 @@
         <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-flash.svg" alt="Flash glitch" loading="lazy"><figcaption>Flash</figcaption></figure>
         <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-static.svg" alt="Static glitch" loading="lazy"><figcaption>Static</figcaption></figure>
       </div>
-    </div>
-  </section>
-
-  <section class="sec band" id="traits">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Traits</span>
-        <h2>What a frog <em>can wear.</em></h2>
-        <p>Every trait a frog can carry. The one-of-ones sit outside the tables.</p>
-      </div>
-      <div class="traits">
-        <div class="tcard"><h3>Head</h3><ul>
-          <li>None</li><li>Devil horns</li><li>Halo</li><li>King crown</li></ul></div>
-        <div class="tcard"><h3>Eyes</h3><ul>
-          <li>None</li><li>Laser eyes, blue</li><li>Laser eyes, red</li><li>3D glasses</li><li>VR mask</li><li>Laser eyes, yellow</li></ul></div>
-        <div class="tcard"><h3>Gear</h3><ul>
-          <li>Gold chain</li><li>Gold mask</li><li>Clown nose</li><li>XCOPY hoodie</li></ul></div>
-      </div>
-      <div class="sec-head" style="margin:clamp(40px,5vw,56px) 0 18px"><h3 style="font-size:22px;text-transform:uppercase">Background inks</h3></div>
-      <div class="inks">
-        <div style="background:#b4d22a;color:#0b0e04">Bile</div>
-        <div style="background:#d8d0bf;color:#0b0b0b">Bone</div>
-        <div style="background:#3fb6e8;color:#03080f">Ice</div>
-        <div style="background:#8f6cc2;color:#0c0812">Rot</div>
-        <div style="background:#e0662a;color:#0c0603">Rust</div>
-        <div style="background:#d4203a;color:#fff">Siren</div>
-        <div style="background:#ffe600;color:#0a0a0a">Bleach</div>
-        <div style="background:#000;color:#f1eee0;box-shadow:inset 0 0 0 1px var(--line)">Void</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sec" id="one-of-ones">
-    <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">20 one-of-ones</span>
-        <h2>Legends <em>of the Pond.</em></h2>
-        <p>Twenty cards exist once. Card #1 is Frog Mark 1, the machine that made ZFROG. Four more come from the Pond itself, and fifteen honour the cypherpunks, privacy pioneers and FHE researchers who made all of this possible.</p>
-      </div>
-      <div class="ones">
-        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-frog-mark-1.svg" alt="Frog Mark 1, one-of-one" loading="lazy"><figcaption>Frog Mark 1<small>Card #1</small></figcaption></figure>
-        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-zama-frog.svg" alt="Zama Frog, one-of-one" loading="lazy"><figcaption>Zama Frog<small>Card #636</small></figcaption></figure>
-        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-the-mirror.svg" alt="The Mirror, one-of-one" loading="lazy"><figcaption>The Mirror<small>Card #574</small></figcaption></figure>
-        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-mosquito-from-the-pond.svg" alt="Mosquito from the Pond, one-of-one" loading="lazy"><figcaption>Mosquito from the Pond<small>Card #610</small></figcaption></figure>
-        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-coded-lily-pad.svg" alt="Coded Lily Pad, one-of-one" loading="lazy"><figcaption>Coded Lily Pad<small>Card #354</small></figcaption></figure>
-      </div>
-      <p class="honor"><b>The honorary fifteen</b>, by title only:</p>
-      <div class="tags"><span>Running</span><span>The 1978 Question</span><span>Crypto Anarchist</span><span>Nakamoto</span><span>Manifesto</span><span>PGP</span><span>Hashcash</span><span>Additive</span><span>b-money</span><span>The Maker</span><span>Bootstrap</span><span>Remailer</span><span>Bit Gold</span><span>Torus</span><span>Blind Signature</span></div>
     </div>
   </section>
 
