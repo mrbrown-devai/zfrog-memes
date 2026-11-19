@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ZFROG Genesis: 713 Shielded Frogs on Ethereum with Zama FHE | ZFROG</title>
+<meta name="description" content="ZFROG Genesis is the first NFT collection of the Pond: 713 hooded pixel frogs, minted shielded on Ethereum with Zama's FHE. Only the holder can unshield a frog and see it first. An ode to privacy.">
+<link rel="canonical" href="https://www.zfrog.xyz/genesis">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ZFROG">
+<meta property="og:title" content="ZFROG Genesis: 713 shielded frogs">
+<meta property="og:description" content="Hooded pixel frogs, minted shielded on Ethereum with Zama's FHE. Only the holder sees it first.">
+<meta property="og:url" content="https://www.zfrog.xyz/genesis">
+<meta property="og:image" content="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/og-genesis.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@FrogMark1">
+<meta name="twitter:title" content="ZFROG Genesis: 713 shielded frogs">
+<meta name="twitter:description" content="Hooded pixel frogs, minted shielded on Ethereum with Zama's FHE. Only the holder sees it first.">
+<meta name="twitter:image" content="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/og-genesis.jpg">
+<meta name="theme-color" content="#07070a">
+<link rel="icon" href="/media/logo.jpg">
+<link rel="apple-touch-icon" href="/media/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Barlow:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap">
+<link rel="stylesheet" href="/assets/site.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"CollectionPage","@id":"https://www.zfrog.xyz/genesis","url":"https://www.zfrog.xyz/genesis","name":"ZFROG Genesis","description":"713 hooded pixel frogs minted shielded on Ethereum with Zama's FHE.","isPartOf":{"@id":"https://www.zfrog.xyz/#site"},"about":{"@id":"https://www.zfrog.xyz/#org"},"image":"https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/og-genesis.jpg"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is ZFROG Genesis?","acceptedAnswer":{"@type":"Answer","text":"The first NFT collection of the Pond: 713 cards on Ethereum, 693 hooded pixel frogs and 20 one-of-ones, minted shielded with Zama's fully homomorphic encryption."}},{"@type":"Question","name":"What does minted shielded mean?","acceptedAnswer":{"@type":"Answer","text":"Each frog's traits are encrypted on Ethereum with Zama's FHE. Nobody can see them, the team included. Only the holder can unshield a frog, see it first, and choose when to show it to the world."}},{"@type":"Question","name":"Is ZFROG Genesis made by Zama?","acceptedAnswer":{"@type":"Answer","text":"No. ZFROG is an independent community project. It uses Zama's technology but is not affiliated with, endorsed by or operated by Zama."}}]}]}</script>
+<style>
+.g-hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);isolation:isolate}
+.g-hero .wrap{padding-block:clamp(56px,9vw,120px) clamp(48px,7vw,88px);display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center}
+.g-hero h1{font-size:clamp(52px,8.6vw,120px);text-transform:uppercase;line-height:.92}
+.g-hero h1 em{font-style:normal;color:var(--toxic);text-shadow:-4px 0 #ff2a2a,4px 0 #1ff2ff}
+.g-hero .lede{font-size:clamp(18px,1.9vw,22px);max-width:36ch;margin:0}
+.g-copy{display:grid;gap:22px;min-width:0}
+.wall{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;transform:rotate(-4deg);min-width:0}
+.wall img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block;background:var(--panel)}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font:700 15px/1 var(--display);letter-spacing:.06em;text-transform:uppercase;text-decoration:none;padding:15px 22px;border:0;cursor:pointer;--notch:9px}
+.btn-primary{background:var(--toxic);color:var(--void)}
+.btn-primary:hover{background:#fff27a}
+.btn-ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--toxic-dim)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 1px var(--toxic);color:var(--toxic)}
+.facts{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--line);padding:1px;margin:0}
+.facts div{background:var(--panel);padding:16px 18px;display:grid;gap:4px}
+.facts dt{font:600 11px/1.3 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.facts dd{margin:0;font:700 clamp(22px,2.4vw,30px)/1.1 var(--display);color:var(--toxic)}
+.sec{padding-block:clamp(64px,8vw,112px)}
+.sec-head{display:grid;gap:14px;margin-bottom:clamp(28px,4vw,44px);max-width:760px}
+.sec-head h2{font-size:clamp(34px,5vw,64px);text-transform:uppercase}
+.sec-head h2 em{font-style:normal;color:var(--toxic)}
+.sec-head p{color:var(--muted);margin:0;max-width:62ch}
+.steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px);counter-reset:s}
+.st{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:24px 22px 26px;display:grid;gap:10px;align-content:start}
+.st::before{counter-increment:s;content:"0" counter(s);font:700 46px/1 var(--display);color:transparent;-webkit-text-stroke:1px var(--toxic-dim)}
+.st h3{font-size:22px;text-transform:uppercase}
+.st p{margin:0;color:var(--muted);font-size:16px}
+.band{background:var(--bog);border-block:1px solid var(--line)}
+.ones{display:grid;grid-template-columns:repeat(5,1fr);gap:clamp(10px,1.4vw,16px)}
+.ones figure{margin:0;display:grid;gap:8px}
+.ones img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block;background:var(--panel)}
+.ones figcaption{font:600 12px/1.3 var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.ones figcaption small{display:block;color:var(--muted);font-weight:400;letter-spacing:.04em;text-transform:none;margin-top:3px}
+.honor{margin-top:clamp(20px,3vw,32px);color:var(--muted);max-width:80ch}
+.honor b{color:var(--fg)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.tags span{font:600 12px/1 var(--mono);letter-spacing:.06em;padding:8px 10px;box-shadow:inset 0 0 0 1px var(--line);color:var(--fg)}
+.glitches{display:grid;grid-template-columns:repeat(7,1fr);gap:clamp(8px,1.2vw,14px)}
+.glitches figure{margin:0;display:grid;gap:8px}
+.glitches img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block}
+.glitches figcaption{font:700 15px/1.1 var(--display);text-transform:uppercase}
+.glitches figcaption small{display:block;font:400 12px/1.4 var(--mono);color:var(--muted);text-transform:none;margin-top:4px}
+.traits{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px)}
+.tcard{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:18px 20px 20px;min-width:0}
+.tcard h3{font-size:18px;text-transform:uppercase;margin-bottom:10px;display:flex;justify-content:space-between;gap:10px}
+.tcard h3 span{font:400 12px var(--mono);color:var(--muted);text-transform:none}
+.tcard ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.tcard li{display:grid;grid-template-columns:1fr auto;gap:10px;font-size:15px;position:relative;padding:3px 0}
+.tcard li b{font:600 13px var(--mono);color:var(--muted);font-variant-numeric:tabular-nums}
+.tcard li i{position:absolute;left:0;bottom:0;height:2px;background:var(--toxic-dim);opacity:.6}
+.inks{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.inks div{aspect-ratio:2/1;display:flex;align-items:flex-end;justify-content:space-between;padding:8px 10px;font:600 12px var(--mono);letter-spacing:.08em;text-transform:uppercase}
+.hoods{display:grid;grid-template-columns:repeat(6,1fr);gap:clamp(8px,1.2vw,14px)}
+.hoods figure{margin:0;display:grid;gap:6px}
+.hoods img{width:100%;aspect-ratio:1;image-rendering:pixelated;display:block}
+.hoods figcaption{font:600 12px/1.3 var(--mono);text-transform:uppercase;letter-spacing:.06em}
+.hoods figcaption small{display:block;color:var(--muted);font-weight:400;text-transform:none}
+.contract{display:flex;align-items:stretch;max-width:640px;background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);--notch:10px}
+.contract span{font:600 11px/1 var(--mono);letter-spacing:.16em;color:var(--void);background:var(--toxic);padding:0 12px;display:flex;align-items:center}
+.contract code{flex:1;min-width:0;font:400 14px/1 var(--mono);padding:15px 14px;overflow-x:auto;white-space:nowrap;user-select:all;scrollbar-width:none}
+.faq details{border-bottom:1px solid var(--line);padding:18px 0}
+.faq summary{cursor:pointer;font:600 20px/1.3 var(--display);list-style:none;display:flex;justify-content:space-between;gap:20px}
+.faq summary::after{content:"+";color:var(--toxic)}
+.faq details[open] summary::after{content:"\2212"}
+.faq details p{margin:12px 0 0;color:var(--muted);max-width:72ch}
+.faq a{color:var(--toxic)}
+.fine{font-size:14px;color:var(--muted);max-width:90ch;border-top:1px dashed var(--line);padding-top:20px;margin:clamp(36px,5vw,56px) 0 0}
+@media (max-width:980px){.glitches{grid-template-columns:repeat(4,1fr)}.hoods{grid-template-columns:repeat(4,1fr)}.ones{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:860px){.g-hero .wrap{grid-template-columns:1fr}.wall{transform:none;grid-template-columns:repeat(4,1fr)}.facts{grid-template-columns:repeat(2,1fr)}.steps3,.traits{grid-template-columns:1fr}.inks{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.glitches{grid-template-columns:repeat(2,1fr)}.hoods{grid-template-columns:repeat(3,1fr)}.ones{grid-template-columns:repeat(2,1fr)}}
+</style>
+
+<link rel="stylesheet" href="/assets/chrome.css">
+<header class="nav sf">
+<div class="wrap">
+<a class="brand" href="/" aria-label="ZFROG home"><img src="/media/logo.jpg" alt="" width="42" height="42">ZFROG</a>
+<nav aria-label="Main">
+<a href="/#rewards">Rewards</a>
+<a href="/earn-zama">Earn $ZAMA</a>
+<a href="/fhe">FHE explained</a>
+<a href="/frog-mark-1">FROG Mark 1</a>
+<a href="/codex">Lore</a>
+<a href="/memes">Memes</a>
+</nav>
+<a class="sf-buy" href="https://raydium.io/swap/?inputMint=sol&amp;outputMint=CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Get $ZFROG</a>
+</div>
+</header>
+<main>
+  <section class="g-hero" style="padding:0">
+    <div class="wrap">
+      <div class="g-copy">
+        <span class="eyebrow">NFT collection · Ethereum · Zama FHE</span>
+        <h1>ZFROG <em>Genesis.</em></h1>
+        <p class="lede">713 hooded frogs, minted shielded. Nobody can see a frog's traits, not even us. Only its holder unshields it, sees it first, and decides when the world gets to look.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary chip" href="#collect">Find your frog</a>
+          <a class="btn btn-ghost chip" href="#shielded">How shielding works</a>
+        </div>
+      </div>
+      <div class="wall" aria-hidden="true">
+        <img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-gold.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-xcopy.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-frog-mark-1.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-flamingo-fur.svg" alt="">
+        <img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-slip.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-purple.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-red.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-cheetah.svg" alt="">
+        <img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-green.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-snow.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-white.svg" alt=""><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-flash.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap" style="padding-block:clamp(28px,4vw,44px) 0">
+    <dl class="facts">
+      <div><dt>Supply</dt><dd>713</dd></div>
+      <div><dt>Frogs · one-of-ones</dt><dd>693 · 20</dd></div>
+      <div><dt>Chain</dt><dd>Ethereum</dd></div>
+      <div><dt>Launched</dt><dd>9 Nov 2026</dd></div>
+    </dl>
+  </div>
+
+  <section class="sec" id="shielded">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Shielded by default</span>
+        <h2>A PFP for people <em>who hide things.</em></h2>
+        <p>Most NFTs are public the second they mint. Genesis frogs are not. Their traits are encrypted on Ethereum with Zama's fully homomorphic encryption, so the contract can hold them and nobody else can read them.</p>
+      </div>
+      <div class="steps3">
+        <article class="st chip"><h3>Minted sealed</h3><p>Every card is drawn at mint and stored encrypted. Explorers, marketplaces and the team see a sealed frog, nothing more.</p></article>
+        <article class="st chip"><h3>Unshield it</h3><p>Only the holder can decrypt their frog's traits and see it first. Your bag, your eyes, your timing.</p></article>
+        <article class="st chip"><h3>Show it, or don't</h3><p>Publish your frog when you choose and it becomes public for good. Keep it sealed and it stays yours alone.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="art">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">The art</span>
+        <h2>32 by 32. <em>Always glitching.</em></h2>
+        <p>Pixel frogs in hoodies, each with a background ink, its gear and a glitch on a loop. Every combination is unique. An ode to privacy, dedicated to XCOPY.</p>
+      </div>
+      <div class="hoods">
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-classic.svg" alt="Genesis frog in a Classic hoodie" loading="lazy"><figcaption>Classic<small>194 frogs</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-black.svg" alt="Genesis frog in a Black hoodie" loading="lazy"><figcaption>Black<small>62</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-white.svg" alt="Genesis frog in a White hoodie" loading="lazy"><figcaption>White<small>55</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-red.svg" alt="Genesis frog in a Red hoodie" loading="lazy"><figcaption>Red<small>55</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-blue.svg" alt="Genesis frog in a Blue hoodie" loading="lazy"><figcaption>Blue<small>55</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-green.svg" alt="Genesis frog in a Green hoodie" loading="lazy"><figcaption>Green<small>55</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-purple.svg" alt="Genesis frog in a Purple hoodie" loading="lazy"><figcaption>Purple<small>49</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-orange.svg" alt="Genesis frog in an Orange hoodie" loading="lazy"><figcaption>Orange<small>49</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-yellow-and-black.svg" alt="Genesis frog in a Yellow and black hoodie" loading="lazy"><figcaption>Yellow and black<small>42</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-cheetah.svg" alt="Genesis frog in a Cheetah hoodie" loading="lazy"><figcaption>Cheetah<small>28</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-flamingo-fur.svg" alt="Genesis frog in a Flamingo fur hoodie" loading="lazy"><figcaption>Flamingo fur<small>21</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/hoodie-gold.svg" alt="Genesis frog in a Gold hoodie" loading="lazy"><figcaption>Gold<small>14</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="glitch">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">The glitch</span>
+        <h2>Every frog <em>breaks a little.</em></h2>
+        <p>Each frog carries one glitch, drawn at mint and looping forever. From a soft Ghost to the rare Static, the full treatment.</p>
+      </div>
+      <div class="glitches">
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-ghost.svg" alt="Ghost glitch" loading="lazy"><figcaption>Ghost<small>180 frogs</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-slip.svg" alt="Slip glitch" loading="lazy"><figcaption>Slip<small>153</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-shake.svg" alt="Shake glitch" loading="lazy"><figcaption>Shake<small>125</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-snow.svg" alt="Snow glitch" loading="lazy"><figcaption>Snow<small>97</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-tear.svg" alt="Tear glitch" loading="lazy"><figcaption>Tear<small>69</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-flash.svg" alt="Flash glitch" loading="lazy"><figcaption>Flash<small>55</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/glitch-static.svg" alt="Static glitch" loading="lazy"><figcaption>Static<small>14</small></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec band" id="traits">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Traits</span>
+        <h2>What a frog <em>can wear.</em></h2>
+        <p>Counts out of the 693 frogs. The one-of-ones sit outside the tables.</p>
+      </div>
+      <div class="traits">
+        <div class="tcard"><h3>Head <span>4 options</span></h3><ul>
+          <li>None<b>444</b></li><li>Devil horns<b>97</b></li><li>Halo<b>97</b></li><li>King crown<b>55</b></li></ul></div>
+        <div class="tcard"><h3>Eyes <span>6 options</span></h3><ul>
+          <li>None<b>430</b></li><li>Laser eyes, blue<b>62</b></li><li>Laser eyes, red<b>62</b></li><li>3D glasses<b>55</b></li><li>VR mask<b>42</b></li><li>Laser eyes, yellow<b>42</b></li></ul></div>
+        <div class="tcard"><h3>Gear <span>rare extras</span></h3><ul>
+          <li>Gold chain<b>104</b></li><li>Gold mask<b>69</b></li><li>Clown nose<b>69</b></li><li>XCOPY hoodie<b>14</b></li></ul></div>
+      </div>
+      <div class="sec-head" style="margin:clamp(40px,5vw,56px) 0 18px"><h3 style="font-size:22px;text-transform:uppercase">Background inks</h3></div>
+      <div class="inks">
+        <div style="background:#b4d22a;color:#0b0e04">Bile<span>111</span></div>
+        <div style="background:#d8d0bf;color:#0b0b0b">Bone<span>111</span></div>
+        <div style="background:#3fb6e8;color:#03080f">Ice<span>111</span></div>
+        <div style="background:#8f6cc2;color:#0c0812">Rot<span>97</span></div>
+        <div style="background:#e0662a;color:#0c0603">Rust<span>90</span></div>
+        <div style="background:#d4203a;color:#fff">Siren<span>90</span></div>
+        <div style="background:#ffe600;color:#0a0a0a">Bleach<span>69</span></div>
+        <div style="background:#000;color:#f1eee0;box-shadow:inset 0 0 0 1px var(--line)">Void<span>14</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="one-of-ones">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">20 one-of-ones</span>
+        <h2>Legends <em>of the Pond.</em></h2>
+        <p>Twenty cards exist once. Card #1 is Frog Mark 1, the machine that made ZFROG. Four more come from the Pond itself, and fifteen honour the cypherpunks, privacy pioneers and FHE researchers who made all of this possible.</p>
+      </div>
+      <div class="ones">
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-frog-mark-1.svg" alt="Frog Mark 1, one-of-one" loading="lazy"><figcaption>Frog Mark 1<small>Card #1</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-zama-frog.svg" alt="Zama Frog, one-of-one" loading="lazy"><figcaption>Zama Frog<small>Card #636</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-the-mirror.svg" alt="The Mirror, one-of-one" loading="lazy"><figcaption>The Mirror<small>Card #574</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-mosquito-from-the-pond.svg" alt="Mosquito from the Pond, one-of-one" loading="lazy"><figcaption>Mosquito from the Pond<small>Card #610</small></figcaption></figure>
+        <figure><img src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/9aec8ea2d985660ef30b25638967fd4b33af6122/nft/genesis/one-coded-lily-pad.svg" alt="Coded Lily Pad, one-of-one" loading="lazy"><figcaption>Coded Lily Pad<small>Card #354</small></figcaption></figure>
+      </div>
+      <p class="honor"><b>The honorary fifteen</b>, by title only:</p>
+      <div class="tags"><span>Running</span><span>The 1978 Question</span><span>Crypto Anarchist</span><span>Nakamoto</span><span>Manifesto</span><span>PGP</span><span>Hashcash</span><span>Additive</span><span>b-money</span><span>The Maker</span><span>Bootstrap</span><span>Remailer</span><span>Bit Gold</span><span>Torus</span><span>Blind Signature</span></div>
+    </div>
+  </section>
+
+  <section class="sec band" id="collect">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Collect</span>
+        <h2>Find your <em>frog.</em></h2>
+        <p>Genesis launched on Fungo Labs, the launchpad for encrypted NFTs on Ethereum, with a sealed auction in cZAMA on 9 and 10 November 2026. Always check the contract before you buy.</p>
+      </div>
+      <div class="contract chip" role="group" aria-label="ZFROG Genesis contract on Ethereum"><span>CONTRACT</span><code>0x663f2eACeBc10a1Ea7c1Cb83ff328c6f4Ea219E1</code></div>
+      <div class="cta-row" style="margin-top:20px">
+        <a class="btn btn-primary chip" href="https://x.com/fungolabs" target="_blank" rel="noopener">Fungo Labs</a>
+        <a class="btn btn-ghost chip" href="https://etherscan.io/address/0x663f2eACeBc10a1Ea7c1Cb83ff328c6f4Ea219E1" target="_blank" rel="noopener">Contract on Etherscan</a>
+        <a class="btn btn-ghost chip" href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Join the Telegram</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec faq" id="faq">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">FAQ</span><h2>Quick <em>answers.</em></h2></div>
+      <details><summary>What is ZFROG Genesis?</summary><p>The first NFT collection of the Pond: 713 cards on Ethereum, 693 hooded pixel frogs and 20 one-of-ones, minted shielded with Zama's fully homomorphic encryption.</p></details>
+      <details><summary>What does "minted shielded" mean?</summary><p>Each frog's traits are encrypted on Ethereum. Nobody can see them, the team included. Only the holder can unshield a frog, see it first, and choose when to show it to the world.</p></details>
+      <details><summary>Why does my frog look sealed on a marketplace?</summary><p>Because it is. Until its holder publishes it, a frog shows as a sealed silhouette everywhere. That is the point.</p></details>
+      <details><summary>How is Genesis linked to $ZFROG?</summary><p>Same Pond, same frog. $ZFROG is our community memecoin on Solana that pays holders in $ZAMA. Genesis is its first art collection on Ethereum. Read more in the <a href="/earn-zama">rewards guide</a> and the <a href="/codex">Pond Codex</a>.</p></details>
+      <details><summary>Is this made by Zama?</summary><p>No. ZFROG is an independent community project. Genesis uses Zama's technology but is not affiliated with, endorsed by or operated by Zama. For official Zama information, go to <a href="https://www.zama.org" rel="noopener">zama.org</a>.</p></details>
+      <p class="fine">NFTs are speculative and can lose all their value. Nothing on this page is financial advice. ZFROG Genesis is an independent fan project, not affiliated with Zama or XCOPY. The XCOPY hoodie and the glitch styles are a homage.</p>
+    </div>
+  </section>
+</main>
+<footer class="sf">
+<div class="wrap">
+<div class="sf-top">
+<div><a class="brand" href="/"><img src="/media/logo.jpg" alt="" width="42" height="42" loading="lazy">ZFROG</a><p class="tag">Made of memes. Powered by privacy.</p></div>
+<nav aria-label="Explore"><h2>Explore</h2><ul>
+<li><a href="/">Home</a></li><li><a href="/#rewards">Live rewards</a></li><li><a href="/earn-zama">Earn $ZAMA</a></li><li><a href="/fhe">FHE explained</a></li><li><a href="/frog-mark-1">FROG Mark 1</a></li><li><a href="/codex">The Pond Codex</a></li><li><a href="/memes">Meme vault</a></li>
+</ul></nav>
+<nav aria-label="Community"><h2>Community</h2><ul>
+<li><a href="https://x.com/FrogMark1" target="_blank" rel="noopener">X @FrogMark1</a></li><li><a href="https://t.me/ZFROGPortal" target="_blank" rel="noopener">Telegram</a></li><li><a href="https://t.me/addstickers/zfrog" target="_blank" rel="noopener">Sticker pack</a></li><li><a href="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/brand/ZFROG_Brand_Book.pdf" target="_blank" rel="noopener">Brand book (PDF)</a></li><li><a href="https://raw.githubusercontent.com/mrbrown-devai/zfrog-memes/main/codex/ZFROG_Pond_Codex.pdf" target="_blank" rel="noopener">Pond Codex (PDF)</a></li>
+</ul></nav>
+<nav aria-label="Token"><h2>$ZFROG</h2><ul>
+<li><a href="https://raydium.io/swap/?inputMint=sol&amp;outputMint=CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Buy on Raydium</a></li><li><a href="https://dexscreener.com/solana/fpbmde3afu8ytcqs8vgh7zep7gsepfewx4hqcnduyoj1" target="_blank" rel="noopener">Chart on Dexscreener</a></li><li><a href="https://solscan.io/token/CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T" target="_blank" rel="noopener">Contract on Solscan</a></li>
+</ul><code>CZ4dvNHa15HybGwBMDaqWhtN4qVpHa9sayBBVrfxoH2T</code></nav>
+</div>
+<p class="sf-legal">$ZFROG is a community memecoin with no intrinsic value and no expectation of financial return. It is not affiliated with, endorsed by or operated by Zama. For official Zama information go to <a href="https://www.zama.org" rel="noopener">zama.org</a>. Crypto assets are highly volatile and you can lose everything you put in. Nothing on this site is financial advice. © 2026 ZFROG.</p>
+</div>
+</footer>
+</html>
