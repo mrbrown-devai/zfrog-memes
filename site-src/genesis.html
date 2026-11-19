@@ -46,6 +46,9 @@
 .sec-head h2{font-size:clamp(34px,5vw,64px);text-transform:uppercase}
 .sec-head h2 em{font-style:normal;color:var(--toxic)}
 .sec-head p{color:var(--muted);margin:0;max-width:62ch}
+.sh-top{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(24px,4vw,56px);align-items:center;margin-bottom:clamp(28px,4vw,44px)}
+.sh-top .sec-head{margin-bottom:0}
+.sh-top img{width:100%;aspect-ratio:16/9;object-fit:cover;display:block;--notch:12px}
 .steps3{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(12px,1.6vw,20px);counter-reset:s}
 .st{background:var(--panel);box-shadow:inset 0 0 0 1px var(--line);padding:24px 22px 26px;display:grid;gap:10px;align-content:start}
 .st::before{counter-increment:s;content:"0" counter(s);font:700 46px/1 var(--display);color:transparent;-webkit-text-stroke:1px var(--toxic-dim)}
@@ -71,7 +74,7 @@
 .faq a{color:var(--toxic)}
 .fine{font-size:14px;color:var(--muted);max-width:90ch;border-top:1px dashed var(--line);padding-top:20px;margin:clamp(36px,5vw,56px) 0 0}
 @media (max-width:980px){.glitches{grid-template-columns:repeat(4,1fr)}.hoods{grid-template-columns:repeat(4,1fr)}}
-@media (max-width:860px){.g-hero .wrap{grid-template-columns:1fr}.wall{transform:none;grid-template-columns:repeat(4,1fr)}.steps3{grid-template-columns:1fr}}
+@media (max-width:860px){.g-hero .wrap{grid-template-columns:1fr}.wall{transform:none;grid-template-columns:repeat(4,1fr)}.steps3{grid-template-columns:1fr}.sh-top{grid-template-columns:1fr}}
 @media (max-width:520px){.glitches{grid-template-columns:repeat(2,1fr)}.hoods{grid-template-columns:repeat(3,1fr)}}
 </style>
 
@@ -113,10 +116,13 @@
 
   <section class="sec" id="shielded">
     <div class="wrap">
-      <div class="sec-head">
-        <span class="eyebrow">Shielded by default</span>
-        <h2>A PFP for people <em>who hide things.</em></h2>
-        <p>Most NFTs are public the second they mint. Genesis frogs are not. Every frog lives 100% onchain: the art and its traits sit in the contract on Ethereum, no IPFS, no server. The traits are encrypted with Zama's fully homomorphic encryption, so the contract can hold them and nobody else can read them.</p>
+      <div class="sh-top">
+        <div class="sec-head">
+          <span class="eyebrow">Shielded by default</span>
+          <h2>A PFP for people <em>who hide things.</em></h2>
+          <p>Most NFTs are public the second they mint. Genesis frogs are not. Every frog lives 100% onchain: the art and its traits sit in the contract on Ethereum, no IPFS, no server. The traits are encrypted with Zama's fully homomorphic encryption, so the contract can hold them and nobody else can read them.</p>
+        </div>
+        <img class="chip" src="https://rawcdn.githack.com/mrbrown-devai/zfrog-memes/2de5cd24a36529fec73b0b0db88e21ed4c4d7e4d/nft/genesis/frog-in-box.jpg" alt="ZFROG hiding under a cardboard box in an office hallway, watched by a security camera" loading="lazy" width="1400" height="788">
       </div>
       <div class="steps3">
         <article class="st chip"><h3>Minted sealed</h3><p>Every card is drawn at mint and stored encrypted. Explorers, marketplaces and the team see a sealed frog, nothing more.</p></article>
